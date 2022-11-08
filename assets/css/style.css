@@ -1,0 +1,24 @@
+* {
+    /*Borrar parametros de navegadores*/
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  /*Formula px a rem*/
+  html {
+    font-size: 62.5%;
+  }
+
+
+  .flex {
+    display: flex;
+  }
+  .flex-betwwen {
+    justify-content: space-between;
+  }
+
