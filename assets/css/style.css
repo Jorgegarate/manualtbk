@@ -14,11 +14,36 @@
     font-size: 62.5%;
   }
 
-
   .flex {
     display: flex;
+    height: 3rem;
+    font-size: 1.6rem;
   }
   .flex-betwwen {
+    display: flex;
     justify-content: space-between;
   }
-
+  .pienav{
+    display: flex;
+    justify-content: space-between;
+  }
+  nav{
+    display: flex;
+    position: relative;
+    height: 100%;
+  }
+  img{
+    width: 5rem;
+  }
+  .navbar{
+    display: flex;
+    position: absolute;
+    width: 260px;
+  }
+  .home{
+    position: relative;
+    background: red;
+    left: 2.6rem;
+    width: calc(100% - 260px);
+  }
+  
