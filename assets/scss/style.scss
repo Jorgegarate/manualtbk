@@ -1,0 +1,146 @@
+* {
+    /*Borrar parametros de navegadores*/
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+    
+  }
+  h2 {
+    margin: 0;
+  }
+
+.btn {
+    padding: .8rem 2.4rem;
+    border-radius: .4rem;
+    background-color: none;
+    font-size: 1.4rem;
+    &-secundary {
+        border: 1px solid #D5006C ;
+        color:#D5006C;
+    }
+}
+  
+  /*Formula px a rem*/
+  html {
+    font-size: 62.5%;
+  }
+  .none {
+    display: none;
+  }
+  p{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.25px;
+    color: #2D3338;
+  
+  }
+  
+  img {
+    width: 100%;
+    max-width: 27rem;
+  }
+  @media (min-width:576px) {
+  .md-flex {
+    display: flex;
+  }
+  }
+  
+  .flex {
+    display: flex;
+  }
+  .flex-betwwen {
+    justify-content: space-between;
+  }
+  .flex-column{
+    flex-direction: column;
+  }
+  .flex-rownew {
+    display: flex;
+    flex-direction: row;
+  }
+  .justify-center {
+    justify-content: center;
+  }
+   @media (max-width:576px) {
+    .mb-pb16 article:not(:last-child) {
+      margin-bottom: 1.6rem;
+    }
+   }
+   @media (max-width:768px) {
+    .last-child div:last-child {
+      display: none;
+    }
+  }
+  
+  
+  
+  .color {
+    background-color: #E7ebf3;
+    
+  }
+  
+  .nav-color {
+    background-color: white;
+    box-shadow: 0px 6px 12px rgba(92, 91, 91, 0.04);
+    z-index: 9999;
+  }
+  
+  
+  .px-32 {
+    padding: 3.2rem 0;
+  }
+  .mt-32 {
+    margin-top: 3.2rem;
+  }
+  .background-card {
+    background-color: #fcfdfe;
+    border-radius: .8rem;
+    box-shadow: 0px 4px 10px rgba(46, 91, 255, 0.06);
+  }
+  
+  .title {
+    padding-bottom: 2.4rem;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 0.25px;
+    color:#828EA5;
+  
+  }
+  .flex-gap {
+    gap:3.2rem;
+  }
+  
+  .article {
+    width: 100%;
+    text-align:center!important;
+  }
+  
+  
+  img.red-slack {
+    margin-top: 2rem;    
+    width: 13rem;
+  }
+  img.red-outlook {
+    width: 7rem;
+  }
+  span {
+    color:#D5006C;
+  }
+
+  .version {
+    color:#D5006C;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 24px;
+    text-transform: uppercase;
+  }
+
+
+  .logo-tablet {
+    min-width: 16rem;
+  }
