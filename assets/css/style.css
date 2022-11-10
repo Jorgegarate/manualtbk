@@ -185,6 +185,15 @@ a img {
   margin-left: 12.5%;
 }
 
+.nav-fixed {
+  position: sticky;
+}
+
+@media (min-width: 992px) {
+  .nav-fixed {
+    top: 1.6rem;
+  }
+}
 .article {
   width: 100%;
   text-align: center !important;
@@ -208,6 +217,7 @@ img.red-outlook {
   width: 70%;
   position: fixed;
   width: 70%;
+  z-index: 99999;
 }
 .nav--color div:not(last-child) {
   margin-bottom: 3.2rem;

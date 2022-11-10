@@ -27,4 +27,14 @@
   }
 }
 
- 
+
+.nav-fixed {
+  position: sticky;
+}
+@media (min-width:992px) {
+  .nav-fixed {
+    top:1.6rem;
+  }
+
+  
+ }

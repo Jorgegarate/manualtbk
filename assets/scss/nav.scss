@@ -8,6 +8,7 @@
     width: 70%;
     position: fixed;
     width: 70%;
+    z-index: 99999;
     div:not(last-child) {
         margin-bottom: 3.2rem;
     }
@@ -147,3 +148,4 @@
 }
 
 
+ 
