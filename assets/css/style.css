@@ -13,18 +13,34 @@ h2 {
   margin: 0;
 }
 
+button svg {
+  fill: #707382;
+}
+button svg:hover {
+  fill: #a0afca;
+}
+
 .btn {
   padding: 0.8rem 2.4rem;
   border-radius: 0.4rem;
   background-color: none;
   font-size: 1.4rem;
 }
+.btn--close {
+  padding: 0;
+  font-size: 1.4rem;
+  background-color: #202830;
+}
+.btn--close img {
+  min-width: 4rem;
+  max-width: 6rem;
+  width: 100%;
+}
 .btn-secundary {
   border: 1px solid #D5006C;
   color: #D5006C;
 }
 
-/*Formula px a rem*/
 html {
   font-size: 62.5%;
 }
@@ -86,12 +102,6 @@ img {
   background-color: #E7ebf3;
 }
 
-.nav-color {
-  background-color: white;
-  box-shadow: 0px 6px 12px rgba(92, 91, 91, 0.04);
-  z-index: 9999;
-}
-
 .px-32 {
   padding: 3.2rem 0;
 }
@@ -109,13 +119,70 @@ img {
 .title {
   padding-bottom: 2.4rem;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 1.8rem;
   letter-spacing: 0.25px;
   color: #828EA5;
 }
 
 .flex-gap {
   gap: 3.2rem;
+}
+
+span {
+  color: #D5006C;
+}
+
+@media (min-width: 992px) {
+  body {
+    margin: 0.8rem;
+  }
+}
+@media (min-width: 992px) {
+  main.container {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    max-width: 100% !important;
+  }
+  section.container {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    max-width: 100% !important;
+  }
+}
+a {
+  justify-content: space-around;
+  align-items: start;
+}
+a img {
+  max-width: 2.4rem;
+  margin-right: 0.8rem;
+}
+
+.nav-color {
+  background-color: white;
+  box-shadow: 0px 6px 12px rgba(92, 91, 91, 0.04);
+  z-index: 9999;
+}
+
+.logo-tablet {
+  min-width: 16rem;
+}
+
+.version {
+  color: #D5006C;
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+@media (min-width: 968px) {
+  .m-left {
+    margin-left: 22.5%;
+  }
+}
+.main.active {
+  margin-left: 12.5%;
 }
 
 .article {
@@ -127,25 +194,134 @@ img.red-slack {
   margin-top: 2rem;
   width: 13rem;
 }
-
 img.red-outlook {
   width: 7rem;
 }
 
-span {
-  color: #D5006C;
+.nav--color {
+  background-color: #202830;
+  margin-right: 1.6rem;
+  color: #707382;
+  padding: 1.6rem;
+  left: 0;
+  height: 100%;
+  width: 70%;
+  position: fixed;
+  width: 70%;
 }
-
-.version {
-  color: #D5006C;
-  font-weight: 500;
-  font-size: 1.4rem;
-  line-height: 24px;
+.nav--color div:not(last-child) {
+  margin-bottom: 3.2rem;
+}
+.nav--color div:not(first-child) {
+  margin-left: 1.6rem;
+  margin-right: 1.6rem;
+}
+.nav--color .version {
+  margin-bottom: 0rem;
+}
+.nav--color .version div {
+  margin-bottom: 0rem;
+}
+.nav--color .logo-w {
+  min-width: 10rem;
+  padding-right: 0.6rem;
+  border-right: 1px solid #707382;
+}
+.nav--color h2 {
   text-transform: uppercase;
+  margin-left: 0.6rem;
+  font-size: 1.2rem;
+  margin-top: auto;
+}
+.nav--color h3 {
+  font-size: 1.6rem;
+  color: #0098dd;
+  margin-bottom: 1.6rem;
+}
+.nav--color ul li {
+  margin-bottom: 1.6rem;
+}
+.nav--color ul li a {
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: #707382;
+}
+.nav--color ul li a img {
+  width: 2.4rem;
+}
+.nav--color ul li a p {
+  color: #a0afca;
+}
+.nav--color ul li a:hover p {
+  color: white;
 }
 
-.logo-tablet {
-  min-width: 16rem;
+@media ((min-width: 576px) and (max-width: 991px)) {
+  .nav--color {
+    width: 42%;
+  }
+}
+@media (min-width: 992px) {
+  .nav-color {
+    border-radius: 0.8rem;
+  }
+  .nav--color {
+    position: absolute;
+    max-width: 21%;
+    border-radius: 1.6rem;
+    left: 0.8rem;
+    height: 98vh;
+  }
+  .nav--color.active {
+    max-width: 11%;
+  }
+  .nav--color.active section img {
+    border-right: none;
+  }
+  .nav--color.active section h2 {
+    display: none;
+  }
+}
+.scroll {
+  margin: 0 !important;
+  height: 90%;
+  overflow: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #707382 #202830;
+}
+.scroll h3 {
+  display: none;
+}
+.scroll .text {
+  display: block;
+}
+.scroll.active h3 {
+  display: flex;
+  justify-content: center;
+}
+.scroll.active .text {
+  display: none;
+}
+.scroll.active ul li a img {
+  margin-right: 1.8rem;
+}
+.scroll.active ul li a {
+  display: flex;
+  justify-content: center !important;
+}
+.scroll.active ul li p {
+  display: none;
+}
+.scroll::-webkit-scrollbar-thumb {
+  background-color: #707382;
+  border-radius: 20px;
+  border: 3px solid #202830;
+}
+.scroll::-webkit-scrollbar {
+  width: 12px;
+}
+.scroll::-webkit-scrollbar-track {
+  background: #202830;
 }
 
 /*# sourceMappingURL=style.css.map */

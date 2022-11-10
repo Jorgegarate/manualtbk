@@ -1,0 +1,14 @@
+.article {
+    width: 100%;
+    text-align:center!important;
+  }
+
+  img {
+    &.red-slack {
+    margin-top: 2rem;    
+    width: 13rem;
+  }
+  &.red-outlook {
+    width: 7rem;
+  }
+}
