@@ -13,15 +13,20 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Document</title>
 </head>
-<body class="color">
-    <nav class="none">
-        <div>
-            <h3>titulo</h3>
-            <ul>
-                <li>Uno</li>
-                <li>Dos</li>
-                <li>Tres</li>
-            </ul>
+<body class="color flex justify-center">
+    <nav class="nav--color">
+        <div class="flex flex-betwwen align-items-center justify-content-lg-center">
+            <section class="flex">
+                <img class="logo-w"src="assets/img/tbk-w.svg" alt="tbk negativo">
+            <H2>DEVELOPERs</H2>
+            
+            </section>
+            <button class="btn--close d-lg-none">
+                <svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M18.3154 16.0001L24.0394 10.2761C24.5607 9.75476 24.5607 8.91209 24.0394 8.39076C23.518 7.86942 22.6754 7.86942 22.154 8.39076L16.43 14.1148L10.706 8.39076C10.1847 7.86942 9.34202 7.86942 8.82069 8.39076C8.29935 8.91209 8.29935 9.75476 8.82069 10.2761L14.5447 16.0001L8.82069 21.7241C8.29935 22.2454 8.29935 23.0881 8.82069 23.6094C9.08069 23.8694 9.42202 24.0001 9.76335 24.0001C10.1047 24.0001 10.446 23.8694 10.706 23.6094L16.43 17.8854L22.154 23.6094C22.414 23.8694 22.7554 24.0001 23.0967 24.0001C23.438 24.0001 23.7794 23.8694 24.0394 23.6094C24.5607 23.0881 24.5607 22.2454 24.0394 21.7241L18.3154 16.0001Z"/>
+                    </svg>
+            </button>
+            
         </div>
         <div>
             <h3>titulo</h3>
@@ -56,23 +61,41 @@
         <div class="container flex flex-betwwen">
             <div><img src="assets/img/burger.svg" alt="Menu"></div>
             <div><img src="assets/img/tbk.svg" alt="Logotipo tbk developer"></div>
-            <div class="d-none d-sm-flex flex-gap aling-items-center">
-                <h2 class="ver">version 0.0.1</h2>
-                <button class="btn-secondary">Soporte</button>
+            <div class="d-none">
+                <div>version</div>
+                <button></button>
             </div>
+            
         </div>
-    </header>
 
-    <main class="container mt-32">
-        <div class="background-card d-block d-sm-flex last-child justify-content-around p-4">
-            <div class="flex justify-center align-items-end">
-                <img src="assets/img/developer.svg" alt="personas programando">
+    </nav>
+    <div class="p-0 container-fluid m-left main">
+        <header class="nav-color px-32">
+            <div class="container flex flex-betwwen">
+                <div class="flex">
+                    <img class="" src="assets/img/burger.svg" alt="Menu">
+                    <img class="d-none d-sm-block d-lg-none logo-tablet" src="assets/img/tbk.svg" alt="Logotipo tbk developer">
+                </div>
+                <div class=" d-sm-none "><img src="assets/img/tbk.svg" alt="Logotipo tbk developer"></div>
+                <div class="d-none d-sm-flex flex-gap align-items-center">
+                    <h2 class="version">version 0.0.1</h2>
+                    <button class="btn btn-secundary">Soporte</button>
+                </div>
             </div>
-            <div class="flex justify-center align-items-end">
-                <img src="assets/img/tbk-planta.svg" alt="logotipo tbk y planta">
-            </div>
-            <div class="flex justify-center align-items-end">
-                <img src="assets/img/mujer-computador.svg" alt="Mujer programando">
+        </header>
+    
+        <main class="container mt-32">
+            <div class="background-card d-block d-sm-flex last-child justify-content-around p-4">
+                <div class="flex justify-center align-items-end">
+                    <img src="assets/img/developer.svg" alt="personas programando">
+                </div>
+                <div class="flex justify-center align-items-end">
+                    <img src="assets/img/tbk-planta.svg" alt="logotipo tbk y planta">
+                </div>
+                <div class="flex justify-center align-items-end">
+                    <img src="assets/img/mujer-computador.svg" alt="Mujer programando">
+                </div>
+    
             </div>
 
         </div>
@@ -91,9 +114,10 @@
             <img class="red-outlook" src="assets/img/outlook.svg" alt="outlook">
         </article>
     </section>
-    <section>
-        <div>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.<span>laboriosam.</span> Delectus at cum odio ullam quis excepturi nulla qui illo esse sint necessitatibus eveniet nemo, <span>laboriosam.</span>quibusdam reiciendis dolorum corrupti iure quo </p>
+    <section class="container mt-32">
+        <div class="background-card d-block d-sm-flex last-child justify-content-around p-5">
+            <p>Puedes revisar si más comercios  han presentado algún error o dudas similares en los <span>issues del repositorio github.</span> Si nadie ha comentado algo similar, puedes <span>crear un nuevo issue</span> con tu sugerencia, bug, problema, etc. </p>
+            
             
         </div>
     </section>

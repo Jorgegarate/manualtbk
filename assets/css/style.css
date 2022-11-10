@@ -8,17 +8,54 @@
   border: none;
   outline: none;
   font-family: "Roboto", sans-serif;
-}
-
-/*Formula px a rem*/
-html {
-  font-size: 62.5%;
+<<<<<<< HEAD
+=======
 }
 
 h2 {
   margin: 0;
 }
 
+button svg {
+  fill: #707382;
+}
+button svg:hover {
+  fill: #a0afca;
+}
+
+.btn {
+  padding: 0.8rem 2.4rem;
+  border-radius: 0.4rem;
+  background-color: none;
+  font-size: 1.4rem;
+}
+.btn--close {
+  padding: 0;
+  font-size: 1.4rem;
+  background-color: #202830;
+}
+.btn--close img {
+  min-width: 4rem;
+  max-width: 6rem;
+  width: 100%;
+}
+.btn-secundary {
+  border: 1px solid #D5006C;
+  color: #D5006C;
+>>>>>>> jorgeGarate
+}
+
+html {
+  font-size: 62.5%;
+}
+
+<<<<<<< HEAD
+h2 {
+  margin: 0;
+}
+
+=======
+>>>>>>> jorgeGarate
 .none {
   display: none;
 }
@@ -74,6 +111,65 @@ img {
 }
 .color {
   background-color: #E7ebf3;
+<<<<<<< HEAD
+=======
+}
+
+.px-32 {
+  padding: 3.2rem 0;
+}
+
+.mt-32 {
+  margin-top: 3.2rem;
+}
+
+.background-card {
+  background-color: #fcfdfe;
+  border-radius: 0.8rem;
+  box-shadow: 0px 4px 10px rgba(46, 91, 255, 0.06);
+}
+
+.title {
+  padding-bottom: 2.4rem;
+  font-weight: 700;
+  font-size: 1.8rem;
+  letter-spacing: 0.25px;
+  color: #828EA5;
+}
+
+.flex-gap {
+  gap: 3.2rem;
+}
+
+span {
+  color: #D5006C;
+}
+
+@media (min-width: 992px) {
+  body {
+    margin: 1.6rem;
+  }
+}
+@media (min-width: 992px) {
+  main.container {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    max-width: 100% !important;
+  }
+  section.container {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    max-width: 100% !important;
+  }
+}
+a {
+  justify-content: space-around;
+  align-items: start;
+}
+a img {
+  max-width: 2.4rem;
+  margin-right: 0.8rem;
+>>>>>>> jorgeGarate
 }
 
 .nav-color {
@@ -82,6 +178,7 @@ img {
   z-index: 9999;
 }
 
+<<<<<<< HEAD
 .px-32 {
   padding: 3.2rem 0;
 }
@@ -106,6 +203,27 @@ img {
 
 .flex-gap {
   gap: 3.2rem;
+=======
+.logo-tablet {
+  min-width: 16rem;
+}
+
+.version {
+  color: #D5006C;
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+@media (min-width: 968px) {
+  .m-left {
+    margin-left: 22.5%;
+  }
+}
+.main.active {
+  margin-left: 12.5%;
+>>>>>>> jorgeGarate
 }
 
 .article {
@@ -122,6 +240,7 @@ img.red-outlook {
   width: 7rem;
 }
 
+<<<<<<< HEAD
 span {
   color: #D5006C;
 }
@@ -151,3 +270,132 @@ span {
 /*# sourceMappingURL=style.css.map */
 =======
 >>>>>>> Stashed changes
+=======
+.nav--color {
+  background-color: #202830;
+  margin-right: 1.6rem;
+  color: #707382;
+  padding: 1.6rem;
+  left: 0;
+  height: 100%;
+  width: 70%;
+  position: fixed;
+  width: 70%;
+}
+.nav--color div:not(last-child) {
+  margin-bottom: 3.2rem;
+}
+.nav--color div:not(first-child) {
+  margin-left: 1.6rem;
+  margin-right: 1.6rem;
+}
+.nav--color .version {
+  margin-bottom: 0rem;
+}
+.nav--color .version div {
+  margin-bottom: 0rem;
+}
+.nav--color .logo-w {
+  min-width: 10rem;
+  padding-right: 0.6rem;
+  border-right: 1px solid #707382;
+}
+.nav--color h2 {
+  text-transform: uppercase;
+  margin-left: 0.6rem;
+  font-size: 1.2rem;
+  margin-top: auto;
+}
+.nav--color h3 {
+  font-size: 1.6rem;
+  color: #0098dd;
+  margin-bottom: 1.6rem;
+}
+.nav--color ul li {
+  margin-bottom: 1.6rem;
+}
+.nav--color ul li a {
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: #707382;
+}
+.nav--color ul li a img {
+  width: 2.4rem;
+}
+.nav--color ul li a p {
+  color: #a0afca;
+}
+.nav--color ul li a:hover p {
+  color: white;
+}
+
+@media ((min-width: 576px) and (max-width: 991px)) {
+  .nav--color {
+    width: 42%;
+  }
+}
+@media (min-width: 992px) {
+  .nav-color {
+    border-radius: 0.8rem;
+  }
+  .nav--color {
+    position: absolute;
+    max-width: 21%;
+    border-radius: 1.6rem;
+    left: 1.6rem;
+    height: 96%;
+  }
+  .nav--color.active {
+    max-width: 11%;
+  }
+  .nav--color.active section img {
+    border-right: none;
+  }
+  .nav--color.active section h2 {
+    display: none;
+  }
+}
+.scroll {
+  margin: 0 !important;
+  height: 90%;
+  overflow: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #707382 #202830;
+}
+.scroll h3 {
+  display: none;
+}
+.scroll .text {
+  display: block;
+}
+.scroll.active h3 {
+  display: flex;
+  justify-content: center;
+}
+.scroll.active .text {
+  display: none;
+}
+.scroll.active ul li a img {
+  margin-right: 1.8rem;
+}
+.scroll.active ul li a {
+  display: flex;
+  justify-content: center !important;
+}
+.scroll.active ul li p {
+  display: none;
+}
+.scroll::-webkit-scrollbar-thumb {
+  background-color: #707382;
+  border-radius: 20px;
+  border: 3px solid #202830;
+}
+.scroll::-webkit-scrollbar {
+  width: 12px;
+}
+.scroll::-webkit-scrollbar-track {
+  background: #202830;
+}
+
+/*# sourceMappingURL=style.css.map */
+>>>>>>> jorgeGarate
