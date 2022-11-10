@@ -134,7 +134,7 @@ span {
 
 @media (min-width: 992px) {
   body {
-    margin: 0.8rem;
+    margin: 1.6rem;
   }
 }
 @media (min-width: 992px) {
@@ -269,8 +269,8 @@ img.red-outlook {
     position: absolute;
     max-width: 21%;
     border-radius: 1.6rem;
-    left: 0.8rem;
-    height: 98vh;
+    left: 1.6rem;
+    height: 96%;
   }
   .nav--color.active {
     max-width: 11%;
