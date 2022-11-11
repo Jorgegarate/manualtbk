@@ -181,8 +181,12 @@ a img {
     margin-left: 22.5%;
   }
 }
+.main {
+  transition: 0.6s;
+}
 .main.active {
   margin-left: 12.5%;
+  transition: 0.6s;
 }
 
 .nav-fixed {
@@ -281,7 +285,7 @@ img.red-outlook {
     border-radius: 1.6rem;
     left: 1.6rem;
     height: 96%;
-    transition: width 2s;
+    transition: 0.6s;
   }
   .nav--color.active {
     max-width: 11%;

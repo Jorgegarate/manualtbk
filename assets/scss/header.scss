@@ -7,8 +7,9 @@
 .logo-tablet {
   min-width: 16rem;
 }
+
 .version {
-  color:$transbank-300;
+  color: $transbank-300;
   font-weight: 500;
   font-size: 1.4rem;
   line-height: 24px;
@@ -16,25 +17,28 @@
 }
 
 @media (min-width:968px) {
-.m-left {
-  margin-left: 22.5%;
-}
+  .m-left {
+    margin-left: 22.5%;
+  }
 }
 
 .main {
-&.active {
-  margin-left: 12.5%;
-}
+  transition: .6s;
+
+  &.active {
+    margin-left: 12.5%;
+    transition: .6s;
+  }
 }
 
 
 .nav-fixed {
-position: sticky;
+  position: sticky;
 }
+
 @media (min-width:992px) {
-.nav-fixed {
-  top:1.6rem;
-}
-
+  .nav-fixed {
+    top: 1.6rem;
+  }
 
 }
