@@ -281,6 +281,7 @@ img.red-outlook {
     border-radius: 1.6rem;
     left: 1.6rem;
     height: 96%;
+    transition: width 2s;
   }
   .nav--color.active {
     max-width: 11%;
