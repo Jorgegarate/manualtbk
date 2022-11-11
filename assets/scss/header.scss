@@ -1,19 +1,20 @@
 .nav-color {
-    background-color: white;
-    box-shadow: 0px 6px 12px $box-shadow;
-    z-index: 9999;
-  }
+  background-color: white;
+  box-shadow: 0px 6px 12px $box-shadow;
+  z-index: 9999;
+}
 
-  .logo-tablet {
-    min-width: 16rem;
-  }
-  .version {
-    color:$transbank-300;
-    font-weight: 500;
-    font-size: 1.4rem;
-    line-height: 24px;
-    text-transform: uppercase;
-  }
+.logo-tablet {
+  min-width: 16rem;
+}
+
+.version {
+  color: $transbank-300;
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 24px;
+  text-transform: uppercase;
+}
 
 @media (min-width:968px) {
   .m-left {
@@ -22,9 +23,18 @@
 }
 
 .main {
+@media(min-width: 992px){
+  transition: .6s;
   &.active {
     margin-left: 12.5%;
+    transition: .6s;
   }
+  }
+}
+
+
+.nav-fixed {
+  position: sticky;
 }
 
 
