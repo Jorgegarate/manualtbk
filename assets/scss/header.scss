@@ -23,11 +23,12 @@
 }
 
 .main {
+@media(min-width: 992px){
   transition: .6s;
-
   &.active {
     margin-left: 12.5%;
     transition: .6s;
+  }
   }
 }
 
