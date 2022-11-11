@@ -1,4 +1,3 @@
-<<<<<<< Updated upstream
 * {
   /*Borrar parametros de navegadores*/
   margin: 0;
@@ -8,8 +7,6 @@
   border: none;
   outline: none;
   font-family: "Roboto", sans-serif;
-<<<<<<< HEAD
-=======
 }
 
 h2 {
@@ -42,20 +39,12 @@ button svg:hover {
 .btn-secundary {
   border: 1px solid #D5006C;
   color: #D5006C;
->>>>>>> jorgeGarate
 }
 
 html {
   font-size: 62.5%;
 }
 
-<<<<<<< HEAD
-h2 {
-  margin: 0;
-}
-
-=======
->>>>>>> jorgeGarate
 .none {
   display: none;
 }
@@ -111,8 +100,6 @@ img {
 }
 .color {
   background-color: #E7ebf3;
-<<<<<<< HEAD
-=======
 }
 
 .px-32 {
@@ -169,7 +156,6 @@ a {
 a img {
   max-width: 2.4rem;
   margin-right: 0.8rem;
->>>>>>> jorgeGarate
 }
 
 .nav-color {
@@ -178,32 +164,6 @@ a img {
   z-index: 9999;
 }
 
-<<<<<<< HEAD
-.px-32 {
-  padding: 3.2rem 0;
-}
-
-.mt-32 {
-  margin-top: 3.2rem;
-}
-
-.background-card {
-  background-color: #fcfdfe;
-  border-radius: 0.8rem;
-  box-shadow: 0px 4px 10px rgba(46, 91, 255, 0.06);
-}
-
-.title {
-  padding-bottom: 2.4rem;
-  font-weight: 700;
-  font-size: 18px;
-  letter-spacing: 0.25px;
-  color: #828EA5;
-}
-
-.flex-gap {
-  gap: 3.2rem;
-=======
 .logo-tablet {
   min-width: 16rem;
 }
@@ -223,9 +183,17 @@ a img {
 }
 .main.active {
   margin-left: 12.5%;
->>>>>>> jorgeGarate
 }
 
+.nav-fixed {
+  position: sticky;
+}
+
+@media (min-width: 992px) {
+  .nav-fixed {
+    top: 1.6rem;
+  }
+}
 .article {
   width: 100%;
   text-align: center !important;
@@ -235,42 +203,10 @@ img.red-slack {
   margin-top: 2rem;
   width: 13rem;
 }
-
 img.red-outlook {
   width: 7rem;
 }
 
-<<<<<<< HEAD
-span {
-  color: #D5006C;
-}
-
-.ver {
-  color: #D5006C;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 24px;
-  text-transform: uppercase;
-}
-
-.btn {
-  padding: 0.8rem 2.4rem;
-  border-radius: 0.4rem;
-  background-color: none;
-  font-size: 1.4rem;
-}
-.btn-secondary {
-  border: 1px solid #D5006C;
-  color: #D5006C;
-}
-
-/*# sourceMappingURL=style.scss.map */
-
-/*# sourceMappingURL=style.css.map */
-=======
->>>>>>> Stashed changes
-=======
 .nav--color {
   background-color: #202830;
   margin-right: 1.6rem;
@@ -281,6 +217,7 @@ span {
   width: 70%;
   position: fixed;
   width: 70%;
+  z-index: 99999;
 }
 .nav--color div:not(last-child) {
   margin-bottom: 3.2rem;
@@ -339,11 +276,12 @@ span {
     border-radius: 0.8rem;
   }
   .nav--color {
-    position: absolute;
+    position: fixed;
     max-width: 21%;
     border-radius: 1.6rem;
     left: 1.6rem;
     height: 96%;
+    transition: width 2s;
   }
   .nav--color.active {
     max-width: 11%;
@@ -398,4 +336,3 @@ span {
 }
 
 /*# sourceMappingURL=style.css.map */
->>>>>>> jorgeGarate
