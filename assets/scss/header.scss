@@ -23,12 +23,13 @@
 }
 
 .main {
-@media(min-width: 992px){
-  transition: .6s;
-  &.active {
-    margin-left: 12.5%;
+  @media(min-width: 992px) {
     transition: .6s;
-  }
+
+    &.active {
+      margin-left: 12.5%;
+      transition: .6s;
+    }
   }
 }
 
@@ -41,14 +42,12 @@
 .nav-fixed {
   position: sticky;
 }
+
 @media (min-width:992px) {
   .nav-fixed {
-    top:1.6rem;
+    top: 1.6rem;
   }
-
-  
- }
-
+}
 
 .menu-btn {
   background-color: rgba(255, 255, 255, 0);
