@@ -415,16 +415,16 @@ img.red-outlook {
 .accordion-button:after {
   flex-shrink: 0;
   margin-left: auto;
-  content: ".";
-  background-image: url(../img/icons/config.svg);
+  background-image: url(../img/icons/chevron.svg);
   background-repeat: no-repeat;
   background-size: 100%;
   transition: 0.3s;
-  margin: 0.5rem;
+  width: 10%;
+  padding: 10px;
 }
 
 .accordion-button:not(.collapsed)::after {
-  background-image: url(../img/icons/config.svg);
+  background-image: url(../img/icons/chevron.svg);
   transform: 0.4s;
 }
 
