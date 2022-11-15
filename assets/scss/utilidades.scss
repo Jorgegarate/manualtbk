@@ -97,6 +97,7 @@ img {
   justify-content: center;
 }
 
+
 @media (max-width:576px) {
   .mb-pb16 article:not(:last-child) {
     margin-bottom: 1.6rem;
@@ -136,6 +137,9 @@ img {
   color: #828EA5;
 
 }
+.title-left{
+    text-align: left;
+}
 
 .flex-gap {
   gap: 3.2rem;
@@ -170,7 +174,7 @@ a {
   align-items: start;
 
   img {
-    max-width: 2.4rem;
+    max-width: 2rem;
     margin-right: .8rem;
   }
 }

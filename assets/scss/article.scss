@@ -1,14 +1,42 @@
 .article {
-    width: 100%;
-    text-align:center!important;
+  width: 100%;
+  text-align: center !important;
+}
+
+img {
+  &.red-slack {
+    margin-top: 2rem;
+    width: 13rem;
+  }
+
+  &.red-outlook {
+    width: 7rem;
   }
 
   img {
-    &.red-slack {
-    margin-top: 2rem;    
-    width: 13rem;
+    width: 50rem;
   }
-  &.red-outlook {
-    width: 7rem;
+  .esquemaa{
+    width: 30rem;
+  }
+  @media (max-width:1155) {
+    .esquemaa {
+      width: 15rem
+    }
+  }
+}
+
+table {
+  padding-top: 3rem;
+  width: 100%;
+  text-align: left;
+
+  th,
+  td {
+    border: 1px solid black;
+  }
+
+  td {
+    width: 25%;
   }
 }
