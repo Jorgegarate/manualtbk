@@ -17,25 +17,13 @@ img {
     padding: 32rem 32rem;
     width: 14rem;
   }
+  &.img-puertos{
+    width: 50%;
+  }
 
   @media (max-width:1155) {
     .esquemaa {
       width: 15rem
     }
-  }
-}
-
-table {
-  padding-top: 3rem;
-  width: 100%;
-  text-align: left;
-
-  th,
-  td {
-    border: 1px solid black;
-  }
-
-  td {
-    width: 25%;
   }
 }

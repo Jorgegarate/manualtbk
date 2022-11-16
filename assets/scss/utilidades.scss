@@ -97,7 +97,6 @@ img {
   justify-content: center;
 }
 
-
 @media (max-width:576px) {
   .mb-pb16 article:not(:last-child) {
     margin-bottom: 1.6rem;
@@ -134,12 +133,8 @@ img {
   font-weight: 700;
   font-size: 2rem;
   letter-spacing: 0.25px;
-<<<<<<< HEAD
   color: #828EA5;
 
-=======
-  color:$grey-300;
->>>>>>> c77c6814a6fb5d4e611795e599192d7b4031a79e
 }
 .title-left{
     text-align: left;
@@ -174,7 +169,6 @@ span {
 }
 
 a {
-<<<<<<< HEAD
   justify-content: space-around;
   align-items: start;
 
@@ -183,23 +177,3 @@ a {
     margin-right: .8rem;
   }
 }
-=======
-justify-content: space-around;
-align-items: start;
-img {
-  max-width:2.4rem ;
-  margin-right: .8rem;
-}
-}
-
-.alert {
-  background-color: $transbank-300;
-  padding:4px;
-  width: 1rem;
-  height: 1rem;
-  border-radius: 10rem;
-  position: absolute;
-  top: 0;
-  z-index: 9999;
-} 
->>>>>>> c77c6814a6fb5d4e611795e599192d7b4031a79e

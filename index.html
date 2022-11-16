@@ -10,11 +10,12 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,300&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
 
-    <title>Document a</title>
+    <title>Manual de integracion</title>
 </head>
 
 <body class="color flex justify-center">
@@ -86,15 +87,18 @@
                 <h3 class="text">Transacciones y Diagramas</h3>
                 <h3>....</h3>
                 <ul class="accordion accordion-flush" id="accordionFlushExample">
-                  
-                        <li>
-                            <div class="accordion-header" id="flush-headingOne">
-                                <button class="accordion-button flex justify-content-start" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="true" aria-controls="flush-collapseOne">
-                                    <img src="assets/img/icons/config.svg" alt="configuracion">
-                                   <p>Protocolos de Comunicación</p>
-                                  </button>
-                            </div>
-                          <div id="flush-collapseOne" class="accordion-collapse collapse show" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+
+                    <li>
+                        <div class="accordion-header" id="flush-headingOne">
+                            <button class="accordion-button flex justify-content-start" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="true"
+                                aria-controls="flush-collapseOne">
+                                <img src="assets/img/icons/config.svg" alt="configuracion">
+                                <p>Protocolos de Comunicación</p>
+                            </button>
+                        </div>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse show"
+                            aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
                             <ul>
                                 <li>uno</li>
                                 <li>dos</li>
@@ -180,40 +184,8 @@
                 </div>
 
             </div>
-    </main>
-    <section class="container md-flex flex-gap mt-32 mb-pb16 ">
-        <article class="background-card p-5 w-100 text-center">
-            <h2 class="title">Escríbenos por slack</h2>
-            <p>Únete a nuestra comunidad de integradores. Nuestro equipo está ahí para ayudarte</p>
-            <img class="red-slack" src="assets/img/slack.svg" alt="slack">
-        </article>
-        <article class="background-card p-5 w-100 text-center">
-            <h2 class="title">Envíanos un mensaje</h2>
-            <p>Necesitas resolver algún tipo de incidencia, contáctanos a través de nuestro formulario</p>
-            <img class="red-outlook" src="assets/img/outlook.svg" alt="outlook">
-        </article>
-    </section>
-    <section class="container mt-32">
-        <div class="background-card d-block d-sm-flex last-child justify-content-around p-5">
-            <p>Puedes revisar si más comercios  han presentado algún error o dudas similares en los <span>issues del repositorio github.</span> Si nadie ha comentado algo similar, puedes <span>crear un nuevo issue</span> con tu sugerencia, bug, problema, etc. </p>
-            
-            
-        </div>
-    </section>
         </main>
-        <section class="container md-flex flex-gap mt-32 mb-pb16 ">
-            <article class="background-card p-5 w-100 text-center">
-                <h2 class="title">Escríbenos por slack</h2>
-                <p>Únete a nuestra comunidad de integradores. Nuestro equipo está ahí para ayudarte</p>
-                <img class="red-slack" src="assets/img/slack.svg" alt="slack">
-            </article>
-            <article class="background-card p-5 w-100 text-center">
-                <h2 class="title">Envíanos un mensaje</h2>
-                <p>Necesitas resolver algún tipo de incidencia, contáctanos a través de nuestro formulario</p>
-                <img class="red-outlook" src="assets/img/outlook.svg" alt="outlook">
-            </article>
-        </section>
-        <section id="hola"class="container mt-32">
+        <section id="hola" class="container mt-32">
             <div class="background-card d-block d-sm-flex last-child justify-content-around p-5">
                 <p>Puedes revisar si más comercios han presentado algún error o dudas similares en los <span>issues del
                         repositorio github.</span> Si nadie ha comentado algo similar, puedes <span>crear un nuevo
@@ -238,280 +210,508 @@
             <article class="background-card p-5 w-100">
                 <h2 class="title text-center">Las transacciones y operaciones soportadas por la solución de autoservicio
                     son:</h2>
-                    <p>• Operaciones con tarjetas Banda, Chip y Contactless (Sin Contacto). <br>
-                        • Ventas débito (Redcompra). <br>
-                        • Ventas crédito (con posibilidad de cuotas) soportando con PIN. <br>
-                        • Ventas crédito sin PIN por un monto menor o igual al que establece la banca nacional como el límite <br>
-                        • para este tipo de transacciones. <br>
-                        • Reversas <br>
-                        • Cierre de terminal <br>
-                        • Carga de Llaves <br>
-                        • Polling (Mensaje de conexión entre la caja y el POS) <br>
-                        • Inicializaciones (Descarga de parámetros y aplicativo desde Maxstore)
-                        </p>
-                        <br>
-                        <p>La comunicación con Transbank será realizada por el terminal IM30 a través de su módulo de comunicación Lan, 
-                            Gprs (No disponible a la fecha) o Wifi.
-                            El terminal de pago desatendido IM30 es un terminal 
-                            POS diseñado para operar en entornos de autoservicio. 
-                            Este dispositivo está diseñado para ser utilizado en una 
-                            variedad de entornos interiores o exteriores, como para 
-                            la venta, el estacionamiento, la emisión de boletos o los 
-                            registros de pago de autoservicio.
-                            Al combinar una amplia variedad de opciones de pago, 
-                            como tarjetas de banda magnética, tarjetas inteligentes, 
-                            tarjetas y dispositivos sin contacto. IM30 proporciona una 
-                            solución integral para pagos sin efectivo también está 
-                            diseñado para funcionar en un amplio rango de temperaturas, repeler la entrada de polvo y agua, resistir impactos 
-                            físicos y dispersar descargas electrostáticas. Todas 
-                            estas son cualidades que permiten que el dispositivo se 
-                            instale en una amplia variedad de ubicaciones exteriores 
-                            o interiores.
-                            </p>
+                <p>• Operaciones con tarjetas Banda, Chip y Contactless (Sin Contacto). <br>
+                    • Ventas débito (Redcompra). <br>
+                    • Ventas crédito (con posibilidad de cuotas) soportando con PIN. <br>
+                    • Ventas crédito sin PIN por un monto menor o igual al que establece la banca nacional como el
+                    límite <br>
+                    • para este tipo de transacciones. <br>
+                    • Reversas <br>
+                    • Cierre de terminal <br>
+                    • Carga de Llaves <br>
+                    • Polling (Mensaje de conexión entre la caja y el POS) <br>
+                    • Inicializaciones (Descarga de parámetros y aplicativo desde Maxstore)
+                </p>
+                <br>
+                <p>La comunicación con Transbank será realizada por el terminal IM30 a través de su módulo de
+                    comunicación Lan,
+                    Gprs (No disponible a la fecha) o Wifi.
+                    El terminal de pago desatendido IM30 es un terminal
+                    POS diseñado para operar en entornos de autoservicio.
+                    Este dispositivo está diseñado para ser utilizado en una
+                    variedad de entornos interiores o exteriores, como para
+                    la venta, el estacionamiento, la emisión de boletos o los
+                    registros de pago de autoservicio.
+                    Al combinar una amplia variedad de opciones de pago,
+                    como tarjetas de banda magnética, tarjetas inteligentes,
+                    tarjetas y dispositivos sin contacto. IM30 proporciona una
+                    solución integral para pagos sin efectivo también está
+                    diseñado para funcionar en un amplio rango de temperaturas, repeler la entrada de polvo y agua,
+                    resistir impactos
+                    físicos y dispersar descargas electrostáticas. Todas
+                    estas son cualidades que permiten que el dispositivo se
+                    instale en una amplia variedad de ubicaciones exteriores
+                    o interiores.
+                </p>
             </article>
         </section>
-
-        <section class="container md-flex flex-gap mt-32 mb-pb16 ">
-            <article class="background-card p-5 w-100 text-center">
-                <h2 class="title">Esquema del módulo de dispositivo IM30</h2>
-                <div class="flex-betwwen "><img class="img" src="assets/img/Frame.svg" alt=""><img src="assets/img/Frame2.svg"
-                        alt=""><img src="assets/img/Frame3.svg" alt="">
+        <section class="container mt-32 mb-pb16 ">
+            <div class="background-card d-block last-child p-4">
+                <div class="p-4">
+                    <h2 class="title mt-5">Esquema del módulo de dispositivo IM30</h2>
                 </div>
-                <br>
-                <h2 class="title">Esquema del módulo de dispositivo IM30</h2>
-                <table class="table table-bordered">
-                    <tr>
-                        <th scope="col">Modulo</th>
-                        <th scope="col" colspan="2">Caracteristicas tecnicas</th>
-                    </tr>
-                    <tr>
-                        <td rowspan="2">Cpu</td>
-                        <td>Procesadores AP</td>
-                        <td>ARM Cortex-A53</td>
-                    </tr>
-                    <tr>
-                        <td>Procesadores SP</td>
-                        <td>ARMv7-M</td>
-                    </tr>
-                    <tr>
-                        <td>Sistema Operativo</td>
-                        <td colspan="2">Linux</td>
-                    </tr>
-                    <tr>
-                        <td>Memoria</td>
-                        <td colspan="2">SDRAM LPDDR3 de 1 GB o 2 GB EMMC de 8 GB</td>
-                    </tr>
-                    <tr>
-                        <td>Monitor</td>
-                        <td colspan="2">Pantalla TFT a color de 5” 1280 x 720 píxeles pantalla táctil capacitiva</td>
-                    </tr>
-                    <tr>
-                        <td>Audio</td>
-                        <td>Altavoz incorporado</td>
-                        <td>Altavoz incorporado
-                            El volumen máximo de al me- nos 80 dB a 10 cm es com- patible con WAV, WMA, RAW y MP3 el
-                            audio se sincroniza con el vídeo
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Comunicaciones inalámbricas</td>
-                        <td colspan="2">Bluetooth (opcional, disponible en ciertas configuraciones de productos) <br>
-                            Wi-Fi (opcional, disponible en ciertas configuraciones de productos) <br> Módulo celular 4G
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Puertos externos</td>
-                        <td colspan="2">USB tipo A (host) <br>
-                            USB tipo C (OTG) <br>
-                            2 RS232 (RJ45) <br>
-                            Ethernet (RJ45) <br>
-                            Gato auxiliar <br>
-                            Puerto HDMI <br>
-                            Esclavo MDB <br>
-                            Maestro MDB y puerto personalizado ejecutivo (encabeza- do de 20 pines) <br>
-                            E/S digital (cabezal de 6 pines)
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Fuente de alimentación</td>
-                        <td colspan="2">7 a 48 VCC (E/S digital) <br>
-                            7 a 48 VDC (esclavo MDB) <br>
-                            De 12 a 48 VCC (RS232) <br>
-                            19 a 30 VAC (Ejecutivo)
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Ranura para tarjeta SIM</td>
-                        <td colspan="2">0 a 1 ranura para tarjeta SIM micro SIM (3FF) (dependien- do de la
-                            configuración del producto)
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Lectores de tarjetas</td>
-                        <td>Lector de tarjetas de banda magnética <br>
-                            <br>
-                            Lector de tarjetas inteli- gentes <br>
-                            <br>
-                            Lector de tarjetas sin contacto</td>
-                        <td>Lectura bidireccional de triple pista <br>
-                            <br>
-                            Compatible con ISO7816 EMV2000 L1 y L2 Cumple con PBOC3.0 <br>
-                            <br>
-                            lee las tarjetas ISO14443 Tipo A/B lee las tarjetas Mifare lee dispositivos NFC <br>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Entorno operativo</td>
-                        <td>Temperatura <br>
-                            <br>
-                            Humedad</td>
-                        <td>-20°C ~ 70°C <br>
-                            <br>
-                            5% ~ 95% (sin condensación)
-                        </td>
-                    </tr>
-                </table>
-            </article>
+                <div class="row d-flex justify-center">
+                    <img class="col-sm-5 col-md-4 mb-3" src="assets/img/im30/im30-01.svg" alt="protocolo">
+                    <img class="col-sm-5 col-md-4 mb-3" src="assets/img/im30/im30-01.svg" alt="protocolo">
+                    <img class="col-sm-6 col-md-4 mb-3" src="assets/img/im30/im30-01.svg" alt="protocolo">
+                </div>
+                <div class="p-4">
+                    <h2 class="title mt-5">Esquema del módulo de dispositivo IM30</h2>
+                    <p class="parrafo">Esquema del módulo de dispositivo IM30</p>
+                </div>
+                <div class="border-table mb-5">
+                    <table class="cont-table">
+                        <thead class="table-head">
+                            <tr>
+                                <th>Módulo</th>
+                                <th colspan="2">Caracteristicas tecnicas</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th rowspan="2">CPU</th>
+                                <th colspan="1" style="width: 25%;">Procesador AP</th>
+                                <th colspan="1">ARM Cortex-A53</th>
+                            </tr>
+                            <tr>
+                                <th colspan="1">Procesador SP</th>
+                                <th colspan="1">ARMv7-M</th>
+                            </tr>
+                            <tr>
+                                <th>Sistema operativo</th>
+                                <th colspan="2">Linux</th>
+                            </tr>
+                            <tr>
+                                <th>Memoria</th>
+                                <th colspan="2">SDRAM LPDDR3 de 1 GB o 2 GB EMMC de 8 GB</th>
+                            </tr>
+                            <tr>
+                                <th>Memoria</th>
+                                <th colspan="2">Pantalla TFT a color de 5” 1280 x 720 píxeles pantalla táctil
+                                    capacitiva</th>
+                            </tr>
+                            <tr>
+                                <th>Audio</th>
+                                <th>Altavoz incorporado</th>
+                                <th>Altavoz incorporado
+                                    El volumen máximo de al me- nos 80 dB a 10 cm es com- patible con WAV, WMA, RAW y
+                                    MP3 el audio se sincroniza con el vídeo</th>
+                            </tr>
+                            <tr>
+                                <th rowspan="3">Comunicaciones inalámbricas</th>
+                                <th colspan="2">
+                                    Bluetooth (opcional, disponible en ciertas configuraciones de productos)
+                                </th>
+                            </tr>
+                            <tr>
+                                <th colspan="2">
+                                    Wi-Fi (opcional, disponible en ciertas configuraciones de productos)
+                                </th>
+                            </tr>
+                            <tr>
+                                <th colspan="2">Módulo celular 4G</th>
+                            </tr>
+                            <tr>
+                                <th rowspan="9">Puertos externos</th>
+                                <th colspan="2">USB tipo A (host)</th>
+                            </tr>
+                            <tr>
+                                <th colspan="2">USB tipo C (OTG)</th>
+                            </tr>
+                            <tr>
+                                <th colspan="2">2 RS232 (RJ45)</th>
+                            </tr>
+                            <tr>
+                                <th colspan="2">Ethernet (RJ45)</th>
+                            </tr>
+                            <tr>
+                                <th colspan="2">Gato auxiliar</th>
+                            </tr>
+                            <tr>
+                                <th colspan="2">Puerto HDMI</th>
+                            </tr>
+                            <tr>
+                                <th colspan="2">Esclavo MDB</th>
+                            </tr>
+                            <tr>
+                                <th colspan="2">Maestro MDB y puerto personalizado ejecutivo (encabeza- do de 20 pines)
+                                </th>
+                            </tr>
+                            <tr>
+                                <th colspan="2">E/S digital (cabezal de 6 pines)</th>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
         </section>
         <!--Especificaciones del producto-->
         <section id="Especificaciones" class="container md-flex flex-gap mt-32 mb-pb16 ">
             <article class="background-card p-5 w-100 text-center">
                 <h2 class="title">Especificaciones del producto</h2>
                 <h3>Componentes, interfaz y puertos</h3>
-                    <p>Esquema del módulo de dispositivo IM30</p> 
-                <img src="assets/img/Frame.svg" alt=""><!--Imagen del modelo con indicadores-->
-                <p>
-                </p>
+                <p>Esquema del módulo de dispositivo IM30</p>
+                <img src="assets/img/Frame.svg" alt="">
+                <!--Imagen del modelo con indicadores-->
+                <table>
+                    <tr>
+                        <th>1. Antena 4G (opcional) <br>
+                            2. Módulo 4G y ranuras para tarjetas SAM/SIM <br>
+                            3. RS232-B (host) <br>
+                            4. RS232-A (dispositivo) <br>
+                            5. Puerto auxiliar (micrófono y altavoz) <br>
+                            6. Puerto Ethernet <br>
+                            7. Puerto de E/S digital <br>
+                            8. Puerto maestro ejecutivo y MDB </th>
+                        <th>
+                            9. Puerto USB tipo A <br>
+                            10. Puerto USB tipo C <br>
+                            11. Botón de servicio <br>
+                            12. Botón de reinicio <br>
+                            13. LED indicador de estado <br>
+                            14. Puerto HDMI <br>
+                            15. Puerto esclavo MDB <br>
+                        </th>
+                    </tr>
+
+                </table>
             </article>
-        </section>
-        <section id="Especificaciones" class="container mt-32">
-            <div class="background-card d-block d-sm-flex last-child justify-content-around p-5">
-                <p>Puedes revisar si más comercios han presentado algún error o dudas similares en los <span>issues del
-                        repositorio github.</span> Si nadie ha comentado algo similar, puedes <span>crear un nuevo
-                        issue</span> con tu sugerencia, bug, problema, etc. </p>
-            </div>
         </section>
         <!--Interfaz del producto-->
         <section id="puertos" class="container md-flex flex-gap mt-32 mb-pb16 ">
             <article class="background-card p-5 w-100 text-center">
                 <h2 class="title">Puertos</h2>
-                <p>El manual de integración tiene como objetivo explicar las funcionalidades que incorpora el nuevo
-                    dispositivo de
-                    Autoservicio IM30 de la marca Maxstore para los integradores de Transbank. El Pos cuenta con lectura
-                    de banda,
-                    chip por contacto y sin contacto, permitiendo realizar transacciones bancarias de Crédito y Débito.
-                    El diagrama que viene a continuación explica de forma general el funcionamiento del POS
-                    Autoservicio.</p>
+                <h3>RS232</h3>
+                <p>RJ45 Pinout (RS232-A)</p>
+                <table class="tabla-puertos">
+                    <thead class="table-head">
+                        <tr>
+                            <th>Anclar</th>
+                            <th>Señal</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <th>1</th>
+                            <th>POWER_IN</th>
+                        </tr>
+                        <tr>
+                            <th>2</th>
+                            <th>Rx</th>
+                        </tr>
+                        <tr>
+                            <th>3</th>
+                            <th>Tx</th>
+                        </tr>
+                        <tr>
+                            <th>4</th>
+                            <th>MDB_WAKEUP</th>
+                        </tr>
+                        <tr>
+                            <th>5</th>
+                            <th>Rts</th>
+                        </tr>
+                        <tr>
+                            <th>6</th>
+                            <th>PCts</th>
+                        </tr>
+                        <tr>
+                            <th>7</th>
+                            <th>Gnd</th>
+                        </tr>
+                        <tr>
+                            <th>8</th>
+                            <th>Gnd</th>
+                        </tr>
+                    </tbody>
+                </table>
+                <img class="img-puertos" src="assets/img/Frame.svg" alt="">
+                <p>RJ45 Pinout (RS232-B)</p>
+                <table class="tabla-puertos">
+                    <thead class="table-head">
+                        <tr>
+                            <th>Anclar</th>
+                            <th>Señal</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <th>1</th>
+                            <th>POWER_OUT</th>
+                        </tr>
+                        <tr>
+                            <th>2</th>
+                            <th>Rx</th>
+                        </tr>
+                        <tr>
+                            <th>3</th>
+                            <th>Tx</th>
+                        </tr>
+                        <tr>
+                            <th>4</th>
+                            <th>MDB_WAKEUP</th>
+                        </tr>
+                        <tr>
+                            <th>5</th>
+                            <th>Rts</th>
+                        </tr>
+                        <tr>
+                            <th>6</th>
+                            <th>Cts</th>
+                        </tr>
+                        <tr>
+                            <th>7</th>
+                            <th>Gnd</th>
+                        </tr>
+                        <tr>
+                            <th>8</th>
+                            <th>Gnd</th>
+                        </tr>
+                    </tbody>
+                </table>
+                <img class="img-puertos" src="assets/img/Frame.svg" alt="">
+                
+            </article>
+        </section>
+        <section id="puertos" class="container md-flex flex-gap mt-32 mb-pb16 ">
+            <article class="background-card p-5 w-100 text-center">
+                <h3>Universal Serial Bus (USB)</h3>
+                <p>Pinout USB (Tipo-A)</p>
+                <table class="tabla-puertos">
+                    <thead class="table-head">
+                        <tr>
+                            <th>Anclar</th>
+                            <th>Señal</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <th>1</th>
+                            <th>POWER_IN</th>
+                        </tr>
+                        <tr>
+                            <th>2</th>
+                            <th>Rx</th>
+                        </tr>
+                        <tr>
+                            <th>3</th>
+                            <th>Tx</th>
+                        </tr>
+                        <tr>
+                            <th>4</th>
+                            <th>MDB_WAKEUP</th>
+                        </tr>
+                        <tr>
+                            <th>5</th>
+                            <th>Rts</th>
+                        </tr>
+                        <tr>
+                            <th>6</th>
+                            <th>Cts</th>
+                        </tr>
+                        <tr>
+                            <th>7</th>
+                            <th>Gnd</th>
+                        </tr>
+                        <tr>
+                            <th>8</th>
+                            <th>Gnd</th>
+                        </tr>
+                    </tbody>
+                </table>
+                <img class="img-puertos" src="assets/img/Frame.svg" alt="">
+                <p>Puerto USB tipo A - USB Pinout (Tipo-C)</p>
+                <table class="tabla-puertos">
+                    <thead class="table-head">
+                        <tr>
+                            <th>N°</th>
+                            <th>N° Pin</th>
+                            <th>Señal</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <th>1</th>
+                            <th>A1</th>
+                            <th>Gnd</th>
+                        </tr>
+                        <tr>
+                            <th>2</th>
+                            <th>A2</th>
+                            <th>Nc</th>
+                        </tr>
+                        <tr>
+                            <th>3</th>
+                            <th>A3</th>
+                            <th>Nc</th>
+                        </tr>
+                        <tr>
+                            <th>4</th>
+                            <th>A4</th>
+                            <th>VBUS</th>
+                        </tr>
+                        <tr>
+                            <th>5</th>
+                            <th>A5</th>
+                            <th>USB_ID</th>
+                        </tr>
+                        <tr>
+                            <th>6</th>
+                            <th>A6</th>
+                            <th>D+</th>
+                        </tr>
+                        <tr>
+                            <th>7</th>
+                            <th>A7</th>
+                            <th>D-</th>
+                        </tr>
+                        <tr>
+                            <th>8</th>
+                            <th>A8</th>
+                            <th>Nc</th>
+                        </tr>
+                        <tr>
+                            <th>9</th>
+                            <th>A9</th>
+                            <th>VBUS</th>
+                        </tr>
+                        <tr>
+                            <th>10</th>
+                            <th>A10</th>
+                            <th>Nc</th>
+                        </tr>
+                        <tr>
+                            <th>11</th>
+                            <th>A11</th>
+                            <th>Nc</th>
+                        </tr>
+                        <tr>
+                            <th>12</th>
+                            <th>A12</th>
+                            <th>Gnd</th>
+                        </tr>
+                        <tr>
+                            <th>13</th>
+                            <th>A13</th>
+                            <th>Gnd</th>
+                        </tr>
+                        <tr>
+                            <th>14</th>
+                            <th>A14</th>
+                            <th>Nc</th>
+                        </tr>
+                        <tr>
+                            <th>15</th>
+                            <th>A15</th>
+                            <th>Nc</th>
+                        </tr>
+                        <tr>
+                            <th>16</th>
+                            <th>A16</th>
+                            <th>VBUS</th>
+                        </tr>
+                        <tr>
+                            <th>17</th>
+                            <th>A17</th>
+                            <th>USB_ID</th>
+                        </tr>
+                        <tr>
+                            <th>18</th>
+                            <th>A18</th>
+                            <th>D+</th>
+                        </tr>
+                        <tr>
+                            <th>19</th>
+                            <th>A19</th>
+                            <th>D-</th>
+                        </tr>
+                        <tr>
+                            <th>20</th>
+                            <th>A20</th>
+                            <th>Nc</th>
+                        </tr>
+                        <tr>
+                            <th>21</th>
+                            <th>A21</th>
+                            <th>VBUS</th>
+                        </tr>
+                        <tr>
+                            <th>22</th>
+                            <th>A22</th>
+                            <th>Nc</th>
+                        </tr>
+                        <tr>
+                            <th>23</th>
+                            <th>A23</th>
+                            <th>Nc</th>
+                        </tr>
+                        <tr>
+                            <th>24</th>
+                            <th>A24</th>
+                            <th>Gnd</th>
+                        </tr>
+                    </tbody>
+                </table>
+                <img class="img-puertos" src="assets/img/Frame.svg" alt="">
+                <table class="tabla-puertos">
+                    <thead class="table-head">
+                        <tr>
+                            <th>Anclar</th>
+                            <th>Señal</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <th>1</th>
+                            <th>POWER_IN</th>
+                        </tr>
+                        <tr>
+                            <th>2</th>
+                            <th>Rx</th>
+                        </tr>
+                        <tr>
+                            <th>3</th>
+                            <th>Tx</th>
+                        </tr>
+                        <tr>
+                            <th>4</th>
+                            <th>MDB_WAKEUP</th>
+                        </tr>
+                        <tr>
+                            <th>5</th>
+                            <th>Rts</th>
+                        </tr>
+                        <tr>
+                            <th>6</th>
+                            <th>PCts</th>
+                        </tr>
+                        <tr>
+                            <th>7</th>
+                            <th>Gnd</th>
+                        </tr>
+                        <tr>
+                            <th>8</th>
+                            <th>Gnd</th>
+                        </tr>
+                    </tbody>
+                </table>
             </article>
         </section>
         <section id="puertos" class="container mt-32">
             <div class="background-card d-block d-sm-flex last-child justify-content-around p-5">
-                <p>Puedes revisar si más comercios han presentado algún error o dudas similares en los <span>issues del
+                <p>Puedes revisar si más comercios han presentado algún error o dudas similares en los <span>issues
+                        del
                         repositorio github.</span> Si nadie ha comentado algo similar, puedes <span>crear un nuevo
                         issue</span> con tu sugerencia, bug, problema, etc. </p>
             </div>
-        </section class="container mt-32">
-        <section class="container mt-32 mb-pb16 ">
-          <div class="background-card d-block last-child p-4">
-            <div class="p-4">
-                <h2 class="title mt-5">Esquema del módulo de dispositivo IM30</h2>
-              </div>
-              <div class="row d-flex justify-center">
-                <img class="col-sm-5 col-md-4 mb-3" src="assets/img/im30/im30-01.svg" alt="protocolo">
-                <img class="col-sm-5 col-md-4 mb-3" src="assets/img/im30/im30-01.svg" alt="protocolo">
-                <img class="col-sm-6 col-md-4 mb-3" src="assets/img/im30/im30-01.svg" alt="protocolo">
-              </div>
-            <div class="p-4">
-              <h2 class="title mt-5">Esquema del módulo de dispositivo IM30</h2>
-              <p class="parrafo">Esquema del módulo de dispositivo IM30</p>
-            </div>
-            <div class="border-table mb-5">
-              <table class="cont-table">
-                <thead class="table-head">
-                  <tr>
-                    <th>Módulo</th>
-                    <th colspan="2">CPU</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th rowspan="2">CPU</th>
-                    <th colspan="1" style="width: 25%;">Procesador AP</th>
-                    <th colspan="1">ARM Cortex-A53</th>
-                  </tr>
-                  <tr>
-                    <th colspan="1">Procesador SP</th>
-                    <th colspan="1">ARMv7-M</th>
-                  </tr>
-                  <tr>
-                    <th>Sistema operativo</th>
-                    <th colspan="2">Linux</th>
-                  </tr>
-                  <tr>
-                    <th>Memoria</th>
-                    <th colspan="2">SDRAM LPDDR3 de 1 GB o 2 GB EMMC de 8 GB</th>
-                  </tr>
-                  <tr>
-                    <th>Memoria</th>
-                    <th colspan="2">Pantalla TFT a color de 5” 1280 x 720 píxeles pantalla táctil capacitiva</th>
-                  </tr>
-                  <tr>
-                    <th>Audio</th>
-                    <th>Altavoz incorporado</th>
-                    <th>Altavoz incorporado
-                      El volumen máximo de al me- nos 80 dB a 10 cm es com- patible con WAV, WMA, RAW y MP3 el audio se sincroniza con el vídeo</th>
-                  </tr>  
-                  <tr>
-                    <th rowspan="3">Comunicaciones inalámbricas</th>
-                    <th colspan="2">
-                      Bluetooth (opcional, disponible en ciertas configuraciones de productos)
-                    </th>
-                  </tr>
-                  <tr>
-                    <th colspan="2">
-                      Wi-Fi (opcional, disponible en ciertas configuraciones de productos)
-                    </th>
-                  </tr>
-                  <tr>
-                    <th colspan="2">Módulo celular 4G</th>
-                  </tr>
-                  <tr>
-                    <th rowspan="9">Puertos externos</th>
-                    <th colspan="2">USB tipo A (host)</th>
-                  </tr>
-                  <tr>
-                    <th colspan="2">USB tipo C (OTG)</th>
-                  </tr>
-                  <tr>
-                    <th colspan="2">2 RS232 (RJ45)</th>
-                  </tr>  
-                  <tr>
-                    <th colspan="2">Ethernet (RJ45)</th>
-                  </tr>  
-                  <tr>
-                    <th colspan="2">Gato auxiliar</th>
-                  </tr>  
-                  <tr>
-                    <th colspan="2">Puerto HDMI</th>
-                  </tr>  
-                  <tr>
-                    <th colspan="2">Esclavo MDB</th>
-                  </tr> 
-                  <tr>
-                    <th colspan="2">Maestro MDB y puerto personalizado ejecutivo (encabeza- do de 20 pines)</th>
-                  </tr>  
-                  <tr>
-                    <th colspan="2">E/S digital (cabezal de 6 pines)</th>
-                  </tr>         
-                </tbody>
-              </table>
-            </div>
-          </div>
-        </section>
-    </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/nav.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+            <script src="assets/js/nav.js"></script>
 
 </body>
 

@@ -278,12 +278,7 @@
 .accordion-button:not(.collapsed)::after {
     background-image: url(../img/icons/chevron.svg);
     transform: .4s;
-<<<<<<< HEAD
 }
-=======
-    
-  }
->>>>>>> c77c6814a6fb5d4e611795e599192d7b4031a79e
 
   @media (min-width:992px){
     .accordion-button.active:not(.collapsed)::after {
