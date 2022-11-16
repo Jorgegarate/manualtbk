@@ -13,12 +13,11 @@ img {
     width: 7rem;
   }
 
-  img {
-    width: 50rem;
+  &.esquemaa {
+    padding: 32rem 32rem;
+    width: 14rem;
   }
-  .esquemaa{
-    width: 30rem;
-  }
+
   @media (max-width:1155) {
     .esquemaa {
       width: 15rem
