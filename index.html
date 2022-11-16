@@ -9,11 +9,9 @@
     <meta name="keywords" content="">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
-    <title>Bootstrap Example</title>
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
 
     <title>Document a</title>
@@ -95,6 +93,7 @@
                                     <img src="assets/img/icons/config.svg" alt="configuracion">
                                    <p>Protocolos de Comunicación</p>
                                   </button>
+                                  <div class="alert"></div>
                             </div>
                           <div id="flush-collapseOne" class="accordion-collapse collapse show" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
                             <ul>
@@ -153,7 +152,7 @@
     </nav>
     <div class="p-0 container-fluid m-left main">
         <header class="nav-color px-32 fixed-top nav-fixed">
-            <div class="container flex flex-betwwen">
+            <div class="container flex flex-betwwen d-flex align-items-center">
                 <div class="flex">
                     <button class="menu-btn">
                         <img class="" src="assets/img/burger.svg" alt="Menu">
@@ -185,7 +184,7 @@
     </main>
     <section class="container md-flex flex-gap mt-32 mb-pb16 ">
         <article class="background-card p-5 w-100 text-center">
-            <h2 class="title">Escríbenos por slack</h2>
+            <h2 class="title">Escríbenos por slack</h2>            
             <p>Únete a nuestra comunidad de integradores. Nuestro equipo está ahí para ayudarte</p>
             <img class="red-slack" src="assets/img/slack.svg" alt="slack">
         </article>
@@ -216,6 +215,7 @@
             </article>
         </section>
         <section id="hola"class="container mt-32">
+            
             <div class="background-card d-block d-sm-flex last-child justify-content-around p-5">
                 <p>Puedes revisar si más comercios han presentado algún error o dudas similares en los <span>issues del
                         repositorio github.</span> Si nadie ha comentado algo similar, puedes <span>crear un nuevo
@@ -223,6 +223,103 @@
 
 
             </div>
+        </section class="container mt-32">
+        <section class="container mt-32 mb-pb16 ">
+          <div class="background-card d-block last-child p-4">
+            <div class="p-4">
+                <h2 class="title mt-5">Esquema del módulo de dispositivo IM30</h2>
+              </div>
+              <div class="row d-flex justify-center">
+                <img class="col-sm-5 col-md-4 mb-3" src="assets/img/im30/im30-01.svg" alt="protocolo">
+                <img class="col-sm-5 col-md-4 mb-3" src="assets/img/im30/im30-01.svg" alt="protocolo">
+                <img class="col-sm-6 col-md-4 mb-3" src="assets/img/im30/im30-01.svg" alt="protocolo">
+              </div>
+            <div class="p-4">
+              <h2 class="title mt-5">Esquema del módulo de dispositivo IM30</h2>
+              <p class="parrafo">Esquema del módulo de dispositivo IM30</p>
+            </div>
+            <div class="border-table mb-5">
+              <table class="cont-table">
+                <thead class="table-head">
+                  <tr>
+                    <th>Módulo</th>
+                    <th colspan="2">CPU</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th rowspan="2">CPU</th>
+                    <th colspan="1" style="width: 25%;">Procesador AP</th>
+                    <th colspan="1">ARM Cortex-A53</th>
+                  </tr>
+                  <tr>
+                    <th colspan="1">Procesador SP</th>
+                    <th colspan="1">ARMv7-M</th>
+                  </tr>
+                  <tr>
+                    <th>Sistema operativo</th>
+                    <th colspan="2">Linux</th>
+                  </tr>
+                  <tr>
+                    <th>Memoria</th>
+                    <th colspan="2">SDRAM LPDDR3 de 1 GB o 2 GB EMMC de 8 GB</th>
+                  </tr>
+                  <tr>
+                    <th>Memoria</th>
+                    <th colspan="2">Pantalla TFT a color de 5” 1280 x 720 píxeles pantalla táctil capacitiva</th>
+                  </tr>
+                  <tr>
+                    <th>Audio</th>
+                    <th>Altavoz incorporado</th>
+                    <th>Altavoz incorporado
+                      El volumen máximo de al me- nos 80 dB a 10 cm es com- patible con WAV, WMA, RAW y MP3 el audio se sincroniza con el vídeo</th>
+                  </tr>  
+                  <tr>
+                    <th rowspan="3">Comunicaciones inalámbricas</th>
+                    <th colspan="2">
+                      Bluetooth (opcional, disponible en ciertas configuraciones de productos)
+                    </th>
+                  </tr>
+                  <tr>
+                    <th colspan="2">
+                      Wi-Fi (opcional, disponible en ciertas configuraciones de productos)
+                    </th>
+                  </tr>
+                  <tr>
+                    <th colspan="2">Módulo celular 4G</th>
+                  </tr>
+                  <tr>
+                    <th rowspan="9">Puertos externos</th>
+                    <th colspan="2">USB tipo A (host)</th>
+                  </tr>
+                  <tr>
+                    <th colspan="2">USB tipo C (OTG)</th>
+                  </tr>
+                  <tr>
+                    <th colspan="2">2 RS232 (RJ45)</th>
+                  </tr>  
+                  <tr>
+                    <th colspan="2">Ethernet (RJ45)</th>
+                  </tr>  
+                  <tr>
+                    <th colspan="2">Gato auxiliar</th>
+                  </tr>  
+                  <tr>
+                    <th colspan="2">Puerto HDMI</th>
+                  </tr>  
+                  <tr>
+                    <th colspan="2">Esclavo MDB</th>
+                  </tr> 
+                  <tr>
+                    <th colspan="2">Maestro MDB y puerto personalizado ejecutivo (encabeza- do de 20 pines)</th>
+                  </tr>  
+                  <tr>
+                    <th colspan="2">E/S digital (cabezal de 6 pines)</th>
+                  </tr>         
+                </tbody>
+              </table>
+            </div>
+          </div>
         </section>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>

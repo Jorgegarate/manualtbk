@@ -111,10 +111,9 @@ img {
 .title {
   padding-bottom: 2.4rem;
   font-weight: 700;
-  font-size: 1.8rem;
+  font-size: 2rem;
   letter-spacing: 0.25px;
-  color:#828EA5;
-
+  color:$grey-300;
 }
 .flex-gap {
   gap:3.2rem;
@@ -150,3 +149,14 @@ img {
   margin-right: .8rem;
 }
 }
+
+.alert {
+  background-color: $transbank-300;
+  padding:4px;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 10rem;
+  position: absolute;
+  top: 0;
+  z-index: 9999;
+} 
