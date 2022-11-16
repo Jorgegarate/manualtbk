@@ -114,7 +114,7 @@
 
     .nav--color {
         position: fixed;
-        max-width: 21%;
+        max-width: 24%;
         border-radius: 1.6rem;
         left: 1.6rem;
         height: 96%;
@@ -157,10 +157,19 @@
             display: flex;
             justify-content: center;
         }
-
-        .text {
-            display: none;
+        @media (max-width:991px) {
+            h3 {display:none;}
+            .text {
+                display: block;
+            }
         }
+        @media (min-width:992px) {
+            .text {
+                display: none;
+            }
+        }
+
+
 
         ul {
             li {
@@ -174,13 +183,21 @@
 
         ul {
             li {
+                @media (min-width:992px) {
+                    a {
+                        justify-content: start;
+                    }
+                }
                 a {
                     display: flex;
-                    justify-content: center !important;
+                    justify-content: center;
                 }
 
                 p {
                     display: none;
+                    @media (max-width:991px) {
+                        display: block;
+                    }
                 }
             }
         }
@@ -261,7 +278,18 @@
 .accordion-button:not(.collapsed)::after {
     background-image: url(../img/icons/chevron.svg);
     transform: .4s;
+<<<<<<< HEAD
 }
+=======
+    
+  }
+>>>>>>> c77c6814a6fb5d4e611795e599192d7b4031a79e
+
+  @media (min-width:992px){
+    .accordion-button.active:not(.collapsed)::after {
+        display: none;
+      }
+  } 
 
 .accordion-button:not(.collapsed) {
     display: flex;
