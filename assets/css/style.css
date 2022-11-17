@@ -94,7 +94,7 @@ img {
   }
 }
 @media (max-width: 768px) {
-  .last-child div:last-child {
+  .women {
     display: none;
   }
 }
@@ -166,9 +166,19 @@ a img {
   text-align: left;
 }
 
-.text-50 {
-  width: 30%;
-  text-align: left;
+.alert {
+  background-color: #D5006C;
+  padding: 4px;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 10rem;
+  position: absolute;
+  top: 0;
+  z-index: 9999;
+}
+
+.nav-pills .nav-link:disabled {
+  color: #707382 !important;
 }
 
 .nav-color {
@@ -275,7 +285,8 @@ img.img-puertos {
   margin-bottom: 0rem;
 }
 .nav--color .logo-w {
-  min-width: 10rem;
+  margin-top: 0.8rem;
+  min-width: 9rem;
   padding-right: 0.6rem;
   border-right: 1px solid #707382;
 }
@@ -344,6 +355,9 @@ img.img-puertos {
     top: 0;
     height: 100%;
     transition: 0.4s;
+  }
+  .nav--color .logo-nav {
+    margin-bottom: 6rem;
   }
   .nav--color.active {
     max-width: 11%;
@@ -601,6 +615,49 @@ img.img-puertos {
   margin-right: 10rem;
   display: flex;
   justify-content: center;
+}
+
+.code-snippet {
+  display: block;
+  background-color: #202830;
+  border-radius: 0.8rem;
+  color: #f9fbfe;
+}
+.code-snippet div {
+  display: block;
+}
+.code-snippet .header-code {
+  border-radius: 1.6rem 1.6rem 0 0;
+  padding: 0.8rem;
+  background-color: #2D3338;
+  display: flex;
+}
+.code-snippet .header-code #btnCopiar {
+  width: 24px;
+}
+.code-snippet .nav-pills .nav-link {
+  color: #a0afca;
+}
+.code-snippet .nav-pills .nav-link.active, .code-snippet .nav-pills .nav-link .nav-pills .show {
+  background-color: #2D3338;
+  color: #f2608d;
+}
+
+.token {
+  color: #ffd98f;
+}
+.token .punctuation {
+  color: #f9fbfe;
+}
+.token .attr-value {
+  color: #7aefbb;
+}
+.token .tag {
+  color: #f2608d;
+}
+
+.body-code {
+  padding: 1.6rem;
 }
 
 /*# sourceMappingURL=style.css.map */

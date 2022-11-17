@@ -35,7 +35,8 @@
     }
 
     .logo-w {
-        min-width: 10rem;
+        margin-top: .8rem;
+        min-width: 9rem;
         padding-right: .6rem;
         border-right: 1px solid $grey-200;
     }
@@ -122,7 +123,9 @@
         top: 0;
         height: 100%;
         transition: .4s;
-
+        .logo-nav {
+            margin-bottom: 6rem;
+        }
         &.active {
             max-width: 11%;
             transition: .4s;
