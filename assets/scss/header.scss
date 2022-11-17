@@ -18,11 +18,12 @@
 
 @media (min-width:992px) {
   .m-left {
-    margin-left: 26.5%;
+    margin-left: 24%;
   }
 }
 
 .main {
+<<<<<<< HEAD
   @media(min-width: 992px) {
     transition: .6s;
 
@@ -30,14 +31,17 @@
       margin-left: 12.5%;
       transition: .6s;
     }
+=======
+@media(min-width: 992px){
+  transition: .4s;
+  &.active {
+    margin-left: 11%;
+    
+    transition: .45s;
+  }
+>>>>>>> 6f802b1501fde589663078d179c4789414dd232f
   }
 }
-
-
-.nav-fixed {
-  position: sticky;
-}
-
 
 .nav-fixed {
   position: sticky;
@@ -45,7 +49,11 @@
 
 @media (min-width:992px) {
   .nav-fixed {
+<<<<<<< HEAD
     top: 1.6rem;
+=======
+    top:0;
+>>>>>>> 6f802b1501fde589663078d179c4789414dd232f
   }
 }
 

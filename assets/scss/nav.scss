@@ -45,6 +45,8 @@
         margin-left: .6rem;
         font-size: 1.2rem;
         margin-top: auto;
+        opacity: 0;
+        animation: fade-in .8s forwards;
     }
 
     h3 {
@@ -62,6 +64,8 @@
             a {
                 img {
                     width: 2.4rem;
+                    opacity: 0;
+                    animation: fade-in .4s forwards;
                 }
 
                 font-size: 1.6rem;
@@ -70,6 +74,8 @@
 
                 p {
                     color: $basic-500;
+                    opacity: 0;
+                    animation: fade-in .6s forwards;
                 }
 
                 &:hover {
@@ -86,8 +92,12 @@
 
         &:hover {
             .sub-nav {
+<<<<<<< HEAD
 
                 position: absolute;
+=======
+                position:absolute;
+>>>>>>> 6f802b1501fde589663078d179c4789414dd232f
                 display: block;
                 top: 10;
                 left: 18rem;
@@ -108,13 +118,11 @@
 }
 
 @media (min-width:992px) {
-    .nav-color {
-        border-radius: .8rem;
-    }
 
     .nav--color {
         position: fixed;
         max-width: 24%;
+<<<<<<< HEAD
         border-radius: 1.6rem;
         left: 1.6rem;
         height: 96%;
@@ -124,13 +132,24 @@
             max-width: 11%;
             transition: .6s;
 
+=======
+        left: 0;
+        top: 0;
+        height: 100%;
+        transition: .4s;
+        &.active {
+            max-width: 11%;
+            transition: .4s;
+>>>>>>> 6f802b1501fde589663078d179c4789414dd232f
             section {
                 img {
                     border-right: none;
                 }
-
                 h2 {
+                    transition: .8s;
                     display: none;
+                    opacity: 0;
+                    animation: fade-in .4s forwards;
                 }
             }
         }
@@ -143,9 +162,16 @@
     overflow: auto;
     scrollbar-width: thin;
     scrollbar-color: $grey-200 $grey-400;
+<<<<<<< HEAD
 
+=======
+    transition: .6s;
+>>>>>>> 6f802b1501fde589663078d179c4789414dd232f
     h3 {
+        transition: .6s;
         display: none;
+        opacity: 0;
+        animation: fade-in .4s forwards;
     }
 
     .text {
@@ -156,9 +182,11 @@
         h3 {
             display: flex;
             justify-content: center;
+            
         }
         @media (max-width:991px) {
-            h3 {display:none;}
+            h3 {display:none;
+            }
             .text {
                 display: block;
             }
@@ -166,6 +194,7 @@
         @media (min-width:992px) {
             .text {
                 display: none;
+                
             }
         }
 
@@ -216,12 +245,18 @@
     &::-webkit-scrollbar-track {
         background: $grey-400;
     }
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 6f802b1501fde589663078d179c4789414dd232f
 }
 
 //b
-
+@keyframes fade-in {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
 /*b */
 .accordion {
     --bs-accordion-color: $transbank-300;
