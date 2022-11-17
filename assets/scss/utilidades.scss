@@ -149,27 +149,9 @@ span {
 }
 
 @media (min-width:992px) {
-<<<<<<< HEAD
   body {
     margin: 1.6rem;
   }
-=======
-body{
-  margin: 0;
-}  
-}
-@media (min-width:992px) {
-main.container {
-  padding-left: 0!important;
-  padding-right: 0!important;
-  max-width: 100%!important;
-}
-section.container {
-  padding-left: 0!important;
-  padding-right: 0!important;
-  max-width: 100%!important;
-}
->>>>>>> 6f802b1501fde589663078d179c4789414dd232f
 }
 
 @media (min-width:992px) {
@@ -194,4 +176,13 @@ a {
     max-width: 2rem;
     margin-right: .8rem;
   }
+}
+
+.left{
+  text-align: left;
+}
+
+.text-50{
+  width: 30%;
+  text-align: left;
 }

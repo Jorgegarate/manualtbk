@@ -83,4 +83,38 @@
 
 .table-puertos{
     width: 50%;
+    margin-left: 5rem;
+    table {
+        margin: 0;
+        width: 100%;
+        color: $webpay-300;
+
+        & thead {
+            font-size: 1.4rem;
+            font-weight: 400;
+
+            tr {
+                background: $transbank-300;
+
+                th {
+                    width: 33%;
+                }
+            }
+
+        }
+    }
+}
+
+.img-puertos{
+    width: 50%;
+    display: flex;
+    max-width: 20rem;
+    margin-right: 10rem;
+}
+.img-transc{
+    width: 70%;  
+    max-width: 50rem;
+    margin-right: 10rem;
+    display: flex;
+    justify-content: center;
 }
