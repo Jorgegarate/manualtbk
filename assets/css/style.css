@@ -121,11 +121,7 @@ img {
   font-weight: 700;
   font-size: 2rem;
   letter-spacing: 0.25px;
-  color: #828EA5;
-}
-
-.title-left {
-  text-align: left;
+  color: #2D3338;
 }
 
 .flex-gap {
@@ -138,7 +134,7 @@ span {
 
 @media (min-width: 992px) {
   body {
-    margin: 1.6rem;
+    margin: 0;
   }
 }
 @media (min-width: 992px) {
@@ -158,12 +154,8 @@ a {
   align-items: start;
 }
 a img {
-  max-width: 2rem;
+  max-width: 2.4rem;
   margin-right: 0.8rem;
-}
-
-.left {
-  text-align: left;
 }
 
 .alert {
