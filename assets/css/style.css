@@ -198,11 +198,11 @@ a img {
 }
 @media (min-width: 992px) {
   .main {
-    transition: 0.6s;
+    transition: 0.4s;
   }
   .main.active {
-    margin-left: 12.5%;
-    transition: 0.6s;
+    margin-left: 11%;
+    transition: 0.45s;
   }
 }
 
@@ -212,7 +212,7 @@ a img {
 
 @media (min-width: 992px) {
   .nav-fixed {
-    top: 1.6rem;
+    top: 0;
   }
 }
 .menu-btn {
