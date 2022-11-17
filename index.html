@@ -71,6 +71,7 @@
                                 <img src="assets/img/icons/Puertos.svg" alt="configuracion">
                                 <p>Puertos</p>
                             </button>
+                            <div class="alert"></div>
                         </div>
                         <div id="flush-collapseOne" class="accordion-collapse collapse show"
                             aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
@@ -90,10 +91,25 @@
                 <h3>...</h3>
                 <ul>
                     <li>
-                        <a class="flex justify-content-start" href="#tarjeta-sim">
-                            <img src="assets/img/icons/Dimensiones.svg" alt="configuracion">
-                            <p>Dimensiones</p>
-                        </a>
+                        <div class="accordion-header" id="flush-headingtwo">
+                            <button class="accordion-button flex justify-content-start" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#flush-collapsetwo" aria-expanded="true"
+                                aria-controls="flush-collapseOne">
+                                <img src="assets/img/icons/Dimensiones.svg" alt="configuracion">
+                                <p>Dimensiones</p>
+                            </button>
+                            <div class="alert"></div>
+                        </div>
+                        <div id="flush-collapsetwo" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingtwo" data-bs-parent="#accordionFlushExample">
+                            <ul>
+                                <li><a class="flex justify-content-start" href="#PUERTOS">RS232</a></li>
+                                <li><a class="flex justify-content-start" href="#USB">USB</a></li>
+                                <li><a class="flex justify-content-start" href="#PUERTOS-USB">Puertos USB</a></li>
+                                <li><a class="flex justify-content-start" href="#MDB">MDB</a></li>
+                                <li><a class="flex justify-content-start" href="#AUX">AUX</a></li>
+                            </ul>
+                        </div>
                     </li>
                 </ul>
             </div>
