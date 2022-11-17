@@ -18,32 +18,27 @@
 
 @media (min-width:992px) {
   .m-left {
-    margin-left: 26.5%;
+    margin-left: 24%;
   }
 }
 
 .main {
 @media(min-width: 992px){
-  transition: .6s;
+  transition: .4s;
   &.active {
-    margin-left: 12.5%;
-    transition: .6s;
+    margin-left: 11%;
+    
+    transition: .45s;
   }
   }
 }
-
-
-.nav-fixed {
-  position: sticky;
-}
-
 
 .nav-fixed {
   position: sticky;
 }
 @media (min-width:992px) {
   .nav-fixed {
-    top:1.6rem;
+    top:0;
   }
 
   
