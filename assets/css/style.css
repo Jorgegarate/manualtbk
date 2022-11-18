@@ -62,6 +62,15 @@ img {
   max-width: 27rem;
 }
 
+.w-100 img {
+  max-width: 100%;
+}
+
+.img-100 {
+  max-width: 100%;
+  padding-right: 4rem;
+}
+
 @media (min-width: 576px) {
   .md-flex {
     display: flex;
@@ -69,6 +78,9 @@ img {
 }
 .flex {
   display: flex;
+}
+.flex .flex-row {
+  flex-direction: column !important;
 }
 
 .flex-betwwen {
@@ -149,6 +161,14 @@ span {
     max-width: 100% !important;
   }
 }
+.align-center {
+  align-items: center;
+  justify-content: center;
+}
+.align-center img {
+  max-width: 7rem;
+}
+
 a {
   justify-content: space-around;
   align-items: start;
@@ -173,6 +193,16 @@ a img {
   color: #707382 !important;
 }
 
+.lista {
+  padding-left: 2rem;
+  list-style: disc;
+}
+.lista li {
+  list-style-type: square;
+  margin: 0.5rem 0;
+  font-size: 1.4rem;
+}
+
 .nav-color {
   background-color: white;
   box-shadow: 0px 6px 12px rgba(92, 91, 91, 0.04);
@@ -184,7 +214,7 @@ a img {
 }
 
 .version {
-  color: #D5006C;
+  color: #0098dd;
   font-weight: 500;
   font-size: 1.4rem;
   line-height: 24px;
@@ -578,6 +608,10 @@ img.img-puertos {
 .table-puertos {
   width: 50%;
   margin-left: 5rem;
+}
+.table-puertos.table-2 {
+  width: 80%;
+  margin-left: 0;
 }
 .table-puertos table {
   margin: 0;

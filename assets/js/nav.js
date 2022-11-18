@@ -23,12 +23,9 @@ menuBtn.addEventListener('click', () => {
       menuClose.classList.add('active');
       scrollContent.classList.add('active');
       accordionCollapse.classList.add('none');
-      accordionButton.forEach(element => { 
-        
-      element.classList.add('active')
-      element.classList.remove('collapsed')
-      
-    })
+      accordionButton.forEach(element => {element.classList.add('active')
+      element.classList.remove('collapsed')})
+      buttonAccordionCollapse.forEach(element =>{element.classList.add('none')});
   } 
 }
   else { 
