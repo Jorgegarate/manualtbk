@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 825.3 374.74">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: 0em;
+      }
+
+      .cls-2 {
+        letter-spacing: -.04em;
+      }
+
+      .cls-3 {
+        font-size: 11px;
+      }
+
+      .cls-3, .cls-4, .cls-5 {
+        font-family: Roboto-Regular, Roboto;
+      }
+
+      .cls-3, .cls-5 {
+        fill: #fff;
+      }
+
+      .cls-6 {
+        fill: #6b196b;
+      }
+
+      .cls-7 {
+        fill: #009bdd;
+      }
+
+      .cls-8 {
+        fill: #d5006c;
+      }
+
+      .cls-9, .cls-4 {
+        fill: #2d3338;
+      }
+
+      .cls-10 {
+        fill: none;
+        stroke: #2d3338;
+        stroke-miterlimit: 10;
+        stroke-width: .75px;
+      }
+
+      .cls-4, .cls-5 {
+        font-size: 10px;
+      }
+
+      .cls-11 {
+        letter-spacing: 0em;
+      }
+
+      .cls-12 {
+        letter-spacing: 0em;
+      }
+
+      .cls-13 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-14 {
+        fill: #e7ebf3;
+        opacity: .53;
+      }
+    </style>
+  </defs>
+  <g>
+    <rect class="cls-14" x="393.52" width="431.77" height="288.73" rx="8.3" ry="8.3"/>
+    <text class="cls-4" transform="translate(515.4 18.6)"><tspan x="0" y="0">P</tspan><tspan class="cls-12" x="6.31" y="0">r</tspan><tspan x="9.59" y="0">oceso </tspan><tspan class="cls-11" x="39.17" y="0">A</tspan><tspan x="45.63" y="0">u</tspan><tspan class="cls-12" x="51.15" y="0">t</tspan><tspan x="54.32" y="0">omático en Caja del Come</tspan><tspan class="cls-1" x="170.99" y="0">r</tspan><tspan x="174.28" y="0">cio</tspan></text>
+  </g>
+  <g>
+    <line class="cls-10" x1="411.76" y1="349.74" x2="266.44" y2="349.74"/>
+    <polygon class="cls-9" points="410.67 346 417.14 349.74 410.67 353.48 410.67 346"/>
+  </g>
+  <g>
+    <line class="cls-10" x1="53.35" y1="252.26" x2="28.03" y2="252.26"/>
+    <polygon class="cls-9" points="52.26 248.52 58.73 252.26 52.26 256 52.26 248.52"/>
+  </g>
+  <g>
+    <line class="cls-10" x1="172.06" y1="252.26" x2="146.73" y2="252.26"/>
+    <polygon class="cls-9" points="170.96 248.52 177.44 252.26 170.96 256 170.96 248.52"/>
+  </g>
+  <g>
+    <circle class="cls-7" cx="12.24" cy="245.3" r="11.29"/>
+    <text class="cls-4" transform="translate(0 267.8)"><tspan x="0" y="0">Inicio</tspan></text>
+  </g>
+  <g>
+    <circle class="cls-7" cx="433.38" cy="342.78" r="11.29"/>
+    <text class="cls-4" transform="translate(425.7 365.28)"><tspan x="0" y="0">FIN</tspan></text>
+  </g>
+  <g>
+    <rect class="cls-8" x="62.73" y="227.26" width="80" height="50" rx="8.3" ry="8.3"/>
+    <text class="cls-3" transform="translate(70.14 249.38)"><tspan x="0" y="0">P</tspan><tspan class="cls-12" x="6.94" y="0">r</tspan><tspan x="10.55" y="0">oceso Caja</tspan><tspan x="8.81" y="13.2">Come</tspan><tspan class="cls-1" x="37.71" y="13.2">r</tspan><tspan x="41.33" y="13.2">cio</tspan></text>
+  </g>
+  <g>
+    <rect class="cls-8" x="300.14" y="227.26" width="80" height="50" rx="8.3" ry="8.3"/>
+    <text class="cls-3" transform="translate(304.82 243.16)"><tspan x="0" y="0">Caja come</tspan><tspan class="cls-1" x="51.98" y="0">r</tspan><tspan x="55.6" y="0">cio</tspan><tspan x="-2.77" y="12">Selecciona ot</tspan><tspan class="cls-12" x="63.18" y="12">r</tspan><tspan x="66.79" y="12">o</tspan><tspan x="11.61" y="24">p</tspan><tspan class="cls-1" x="17.79" y="24">r</tspan><tspan x="21.41" y="24">estador</tspan></text>
+  </g>
+  <g>
+    <rect class="cls-8" x="300.14" y="125.78" width="80" height="50" rx="8.3" ry="8.3"/>
+    <text class="cls-3" transform="translate(305.64 148.85)"><tspan x="0" y="0">No se Cambia</tspan><tspan x="3.04" y="12">de P</tspan><tspan class="cls-1" x="24.73" y="12">r</tspan><tspan x="28.35" y="12">estador</tspan></text>
+  </g>
+  <g>
+    <rect class="cls-8" x="182.44" y="324.74" width="80" height="50" rx="8.3" ry="8.3"/>
+    <text class="cls-3" transform="translate(207.55 346.86)"><tspan x="0" y="0">Ot</tspan><tspan class="cls-12" x="11.16" y="0">r</tspan><tspan x="14.77" y="0">os </tspan><tspan x="-8.3" y="13.2">P</tspan><tspan class="cls-12" x="-1.36" y="13.2">r</tspan><tspan x="2.26" y="13.2">ocesos</tspan></text>
+  </g>
+  <g>
+    <path class="cls-6" d="M260.43,258.44l-33.16,25.93c-2.84,2.22-6.82,2.22-9.66,0l-33.16-25.93c-4.01-3.14-4.01-9.22,0-12.35l33.16-25.93c2.84-2.22,6.82-2.22,9.66,0l33.16,25.93c4.01,3.14,4.01,9.22,0,12.35Z"/>
+    <text class="cls-5" transform="translate(199.59 243.13)"><tspan x="0" y="0">Cambiar o </tspan><tspan x="-2.26" y="12">utilizar ot</tspan><tspan class="cls-12" x="39.02" y="12">r</tspan><tspan x="42.31" y="12">o </tspan><tspan x="2.37" y="24">P</tspan><tspan class="cls-1" x="8.68" y="24">r</tspan><tspan x="11.97" y="24">estador</tspan></text>
+  </g>
+  <g>
+    <g>
+      <line class="cls-10" x1="290.76" y1="252.26" x2="265.44" y2="252.26"/>
+      <polygon class="cls-9" points="289.67 248.52 296.14 252.26 289.67 256 289.67 248.52"/>
+    </g>
+    <text class="cls-4" transform="translate(273.11 263.37)"><tspan x="0" y="0">SI</tspan></text>
+  </g>
+  <g>
+    <rect class="cls-8" x="418.85" y="227.26" width="80" height="50" rx="8.3" ry="8.3"/>
+    <text class="cls-3" transform="translate(430.99 243.16)"><tspan x="0" y="0">Cambio de </tspan><tspan x=".21" y="12" xml:space="preserve"> Codigo de </tspan><tspan x="4.08" y="24">Come</tspan><tspan class="cls-1" x="32.98" y="24">r</tspan><tspan x="36.6" y="24">cio</tspan></text>
+  </g>
+  <g>
+    <line class="cls-10" x1="409.46" y1="252.26" x2="384.14" y2="252.26"/>
+    <polygon class="cls-9" points="408.37 248.52 414.85 252.26 408.37 256 408.37 248.52"/>
+  </g>
+  <g>
+    <rect class="cls-8" x="537.55" y="227.26" width="80" height="50" rx="8.3" ry="8.3"/>
+    <text class="cls-3" transform="translate(538.69 250.33)"><tspan class="cls-2" x="0" y="0">T</tspan><tspan class="cls-13" x="6.16" y="0">r</tspan><tspan x="9.67" y="0">ansacción de </tspan><tspan x="24.98" y="12">cier</tspan><tspan class="cls-1" x="42.96" y="12">r</tspan><tspan x="46.58" y="12">e</tspan></text>
+  </g>
+  <g>
+    <rect class="cls-8" x="705.98" y="125.78" width="80" height="50" rx="8.3" ry="8.3"/>
+    <text class="cls-3" transform="translate(726.85 148.84)"><tspan x="0" y="0">Envió a </tspan><tspan class="cls-2" x="-6.58" y="12">T</tspan><tspan class="cls-13" x="-.42" y="12">r</tspan><tspan x="3.08" y="12">ansbank</tspan></text>
+  </g>
+  <g>
+    <line class="cls-10" x1="528.17" y1="252.26" x2="502.85" y2="252.26"/>
+    <polygon class="cls-9" points="527.08 248.52 533.55 252.26 527.08 256 527.08 248.52"/>
+  </g>
+  <g>
+    <g>
+      <line class="cls-10" x1="222.44" y1="315.36" x2="222.44" y2="290.04"/>
+      <polygon class="cls-9" points="226.18 314.27 222.44 320.74 218.7 314.27 226.18 314.27"/>
+    </g>
+    <text class="cls-4" transform="translate(226.05 308.95)"><tspan x="0" y="0">NO</tspan></text>
+  </g>
+  <g>
+    <path class="cls-10" d="M99.43,221.88v-57.85c0-7.02,5.16-12.71,11.53-12.71h185.18"/>
+    <polygon class="cls-9" points="103.17 220.79 99.43 227.26 95.69 220.79 103.17 220.79"/>
+  </g>
+  <path class="cls-10" d="M99.43,168.6V68.14c0-11.15,5.16-20.19,11.53-20.19H417.14"/>
+  <g>
+    <g>
+      <line class="cls-10" x1="414.85" y1="150.87" x2="389.52" y2="150.87"/>
+      <polygon class="cls-9" points="390.62 147.13 384.14 150.87 390.62 154.61 390.62 147.13"/>
+    </g>
+    <text class="cls-4" transform="translate(395.37 161.98)"><tspan x="0" y="0">NO</tspan></text>
+  </g>
+  <g>
+    <path class="cls-6" d="M497.84,156.96l-33.16,25.93c-2.84,2.22-6.82,2.22-9.66,0l-33.16-25.93c-4.01-3.14-4.01-9.22,0-12.35l33.16-25.93c2.84-2.22,6.82-2.22,9.66,0l33.16,25.93c4.01,3.14,4.01,9.22,0,12.35Z"/>
+    <text class="cls-5" transform="translate(436.24 148.64)"><tspan x="0" y="0">Respuesta</tspan><tspan x="2.02" y="12">Cor</tspan><tspan class="cls-1" x="17.62" y="12">r</tspan><tspan x="20.91" y="12">ecta?</tspan></text>
+  </g>
+  <g>
+    <line class="cls-10" x1="458.85" y1="194.94" x2="458.85" y2="220.26"/>
+    <polygon class="cls-9" points="455.11 196.03 458.85 189.56 462.59 196.03 455.11 196.03"/>
+  </g>
+  <g>
+    <rect class="cls-8" x="421.94" y="28.3" width="80" height="50" rx="8.3" ry="8.3"/>
+    <text class="cls-3" transform="translate(439.1 44.2)"><tspan x="0" y="0">Actualiza</tspan><tspan class="cls-11" x="-5.81" y="12">P</tspan><tspan x="1.07" y="12">a</tspan><tspan class="cls-13" x="7.05" y="12">r</tspan><tspan x="10.56" y="12">ámet</tspan><tspan class="cls-12" x="35.6" y="12">r</tspan><tspan x="39.22" y="12">os</tspan><tspan x="-2.6" y="24">P</tspan><tspan class="cls-1" x="4.33" y="24">r</tspan><tspan x="7.96" y="24">estador </tspan></text>
+  </g>
+  <g>
+    <line class="cls-10" x1="459.85" y1="87.68" x2="459.85" y2="113.01"/>
+    <polygon class="cls-9" points="456.11 88.78 459.85 82.3 463.59 88.78 456.11 88.78"/>
+  </g>
+  <text class="cls-4" transform="translate(463.46 101.21)"><tspan x="0" y="0">SI</tspan></text>
+  <g>
+    <path class="cls-10" d="M745.98,187.67v50.85c0,7.02-5.16,12.71-11.53,12.71h-111.18"/>
+    <polygon class="cls-9" points="742.24 188.76 745.98 182.29 749.72 188.76 742.24 188.76"/>
+  </g>
+  <g>
+    <rect class="cls-8" x="577.55" y="62.01" width="80" height="50" rx="8.3" ry="8.3"/>
+    <text class="cls-3" transform="translate(590.23 85.08)"><tspan x="0" y="0">Respuesta </tspan><tspan x="13.44" y="12">cier</tspan><tspan class="cls-1" x="31.42" y="12">r</tspan><tspan x="35.04" y="12">e</tspan></text>
+  </g>
+  <g>
+    <path class="cls-10" d="M669.42,86.56h63.85c7.02,0,12.71,5.16,12.71,11.53v21.18"/>
+    <polygon class="cls-9" points="670.51 90.3 664.04 86.56 670.51 82.83 670.51 90.3"/>
+  </g>
+  <g>
+    <path class="cls-10" d="M511.13,149.49h92.85c7.02,0,12.71-5.98,12.71-13.36v-19.54"/>
+    <polygon class="cls-9" points="512.22 153.23 505.75 149.49 512.22 145.75 512.22 153.23"/>
+  </g>
+</svg>

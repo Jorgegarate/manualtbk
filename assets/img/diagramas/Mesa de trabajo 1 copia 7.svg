@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 442.48 342.27">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: 0em;
+      }
+
+      .cls-2 {
+        fill: #fff;
+        font-family: Roboto-Medium, Roboto;
+        font-size: 12px;
+        font-weight: 500;
+      }
+
+      .cls-3 {
+        fill: #6b196b;
+      }
+
+      .cls-4 {
+        fill: #d5006c;
+      }
+
+      .cls-5, .cls-6 {
+        fill: #2d3338;
+      }
+
+      .cls-7 {
+        letter-spacing: -.01em;
+      }
+
+      .cls-8, .cls-9, .cls-10, .cls-11 {
+        fill: none;
+        stroke: #2d3338;
+        stroke-miterlimit: 10;
+        stroke-width: .75px;
+      }
+
+      .cls-9 {
+        stroke-dasharray: 0 0 2.99 2.99;
+      }
+
+      .cls-12 {
+        letter-spacing: 0em;
+      }
+
+      .cls-10 {
+        stroke-dasharray: 0 0 3.03 3.03;
+      }
+
+      .cls-6 {
+        font-family: Roboto-Regular, Roboto;
+        font-size: 10px;
+      }
+
+      .cls-13 {
+        letter-spacing: 0em;
+      }
+
+      .cls-11 {
+        stroke-dasharray: 0 0 3.05 3.05;
+      }
+
+      .cls-14 {
+        letter-spacing: -.01em;
+      }
+    </style>
+  </defs>
+  <g>
+    <line class="cls-8" x1="197.36" y1="83.52" x2="37.43" y2="83.52"/>
+    <polygon class="cls-5" points="196.27 79.78 202.74 83.52 196.27 87.26 196.27 79.78"/>
+  </g>
+  <g>
+    <line class="cls-8" x1="202.74" y1="103.1" x2="42.81" y2="103.1"/>
+    <polygon class="cls-5" points="43.9 99.36 37.43 103.1 43.9 106.84 43.9 99.36"/>
+  </g>
+  <g>
+    <line class="cls-8" x1="381.41" y1="81.58" x2="221.48" y2="81.58"/>
+    <polygon class="cls-5" points="380.32 77.84 386.79 81.58 380.32 85.32 380.32 77.84"/>
+  </g>
+  <g>
+    <line class="cls-8" x1="386.79" y1="101.17" x2="226.86" y2="101.17"/>
+    <polygon class="cls-5" points="227.95 97.43 221.48 101.17 227.95 104.91 227.95 97.43"/>
+  </g>
+  <g>
+    <line class="cls-8" x1="212.03" y1="23.72" x2="212.03" y2="25.22"/>
+    <line class="cls-11" x1="212.03" y1="28.27" x2="212.03" y2="167.01"/>
+    <line class="cls-8" x1="212.03" y1="168.53" x2="212.03" y2="170.03"/>
+  </g>
+  <g>
+    <line class="cls-8" x1="28.25" y1="23.72" x2="28.25" y2="25.22"/>
+    <line class="cls-10" x1="28.25" y1="28.25" x2="28.25" y2="166.02"/>
+    <line class="cls-8" x1="28.25" y1="167.53" x2="28.25" y2="169.03"/>
+  </g>
+  <g>
+    <line class="cls-8" x1="397.25" y1="23.72" x2="397.25" y2="25.22"/>
+    <line class="cls-9" x1="397.25" y1="28.21" x2="397.25" y2="326.04"/>
+    <line class="cls-8" x1="397.25" y1="327.53" x2="397.25" y2="329.03"/>
+  </g>
+  <rect class="cls-4" width="56.51" height="23.66"/>
+  <rect class="cls-3" x="-20.12" y="86.62" width="96.75" height="8.72" rx="2.43" ry="2.43" transform="translate(119.23 62.72) rotate(90)"/>
+  <rect class="cls-3" x="163.65" y="86.62" width="96.75" height="8.72" rx="2.36" ry="2.36" transform="translate(303 -121.05) rotate(90)"/>
+  <rect class="cls-3" x="373.06" y="86.62" width="48.38" height="8.72" rx="2.04" ry="2.04" transform="translate(488.22 -306.27) rotate(90)"/>
+  <rect class="cls-4" x="187.29" y=".06" width="56.51" height="23.66"/>
+  <rect class="cls-4" x="352.01" width="90.47" height="23.66"/>
+  <text class="cls-2" transform="translate(13.01 16.1)"><tspan x="0" y="0">CA</tspan><tspan class="cls-7" x="15.82" y="0">J</tspan><tspan x="22.35" y="0">A</tspan></text>
+  <text class="cls-2" transform="translate(196.77 16.16)"><tspan x="0" y="0">Pinpad</tspan></text>
+  <text class="cls-2" transform="translate(371.79 16.1)"><tspan x="0" y="0">Maxs</tspan><tspan class="cls-14" x="29.23" y="0">t</tspan><tspan x="33.04" y="0">o</tspan><tspan class="cls-1" x="39.87" y="0">r</tspan><tspan x="43.98" y="0">e</tspan></text>
+  <text class="cls-6" transform="translate(264.21 77.1)"><tspan x="0" y="0">Req. Inicialización</tspan></text>
+  <text class="cls-6" transform="translate(280.76 96.89)"><tspan x="0" y="0">Respuesta</tspan></text>
+  <text class="cls-6" transform="translate(63.29 77.6)"><tspan x="0" y="0" xml:space="preserve">Req.  (Inicialización (P-F))</tspan></text>
+  <text class="cls-6" transform="translate(98.32 98.68)"><tspan class="cls-13" x="0" y="0">A</tspan><tspan x="6.47" y="0">CK/</tspan><tspan class="cls-12" x="23.37" y="0">N</tspan><tspan x="30.59" y="0">AK</tspan></text>
+  <g>
+    <line class="cls-8" x1="197.3" y1="199.33" x2="37.37" y2="199.33"/>
+    <polygon class="cls-5" points="196.21 195.59 202.69 199.33 196.21 203.07 196.21 195.59"/>
+  </g>
+  <g>
+    <line class="cls-8" x1="202.69" y1="218.92" x2="42.75" y2="218.92"/>
+    <polygon class="cls-5" points="43.85 215.18 37.37 218.91 43.85 222.65 43.85 215.18"/>
+  </g>
+  <rect class="cls-3" x="-56.73" y="252.98" width="169.86" height="8.72" rx="2.43" ry="2.43" transform="translate(285.54 229.14) rotate(90)"/>
+  <rect class="cls-3" x="127.04" y="252.98" width="169.86" height="8.72" rx="2.36" ry="2.36" transform="translate(469.31 45.37) rotate(90)"/>
+  <text class="cls-6" transform="translate(63.23 193.41)"><tspan x="0" y="0" xml:space="preserve">Req.  (Inicialización (P-F))</tspan></text>
+  <text class="cls-6" transform="translate(98.27 214.49)"><tspan class="cls-13" x="0" y="0">A</tspan><tspan x="6.47" y="0">CK/</tspan><tspan class="cls-12" x="23.37" y="0">N</tspan><tspan x="30.59" y="0">AK</tspan></text>
+  <g>
+    <line class="cls-8" x1="197.36" y1="254.51" x2="37.43" y2="254.51"/>
+    <polygon class="cls-5" points="196.27 250.77 202.74 254.51 196.27 258.25 196.27 250.77"/>
+  </g>
+  <g>
+    <line class="cls-8" x1="202.74" y1="274.09" x2="42.81" y2="274.09"/>
+    <polygon class="cls-5" points="43.9 270.35 37.43 274.09 43.9 277.83 43.9 270.35"/>
+  </g>
+  <text class="cls-6" transform="translate(67.47 248.59)"><tspan x="0" y="0">Resultado Inicialización</tspan></text>
+  <text class="cls-6" transform="translate(98.32 269.67)"><tspan class="cls-13" x="0" y="0">A</tspan><tspan x="6.47" y="0">CK/</tspan><tspan class="cls-12" x="23.37" y="0">N</tspan><tspan x="30.59" y="0">AK</tspan></text>
+  <g>
+    <line class="cls-8" x1="197.36" y1="310.31" x2="37.43" y2="310.31"/>
+    <polygon class="cls-5" points="196.27 306.57 202.74 310.31 196.27 314.05 196.27 306.57"/>
+  </g>
+  <g>
+    <line class="cls-8" x1="202.74" y1="329.9" x2="42.81" y2="329.9"/>
+    <polygon class="cls-5" points="43.9 326.16 37.43 329.9 43.9 333.64 43.9 326.16"/>
+  </g>
+  <text class="cls-6" transform="translate(62.2 304.39)"><tspan x="0" y="0">Resp. Result Inicialización</tspan></text>
+  <text class="cls-6" transform="translate(98.32 325.47)"><tspan class="cls-13" x="0" y="0">A</tspan><tspan x="6.47" y="0">CK/</tspan><tspan class="cls-12" x="23.37" y="0">N</tspan><tspan x="30.59" y="0">AK</tspan></text>
+</svg>

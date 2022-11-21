@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340.28 159.03">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        font-family: Roboto-Medium, Roboto;
+        font-size: 12px;
+        font-weight: 500;
+      }
+
+      .cls-2 {
+        fill: #6b196b;
+      }
+
+      .cls-3 {
+        fill: #d5006c;
+      }
+
+      .cls-4, .cls-5 {
+        fill: #2d3338;
+      }
+
+      .cls-6 {
+        stroke-dasharray: 0 0 2.94 2.94;
+      }
+
+      .cls-6, .cls-7 {
+        fill: none;
+        stroke: #2d3338;
+        stroke-miterlimit: 10;
+        stroke-width: .75px;
+      }
+
+      .cls-8 {
+        letter-spacing: -.01em;
+      }
+
+      .cls-5 {
+        font-family: Roboto-Regular, Roboto;
+        font-size: 10px;
+      }
+
+      .cls-9 {
+        letter-spacing: 0em;
+      }
+
+      .cls-10 {
+        letter-spacing: 0em;
+      }
+
+      .cls-11 {
+        letter-spacing: 0em;
+      }
+    </style>
+  </defs>
+  <g>
+    <line class="cls-7" x1="293.75" y1="73.55" x2="38.43" y2="73.55"/>
+    <polygon class="cls-4" points="292.66 69.81 299.13 73.55 292.66 77.29 292.66 69.81"/>
+  </g>
+  <g>
+    <line class="cls-7" x1="299.13" y1="108.14" x2="43.81" y2="108.14"/>
+    <polygon class="cls-4" points="44.9 104.4 38.43 108.14 44.9 111.88 44.9 104.4"/>
+  </g>
+  <g>
+    <line class="cls-7" x1="312.03" y1="23.72" x2="312.03" y2="25.22"/>
+    <line class="cls-6" x1="312.03" y1="28.16" x2="312.03" y2="156.06"/>
+    <line class="cls-7" x1="312.03" y1="157.53" x2="312.03" y2="159.03"/>
+  </g>
+  <g>
+    <line class="cls-7" x1="28.25" y1="23.72" x2="28.25" y2="25.22"/>
+    <line class="cls-6" x1="28.25" y1="28.16" x2="28.25" y2="156.06"/>
+    <line class="cls-7" x1="28.25" y1="157.53" x2="28.25" y2="159.03"/>
+  </g>
+  <rect class="cls-3" width="56.51" height="23.66"/>
+  <rect class="cls-2" x="-20.12" y="86.62" width="96.75" height="8.72" rx="2.43" ry="2.43" transform="translate(119.23 62.72) rotate(90)"/>
+  <rect class="cls-2" x="263.65" y="86.62" width="96.75" height="8.72" rx="2.36" ry="2.36" transform="translate(403 -221.05) rotate(90)"/>
+  <rect class="cls-3" x="283.77" y=".06" width="56.51" height="23.66"/>
+  <text class="cls-1" transform="translate(13.01 16.1)"><tspan x="0" y="0">CA</tspan><tspan class="cls-8" x="15.82" y="0">J</tspan><tspan x="22.35" y="0">A</tspan></text>
+  <text class="cls-1" transform="translate(300.29 16.16)"><tspan x="0" y="0">POS</tspan></text>
+  <text class="cls-5" transform="translate(130.97 104.12)"><tspan x="0" y="0">Respuesta (</tspan><tspan class="cls-9" x="52.79" y="0">A</tspan><tspan x="59.26" y="0">CK)</tspan></text>
+  <text class="cls-5" transform="translate(114.9 69.35)"><tspan x="0" y="0">Requerimien</tspan><tspan class="cls-10" x="55.77" y="0">t</tspan><tspan x="58.94" y="0">o (</tspan><tspan class="cls-11" x="70.53" y="0">P</tspan><tspan x="76.78" y="0">ooling)</tspan></text>
+</svg>

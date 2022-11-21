@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 442.48 159.03">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: 0em;
+      }
+
+      .cls-2 {
+        fill: #fff;
+        font-family: Roboto-Medium, Roboto;
+        font-size: 12px;
+        font-weight: 500;
+      }
+
+      .cls-3 {
+        letter-spacing: 0em;
+      }
+
+      .cls-4 {
+        fill: #6b196b;
+      }
+
+      .cls-5 {
+        fill: #d5006c;
+      }
+
+      .cls-6, .cls-7 {
+        fill: #2d3338;
+      }
+
+      .cls-8 {
+        letter-spacing: -.01em;
+      }
+
+      .cls-9 {
+        stroke-dasharray: 0 0 2.94 2.94;
+      }
+
+      .cls-9, .cls-10 {
+        fill: none;
+        stroke: #2d3338;
+        stroke-miterlimit: 10;
+        stroke-width: .75px;
+      }
+
+      .cls-11 {
+        letter-spacing: -.01em;
+      }
+
+      .cls-7 {
+        font-family: Roboto-Regular, Roboto;
+        font-size: 10px;
+      }
+
+      .cls-12 {
+        letter-spacing: 0em;
+      }
+
+      .cls-13 {
+        letter-spacing: 0em;
+      }
+
+      .cls-14 {
+        letter-spacing: 0em;
+      }
+
+      .cls-15 {
+        letter-spacing: 0em;
+      }
+    </style>
+  </defs>
+  <g>
+    <line class="cls-10" x1="197.36" y1="48.52" x2="37.43" y2="48.52"/>
+    <polygon class="cls-6" points="196.27 44.78 202.74 48.52 196.27 52.26 196.27 44.78"/>
+  </g>
+  <g>
+    <line class="cls-10" x1="202.74" y1="68.1" x2="42.81" y2="68.1"/>
+    <polygon class="cls-6" points="43.9 64.36 37.43 68.1 43.9 71.84 43.9 64.36"/>
+  </g>
+  <g>
+    <line class="cls-10" x1="197.36" y1="112.55" x2="37.43" y2="112.55"/>
+    <polygon class="cls-6" points="196.27 108.81 202.74 112.55 196.27 116.29 196.27 108.81"/>
+  </g>
+  <g>
+    <line class="cls-10" x1="202.74" y1="132.14" x2="42.81" y2="132.14"/>
+    <polygon class="cls-6" points="43.9 128.4 37.43 132.14 43.9 135.88 43.9 128.4"/>
+  </g>
+  <g>
+    <line class="cls-10" x1="381.41" y1="81.58" x2="221.48" y2="81.58"/>
+    <polygon class="cls-6" points="380.32 77.84 386.79 81.58 380.32 85.32 380.32 77.84"/>
+  </g>
+  <g>
+    <line class="cls-10" x1="386.79" y1="101.17" x2="226.86" y2="101.17"/>
+    <polygon class="cls-6" points="227.95 97.43 221.48 101.17 227.95 104.91 227.95 97.43"/>
+  </g>
+  <g>
+    <line class="cls-10" x1="212.03" y1="23.72" x2="212.03" y2="25.22"/>
+    <line class="cls-9" x1="212.03" y1="28.16" x2="212.03" y2="156.06"/>
+    <line class="cls-10" x1="212.03" y1="157.53" x2="212.03" y2="159.03"/>
+  </g>
+  <g>
+    <line class="cls-10" x1="28.25" y1="23.72" x2="28.25" y2="25.22"/>
+    <line class="cls-9" x1="28.25" y1="28.16" x2="28.25" y2="156.06"/>
+    <line class="cls-10" x1="28.25" y1="157.53" x2="28.25" y2="159.03"/>
+  </g>
+  <g>
+    <line class="cls-10" x1="397.25" y1="23.72" x2="397.25" y2="25.22"/>
+    <line class="cls-9" x1="397.25" y1="28.16" x2="397.25" y2="156.06"/>
+    <line class="cls-10" x1="397.25" y1="157.53" x2="397.25" y2="159.03"/>
+  </g>
+  <rect class="cls-5" width="56.51" height="23.66"/>
+  <rect class="cls-4" x="-20.12" y="86.62" width="96.75" height="8.72" rx="2.43" ry="2.43" transform="translate(119.23 62.72) rotate(90)"/>
+  <rect class="cls-4" x="163.65" y="86.62" width="96.75" height="8.72" rx="2.36" ry="2.36" transform="translate(303 -121.05) rotate(90)"/>
+  <rect class="cls-4" x="373.06" y="86.62" width="48.38" height="8.72" rx="2.04" ry="2.04" transform="translate(488.22 -306.27) rotate(90)"/>
+  <rect class="cls-5" x="183.77" y=".06" width="56.51" height="23.66"/>
+  <rect class="cls-5" x="352.01" width="90.47" height="23.66"/>
+  <text class="cls-2" transform="translate(13.01 16.1)"><tspan x="0" y="0">CA</tspan><tspan class="cls-11" x="15.82" y="0">J</tspan><tspan x="22.35" y="0">A</tspan></text>
+  <text class="cls-2" transform="translate(200.29 16.16)"><tspan x="0" y="0">POS</tspan></text>
+  <text class="cls-2" transform="translate(357.27 16.1)"><tspan class="cls-14" x="0" y="0">A</tspan><tspan x="7.89" y="0">U</tspan><tspan class="cls-8" x="15.71" y="0">T</tspan><tspan x="22.83" y="0">ORI</tspan><tspan class="cls-13" x="41.99" y="0">Z</tspan><tspan x="49.29" y="0">ADOR</tspan></text>
+  <text class="cls-7" transform="translate(248.45 77.1)"><tspan x="0" y="0">Req. Ca</tspan><tspan class="cls-1" x="34.19" y="0">r</tspan><tspan x="37.49" y="0">ga Ll</tspan><tspan class="cls-3" x="58.82" y="0">a</tspan><tspan class="cls-15" x="64.18" y="0">v</tspan><tspan x="68.96" y="0">es (0800)</tspan></text>
+  <text class="cls-7" transform="translate(245.91 96.89)"><tspan x="0" y="0">Resp. Ca</tspan><tspan class="cls-1" x="39.28" y="0">r</tspan><tspan x="42.57" y="0">ga Ll</tspan><tspan class="cls-3" x="63.9" y="0">a</tspan><tspan class="cls-15" x="69.27" y="0">v</tspan><tspan x="74.05" y="0">es (0810)</tspan></text>
+  <text class="cls-7" transform="translate(76.87 42.6)"><tspan x="0" y="0">Req. (Ca</tspan><tspan class="cls-1" x="37.61" y="0">r</tspan><tspan x="40.9" y="0">ga Ll</tspan><tspan class="cls-3" x="62.24" y="0">a</tspan><tspan class="cls-15" x="67.6" y="0">v</tspan><tspan x="72.38" y="0">es) </tspan></text>
+  <text class="cls-7" transform="translate(82.27 63.68)"><tspan x="0" y="0">Respuesta (</tspan><tspan class="cls-12" x="52.79" y="0">A</tspan><tspan x="59.26" y="0">CK)</tspan></text>
+  <text class="cls-7" transform="translate(82.27 128.12)"><tspan x="0" y="0">Respuesta (</tspan><tspan class="cls-12" x="52.79" y="0">A</tspan><tspan x="59.26" y="0">CK)</tspan></text>
+  <text class="cls-7" transform="translate(74.33 108.35)"><tspan x="0" y="0">Resp. (Ca</tspan><tspan class="cls-1" x="42.7" y="0">r</tspan><tspan x="45.99" y="0">ga Ll</tspan><tspan class="cls-3" x="67.32" y="0">a</tspan><tspan class="cls-15" x="72.69" y="0">v</tspan><tspan x="77.47" y="0">es) </tspan></text>
+</svg>

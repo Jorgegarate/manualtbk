@@ -103,7 +103,7 @@
                         <div id="flush-collapsetwo" class="accordion-collapse collapse"
                             aria-labelledby="flush-headingtwo" data-bs-parent="#accordionFlushExample">
                             <ul>
-                                <li><a class="flex justify-content-start" >RS232</a></li>
+                                <li><a class="flex justify-content-start">RS232</a></li>
                                 <li><a class="flex justify-content-start" href="#USB">USB</a></li>
                                 <li><a class="flex justify-content-start" href="#PUERTOS-USB">Puertos USB</a></li>
                                 <li><a class="flex justify-content-start" href="#MDB">MDB</a></li>
@@ -226,469 +226,384 @@
 
                 </div>
             </section>
-        </section>
-        <div id="MDB" class="container mt-32 mb-pb16 ">
-            <div class="background-card d-block last-child p-4">
-                <section class="p-4">
-                    <div>
-                        <h2 class="title mt-5">Introducción</h2>
-                        <p>El manual de integración tiene como objetivo explicar las funcionalidades que incorpora el nuevo dispositivo de Autoservicio IM30 de la marca Maxstore para los integradores de Transbank. <span>El Pos cuenta con lectura de banda, chip por contacto y sin contacto,</span>  permitiendo realizar transacciones bancarias de Crédito y Débito.
-                        </p>
-                        <p><span>El diagrama que viene a continuación explica de forma general el funcionamiento del POS Autoservicio.</span> </p>
-                    </div>
-                    <div class="w-100 p-5">
-                        <img src="assets/img/diagramas/funcionamientoDelPosAutoservicio.svg">
-                    </div>
-                </section>
-                <div id="transacciones" class="p-5"></div>
-                <section id="transacciones" class="p-4 pt-5">
-                    <h2 class="title mt-5">Las transacciones y operaciones soportadas por la solución de autoservicio son:</h2>
-                    <ul class="lista">
-                        <li>Operaciones con tarjetas Banda, Chip y Contactless (Sin Contacto).</li>
-                        <li>Ventas débito (Redcompra).</li>
-                        <li>Ventas crédito (con posibilidad de cuotas) soportando con PIN.</li>
-                        <li>Ventas crédito sin PIN por un monto menor o igual al que establece la banca nacional como el límite para este tipo de transacciones</li>
-                        <li>Reversas</li>
-                        <li>Cierre de terminal</li>
-                        <li>Carga de Llaves</li>
-                        <li>Polling (Mensaje de conexión entre la caja y el POS)</li>
-                        <li>Inicializaciones (Descarga de parámetros y aplicativo desde Maxstore)</li>
-                    </ul>
-                    <div class="row flex justify-center mt-5">
-                        <div class="col-12 col-md-6 flex align-center ">
-                            <p>
-                                La comunicación con Transbank será realizada por el ter- minal IM30 a través de su módulo de comunicación Lan, Gprs (No disponible a la fecha) o Wifi.
-El terminal de pago desatendido IM30 es un terminal POS diseñado para operar en entornos de autoservicio. Este dispositivo está diseñado para ser utilizado en una variedad de entornos interiores o exteriores, como para la venta, el estacionamiento, la emisión de boletos o los registros de pago de autoservicio.
-Al combinar una amplia variedad de opciones de pago, como tarjetas de banda magnética, tarjetas inteligentes, tarjetas y dispositivos sin contacto. IM30 proporciona una solución integral para pagos sin efectivo también está diseñado para funcionar en un amplio rango de tempera- turas, repeler la entrada de polvo y agua, resistir impactos físicos y dispersar descargas electrostáticas. Todas estas son cualidades que permiten que el dispositivo se instale en una amplia variedad de ubicaciones exteriores o interiores.
+            </section>
+            <div id="MDB" class="container mt-32 mb-pb16 ">
+                <div class="background-card d-block last-child p-4">
+                    <section class="p-4">
+                        <div>
+                            <h2 class="title mt-5">Introducción</h2>
+                            <p>El manual de integración tiene como objetivo explicar las funcionalidades que incorpora
+                                el nuevo dispositivo de Autoservicio IM30 de la marca Maxstore para los integradores de
+                                Transbank. <span>El Pos cuenta con lectura de banda, chip por contacto y sin
+                                    contacto,</span> permitiendo realizar transacciones bancarias de Crédito y Débito.
                             </p>
+                            <p><span>El diagrama que viene a continuación explica de forma general el funcionamiento del
+                                    POS Autoservicio.</span> </p>
                         </div>
-                        <div class="col-12 col-md-6 flex justify-center">
-                            <img src="assets/img/im30/im30-frontal.svg" alt="">
+                        <div class="w-100 p-5">
+                            <img src="assets/img/diagramas/funcionamientoDelPosAutoservicio.svg">
                         </div>
-
-                    </div>
-                </section>
-                <div id="especificaciones" class="p-5"></div>
-                <section  class="p-4 pt-5">
-                    <h2 class="title mt-5">Especificaciones del producto</h2>
-                    <div class="row flex justify-center mt-5">
-                        <div class="col-7 col-sm-5 col-md-3 mb-3 flex justify-center">
-                            <img src="assets/img/im30/im30-trasera.svg" alt="">
-                        </div>
-                        <div class="col-7 col-sm-5 col-md-3 mb-3 flex justify-center">
-                            <img src="assets/img/im30/im30-frontal.svg" alt="">
-                        </div>
-                        <div class="col-7 col-sm-5 col-md-3 mb-3 flex justify-center">
-                            <img src="assets/img/im30/im30-lateral.svg" alt="">
-                        </div>
-
-                    </div>
-                </section>
-                <section class="p-4">
-                    <div>
-                        <div class="p-4">
-                            <h2 class="title mt-5">Esquema del módulo de dispositivo IM30</h2>
-                            <p class="parrafo">Esquema del módulo de dispositivo IM30</p>
-                        </div>
-                        <div class="border-table mb-5">
-                            <table class="cont-table">
-                                <thead class="table-head">
-                                    <tr>
-                                        <th>Módulo</th>
-                                        <th colspan="2">CPU</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <th rowspan="2">CPU</th>
-                                        <th colspan="1" style="width: 25%;">Procesador AP</th>
-                                        <th colspan="1">ARM Cortex-A53</th>
-                                    </tr>
-                                    <tr>
-                                        <th colspan="1">Procesador SP</th>
-                                        <th colspan="1">ARMv7-M</th>
-                                    </tr>
-                                    <tr>
-                                        <th>Sistema operativo</th>
-                                        <th colspan="2">Linux</th>
-                                    </tr>
-                                    <tr>
-                                        <th>Memoria</th>
-                                        <th colspan="2">SDRAM LPDDR3 de 1 GB o 2 GB EMMC de 8 GB</th>
-                                    </tr>
-                                    <tr>
-                                        <th>Memoria</th>
-                                        <th colspan="2">Pantalla TFT a color de 5” 1280 x 720 píxeles pantalla táctil
-                                            capacitiva</th>
-                                    </tr>
-                                    <tr>
-                                        <th>Audio</th>
-                                        <th>Altavoz incorporado</th>
-                                        <th>Altavoz incorporado
-                                            El volumen máximo de al me- nos 80 dB a 10 cm es com- patible con WAV, WMA, RAW
-                                            y MP3 el audio se sincroniza con el vídeo</th>
-                                    </tr>
-                                    <tr>
-                                        <th rowspan="3">Comunicaciones inalámbricas</th>
-                                        <th colspan="2">
-                                            Bluetooth (opcional, disponible en ciertas configuraciones de productos)
-                                        </th>
-                                    </tr>
-                                    <tr>
-                                        <th colspan="2">
-                                            Wi-Fi (opcional, disponible en ciertas configuraciones de productos)
-                                        </th>
-                                    </tr>
-                                    <tr>
-                                        <th colspan="2">Módulo celular 4G</th>
-                                    </tr>
-                                    <tr>
-                                        <th rowspan="9">Puertos externos</th>
-                                        <th colspan="2">USB tipo A (host)</th>
-                                    </tr>
-                                    <tr>
-                                        <th colspan="2">USB tipo C (OTG)</th>
-                                    </tr>
-                                    <tr>
-                                        <th colspan="2">2 RS232 (RJ45)</th>
-                                    </tr>
-                                    <tr>
-                                        <th colspan="2">Ethernet (RJ45)</th>
-                                    </tr>
-                                    <tr>
-                                        <th colspan="2">Gato auxiliar</th>
-                                    </tr>
-                                    <tr>
-                                        <th colspan="2">Puerto HDMI</th>
-                                    </tr>
-                                    <tr>
-                                        <th colspan="2">Esclavo MDB</th>
-                                    </tr>
-                                    <tr>
-                                        <th colspan="2">Maestro MDB y puerto personalizado ejecutivo (encabeza- do de 20
-                                            pines)</th>
-                                    </tr>
-                                    <tr>
-                                        <th colspan="2">E/S digital (cabezal de 6 pines)</th>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-
-                    </div>
-                </section>
-            </div>
-
-        </div>
-        <div class="container mt-32 mb-pb16 ">
-            <div class="background-card d-block last-child p-4">
-                <div id="interfaz" class="p-5"></div>
-                <section class="p-4">
-                    <div>
-                        <h2 class="title mt-5">Componentes, interfaz y puertos</h2>
-                        <h3 class="title-h3">Esquema del módulo de dispositivo IM30</h3>
-                    </div>
-                    <div class=" p-5">
-                        <div class="row">
-                            <div class="col-12 col-md-8 "> 
-                                <img class="img-100"src="assets/img/im30/im30-detalles.jpg">
+                    </section>
+                    <div id="transacciones" class="p-5"></div>
+                    <section id="transacciones" class="p-4 pt-5">
+                        <h2 class="title mt-5">Las transacciones y operaciones soportadas por la solución de
+                            autoservicio son:</h2>
+                        <ul class="lista">
+                            <li>Operaciones con tarjetas Banda, Chip y Contactless (Sin Contacto).</li>
+                            <li>Ventas débito (Redcompra).</li>
+                            <li>Ventas crédito (con posibilidad de cuotas) soportando con PIN.</li>
+                            <li>Ventas crédito sin PIN por un monto menor o igual al que establece la banca nacional
+                                como el límite para este tipo de transacciones</li>
+                            <li>Reversas</li>
+                            <li>Cierre de terminal</li>
+                            <li>Carga de Llaves</li>
+                            <li>Polling (Mensaje de conexión entre la caja y el POS)</li>
+                            <li>Inicializaciones (Descarga de parámetros y aplicativo desde Maxstore)</li>
+                        </ul>
+                        <div class="row flex justify-center mt-5">
+                            <div class="col-12 col-md-6 flex align-center ">
+                                <p>
+                                    La comunicación con Transbank será realizada por el ter- minal IM30 a través de su
+                                    módulo de comunicación Lan, Gprs (No disponible a la fecha) o Wifi.
+                                    El terminal de pago desatendido IM30 es un terminal POS diseñado para operar en
+                                    entornos de autoservicio. Este dispositivo está diseñado para ser utilizado en una
+                                    variedad de entornos interiores o exteriores, como para la venta, el
+                                    estacionamiento, la emisión de boletos o los registros de pago de autoservicio.
+                                    Al combinar una amplia variedad de opciones de pago, como tarjetas de banda
+                                    magnética, tarjetas inteligentes, tarjetas y dispositivos sin contacto. IM30
+                                    proporciona una solución integral para pagos sin efectivo también está diseñado para
+                                    funcionar en un amplio rango de tempera- turas, repeler la entrada de polvo y agua,
+                                    resistir impactos físicos y dispersar descargas electrostáticas. Todas estas son
+                                    cualidades que permiten que el dispositivo se instale en una amplia variedad de
+                                    ubicaciones exteriores o interiores.
+                                </p>
                             </div>
-                            <div class="col-12 col-md-4">
-                                <div class="border-table table-puertos table-2">
-                                <table class="cont-table ">
+                            <div class="col-12 col-md-6 flex justify-center">
+                                <img src="assets/img/im30/im30-frontal.svg" alt="">
+                            </div>
+
+                        </div>
+                    </section>
+                    <div id="especificaciones" class="p-5"></div>
+                    <section class="p-4 pt-5">
+                        <h2 class="title mt-5">Especificaciones del producto</h2>
+                        <div class="row flex justify-center mt-5">
+                            <div class="col-7 col-sm-5 col-md-3 mb-3 flex justify-center">
+                                <img src="assets/img/im30/im30-trasera.svg" alt="">
+                            </div>
+                            <div class="col-7 col-sm-5 col-md-3 mb-3 flex justify-center">
+                                <img src="assets/img/im30/im30-frontal.svg" alt="">
+                            </div>
+                            <div class="col-7 col-sm-5 col-md-3 mb-3 flex justify-center">
+                                <img src="assets/img/im30/im30-lateral.svg" alt="">
+                            </div>
+
+                        </div>
+                    </section>
+                    <section class="p-4">
+                        <div>
+                            <div class="p-4">
+                                <h2 class="title mt-5">Esquema del módulo de dispositivo IM30</h2>
+                                <p class="parrafo">Esquema del módulo de dispositivo IM30</p>
+                            </div>
+                            <div class="border-table mb-5">
+                                <table class="cont-table">
                                     <thead class="table-head">
                                         <tr>
-                                            <th>Anclar</th>
+                                            <th>Módulo</th>
+                                            <th colspan="2">CPU</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <th>1. Antena 4G (opcional)</th>
+                                            <th rowspan="2">CPU</th>
+                                            <th colspan="1" style="width: 25%;">Procesador AP</th>
+                                            <th colspan="1">ARM Cortex-A53</th>
                                         </tr>
                                         <tr>
-                                            <th>2. Módulo 4G y ranuras para tarjetas SAM/SIM</th>
+                                            <th colspan="1">Procesador SP</th>
+                                            <th colspan="1">ARMv7-M</th>
                                         </tr>
                                         <tr>
-                                            <th>3. RS232-B (host)</th>
+                                            <th>Sistema operativo</th>
+                                            <th colspan="2">Linux</th>
                                         </tr>
                                         <tr>
-                                            <th>4. RS232-A (dispositivo)</th>
+                                            <th>Memoria</th>
+                                            <th colspan="2">SDRAM LPDDR3 de 1 GB o 2 GB EMMC de 8 GB</th>
                                         </tr>
                                         <tr>
-                                            <th>5. Puerto auxiliar (micrófono y altavoz)</th>
+                                            <th>Memoria</th>
+                                            <th colspan="2">Pantalla TFT a color de 5” 1280 x 720 píxeles pantalla
+                                                táctil
+                                                capacitiva</th>
                                         </tr>
                                         <tr>
-                                            <th>6. Puerto Ethernet</th>
+                                            <th>Audio</th>
+                                            <th>Altavoz incorporado</th>
+                                            <th>Altavoz incorporado
+                                                El volumen máximo de al me- nos 80 dB a 10 cm es com- patible con WAV,
+                                                WMA, RAW
+                                                y MP3 el audio se sincroniza con el vídeo</th>
                                         </tr>
                                         <tr>
-                                            <th>7. Puerto de E/S digital</th>
+                                            <th rowspan="3">Comunicaciones inalámbricas</th>
+                                            <th colspan="2">
+                                                Bluetooth (opcional, disponible en ciertas configuraciones de productos)
+                                            </th>
                                         </tr>
                                         <tr>
-                                            <th>8. Puerto maestro ejecutivo y MDB</th>
+                                            <th colspan="2">
+                                                Wi-Fi (opcional, disponible en ciertas configuraciones de productos)
+                                            </th>
                                         </tr>
                                         <tr>
-                                            <th>9. Puerto USB tipo A</th>
+                                            <th colspan="2">Módulo celular 4G</th>
                                         </tr>
                                         <tr>
-                                            <th>10. Puerto USB tipo C</th>
+                                            <th rowspan="9">Puertos externos</th>
+                                            <th colspan="2">USB tipo A (host)</th>
                                         </tr>
                                         <tr>
-                                            <th>11. Botón de servicio</th>
+                                            <th colspan="2">USB tipo C (OTG)</th>
                                         </tr>
                                         <tr>
-                                            <th>12. Botón de reinicio</th>
+                                            <th colspan="2">2 RS232 (RJ45)</th>
                                         </tr>
                                         <tr>
-                                            <th>13. LED indicador de estado</th>
+                                            <th colspan="2">Ethernet (RJ45)</th>
                                         </tr>
                                         <tr>
-                                            <th>14. Puerto HDMI</th>
+                                            <th colspan="2">Gato auxiliar</th>
                                         </tr>
                                         <tr>
-                                            <th>15. Puerto esclavo MDB</th>
+                                            <th colspan="2">Puerto HDMI</th>
+                                        </tr>
+                                        <tr>
+                                            <th colspan="2">Esclavo MDB</th>
+                                        </tr>
+                                        <tr>
+                                            <th colspan="2">Maestro MDB y puerto personalizado ejecutivo (encabeza- do
+                                                de 20
+                                                pines)</th>
+                                        </tr>
+                                        <tr>
+                                            <th colspan="2">E/S digital (cabezal de 6 pines)</th>
                                         </tr>
                                     </tbody>
                                 </table>
-                                </div>
                             </div>
-                            
+
                         </div>
-                        
-                    </div>
-                    
-                </section>
+                    </section>
+                </div>
+
             </div>
-
-        </div>
-        <div class="container mt-32 mb-pb16 ">
-            <div class="background-card d-block last-child p-4">
-                <section class="p-4">
-                    <div id="rs" class="p-5"></div>
-                    <div>
-                        <div class="p-4">
-                            <h2 class="title mt-5">RS232</h2>
-                            <p>
-                                Es un protocolo para la comunicación en serie. Los dos puertos RJ45 del IM30, etiquetados como RS232-A y RS232-B, utilizan este protocolo y tienen los siguientes pines:</p>
+            <div class="container mt-32 mb-pb16 ">
+                <div class="background-card d-block last-child p-4">
+                    <div id="interfaz" class="p-5"></div>
+                    <section class="p-4">
+                        <div>
+                            <h2 class="title mt-5">Componentes, interfaz y puertos</h2>
+                            <h3 class="title-h3">Esquema del módulo de dispositivo IM30</h3>
                         </div>
-                        <div class="">
-                            <h2 class="title mt-5">RJ45 Pinout (RS232-A)</h2>
-                            <div class="row mb-5">
-                                <div class="col-12 col-md-6">
-                                    <div class=" border-table">
-                                        <table class="cont-table">
+                        <div class=" p-5">
+                            <div class="row">
+                                <div class="col-12 col-md-8 ">
+                                    <img class="img-100" src="assets/img/im30/im30-detalles.jpg">
+                                </div>
+                                <div class="col-12 col-md-4">
+                                    <div class="border-table table-puertos table-2">
+                                        <table class="cont-table ">
                                             <thead class="table-head">
                                                 <tr>
                                                     <th>Anclar</th>
-                                                    <th>Señal</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 <tr>
-                                                    <th>1</th>
-                                                    <th>POWER_IN</th>
+                                                    <th>1. Antena 4G (opcional)</th>
                                                 </tr>
                                                 <tr>
-                                                    <th>2</th>
-                                                    <th>Rx</th>
+                                                    <th>2. Módulo 4G y ranuras para tarjetas SAM/SIM</th>
                                                 </tr>
                                                 <tr>
-                                                    <th>3</th>
-                                                    <th>Tx</th>
+                                                    <th>3. RS232-B (host)</th>
                                                 </tr>
                                                 <tr>
-                                                    <th>4</th>
-                                                    <th>MDB_WAKEUP</th>
+                                                    <th>4. RS232-A (dispositivo)</th>
                                                 </tr>
                                                 <tr>
-                                                    <th>5</th>
-                                                    <th>Rts</th>
+                                                    <th>5. Puerto auxiliar (micrófono y altavoz)</th>
                                                 </tr>
                                                 <tr>
-                                                    <th>6</th>
-                                                    <th>Cts</th>
+                                                    <th>6. Puerto Ethernet</th>
                                                 </tr>
                                                 <tr>
-                                                    <th>7</th>
-                                                    <th>Gnd</th>
+                                                    <th>7. Puerto de E/S digital</th>
                                                 </tr>
                                                 <tr>
-                                                    <th>8</th>
-                                                    <th>Gnd</th>
+                                                    <th>8. Puerto maestro ejecutivo y MDB</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>9. Puerto USB tipo A</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>10. Puerto USB tipo C</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>11. Botón de servicio</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>12. Botón de reinicio</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>13. LED indicador de estado</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>14. Puerto HDMI</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>15. Puerto esclavo MDB</th>
                                                 </tr>
                                             </tbody>
                                         </table>
                                     </div>
                                 </div>
-                                <div class="col-12 col-md-6 flex flex-row align-center">
-                                    <img class="mb-4" src="assets/img/conexiones/RS232-A.jpg" alt="">
-                                    <p>Puerto RJ45 (RS232-A)</p>
-                                </div>
-                            </div>
-                            <div class="row mt-5">
-                                <div class="col-12 col-md-6">
-                                    <div class=" border-table">
-                                        <table class="cont-table">
-                                            <thead class="table-head">
-                                                <tr>
-                                                    <th>Anclar</th>
-                                                    <th>Señal</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <th>1</th>
-                                                    <th>POWER_OUT</th>
-                                                </tr>
-                                                <tr>
-                                                    <th>2</th>
-                                                    <th>Rx</th>
-                                                </tr>
-                                                <tr>
-                                                    <th>3</th>
-                                                    <th>Tx</th>
-                                                </tr>
-                                                <tr>
-                                                    <th>4</th>
-                                                    <th>MDB_WAKEUP</th>
-                                                </tr>
-                                                <tr>
-                                                    <th>5</th>
-                                                    <th>Rts</th>
-                                                </tr>
-                                                <tr>
-                                                    <th>6</th>
-                                                    <th>Cts</th>
-                                                </tr>
-                                                <tr>
-                                                    <th>7</th>
-                                                    <th>Gnd</th>
-                                                </tr>
-                                                <tr>
-                                                    <th>8</th>
-                                                    <th>Gnd</th>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-md-6 flex flex-row align-center">
-                                    <img class="mb-4" src="assets/img/conexiones/RS232-A.jpg" alt="">
-                                    <p>Puerto RJ45 (RS232-B)</p>
-                                </div>
+
                             </div>
 
                         </div>
 
-                    </div>
-                    <div id="usb" class="p-5"></div>
-                        <div class="">
-                            <h2 class="title mt-5">Pinout USB (Tipo-A)</h2>
-                            <div class="row mb-5">
-                                <div class="col-12 col-md-6">
-                                    <div class=" border-table">
-                                        <table class="cont-table">
-                                            <thead class="table-head">
-                                                <tr>
-                                                    <th>Anclar</th>
-                                                    <th>Señal</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <th>1</th>
-                                                    <th>POWER_IN</th>
-                                                </tr>
-                                                <tr>
-                                                    <th>2</th>
-                                                    <th>Rx</th>
-                                                </tr>
-                                                <tr>
-                                                    <th>3</th>
-                                                    <th>Tx</th>
-                                                </tr>
-                                                <tr>
-                                                    <th>4</th>
-                                                    <th>MDB_WAKEUP</th>
-                                                </tr>
-                                                <tr>
-                                                    <th>5</th>
-                                                    <th>Rts</th>
-                                                </tr>
-                                                <tr>
-                                                    <th>6</th>
-                                                    <th>Cts</th>
-                                                </tr>
-                                                <tr>
-                                                    <th>7</th>
-                                                    <th>Gnd</th>
-                                                </tr>
-                                                <tr>
-                                                    <th>8</th>
-                                                    <th>Gnd</th>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-md-6 flex flex-row align-center">
-                                    <img class="mb-4" src="assets/img/conexiones/USBTipo-A.jpg" alt="">
-                                    <p>Puerto RJ45 (RS232-A)</p>
-                                </div>
-                            </div>
-                            <div class="row mt-5">
-                                <div class="col-12 col-md-6">
-                                    <div class=" border-table">
-                                        <table class="cont-table">
-                                            <thead class="table-head">
-                                                <tr>
-                                                    <th>Anclar</th>
-                                                    <th>Señal</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <th>1</th>
-                                                    <th>POWER_OUT</th>
-                                                </tr>
-                                                <tr>
-                                                    <th>2</th>
-                                                    <th>Rx</th>
-                                                </tr>
-                                                <tr>
-                                                    <th>3</th>
-                                                    <th>Tx</th>
-                                                </tr>
-                                                <tr>
-                                                    <th>4</th>
-                                                    <th>MDB_WAKEUP</th>
-                                                </tr>
-                                                <tr>
-                                                    <th>5</th>
-                                                    <th>Rts</th>
-                                                </tr>
-                                                <tr>
-                                                    <th>6</th>
-                                                    <th>Cts</th>
-                                                </tr>
-                                                <tr>
-                                                    <th>7</th>
-                                                    <th>Gnd</th>
-                                                </tr>
-                                                <tr>
-                                                    <th>8</th>
-                                                    <th>Gnd</th>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-md-6 flex flex-row align-center">
-                                    <img class="mb-4" src="assets/img/conexiones/RS232-A.jpg" alt="">
-                                    <p>Puerto RJ45 (RS232-B)</p>
-                                </div>
-                            </div>
+                    </section>
+                </div>
 
+            </div>
+            <div class="container mt-32 mb-pb16 ">
+                <div class="background-card d-block last-child p-4">
+                    <section class="p-4">
+                        <div id="rs" class="p-5"></div>
+                        <div>
+                            <div class="p-4">
+                                <h2 class="title mt-5">RS232</h2>
+                                <p>
+                                    Es un protocolo para la comunicación en serie. Los dos puertos RJ45 del IM30,
+                                    etiquetados como RS232-A y RS232-B, utilizan este protocolo y tienen los siguientes
+                                    pines:</p>
+                            </div>
+                            <div class="">
+                                <h2 class="title mt-5">RJ45 Pinout (RS232-A)</h2>
+                                <div class="row mb-5">
+                                    <div class="col-12 col-md-6">
+                                        <div class=" border-table">
+                                            <table class="cont-table">
+                                                <thead class="table-head">
+                                                    <tr>
+                                                        <th>Anclar</th>
+                                                        <th>Señal</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th>1</th>
+                                                        <th>POWER_IN</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>2</th>
+                                                        <th>Rx</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>3</th>
+                                                        <th>Tx</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>4</th>
+                                                        <th>MDB_WAKEUP</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>5</th>
+                                                        <th>Rts</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>6</th>
+                                                        <th>Cts</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>7</th>
+                                                        <th>Gnd</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>8</th>
+                                                        <th>Gnd</th>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 flex flex-row align-center">
+                                        <img class="mb-4" src="assets/img/conexiones/RS232-A.jpg" alt="">
+                                        <p>Puerto RJ45 (RS232-A)</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <h2 class="title mt-5">RJ45 Pinout (RS232-A)</h2>
+                                <div class="row mt-5">
+                                    <div class="col-12 col-md-6">
+                                        <div class=" border-table">
+                                            <table class="cont-table">
+                                                <thead class="table-head">
+                                                    <tr>
+                                                        <th>Anclar</th>
+                                                        <th>Señal</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th>1</th>
+                                                        <th>POWER_OUT</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>2</th>
+                                                        <th>Rx</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>3</th>
+                                                        <th>Tx</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>4</th>
+                                                        <th>MDB_WAKEUP</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>5</th>
+                                                        <th>Rts</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>6</th>
+                                                        <th>Cts</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>7</th>
+                                                        <th>Gnd</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>8</th>
+                                                        <th>Gnd</th>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 flex flex-row align-center">
+                                        <img class="mb-4" src="assets/img/conexiones/RS232-A.jpg" alt="">
+                                        <p>Puerto RJ45 (RS232-B)</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+                        <div id="usb" class="p-5"></div>
+
                         <div class="">
                             <h2 class="title mt-5">Pinout USB (Tipo-A)</h2>
                             <div class="row mb-5">
@@ -750,6 +665,149 @@ Al combinar una amplia variedad de opciones de pago, como tarjetas de banda magn
                                         <table class="cont-table">
                                             <thead class="table-head">
                                                 <tr>
+                                                    <th>N°</th>
+                                                    <th>N° PIN</th>
+                                                    <th>Señal</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th>1</th>
+                                                    <th>A1</th>
+                                                    <th>Gnd</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>2</th>
+                                                    <th>A2</th>
+                                                    <th>Nc</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>3</th>
+                                                    <th>A3</th>
+                                                    <th>Nc</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>4</th>
+                                                    <th>A4</th>
+                                                    <th>VBUS</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>5</th>
+                                                    <th>A5</th>
+                                                    <th>UBS_ID</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>6</th>
+                                                    <th>A6</th>
+                                                    <th>D+</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>7</th>
+                                                    <th>A7</th>
+                                                    <th>D-</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>8</th>
+                                                    <th>A8</th>
+                                                    <th>Nc</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>9</th>
+                                                    <th>A9</th>
+                                                    <th>VBUS</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>10</th>
+                                                    <th>A10</th>
+                                                    <th>Nc</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>11</th>
+                                                    <th>A11</th>
+                                                    <th>Nc</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>12</th>
+                                                    <th>A12</th>
+                                                    <th>Gnd</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>13</th>
+                                                    <th>A13</th>
+                                                    <th>Gnd</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>14</th>
+                                                    <th>A14</th>
+                                                    <th>Nc</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>15</th>
+                                                    <th>A15</th>
+                                                    <th>Nc</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>16</th>
+                                                    <th>A16</th>
+                                                    <th>VBUS</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>17</th>
+                                                    <th>A17</th>
+                                                    <th>USB_ID</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>18</th>
+                                                    <th>A18</th>
+                                                    <th>D+</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>19</th>
+                                                    <th>A19</th>
+                                                    <th>D-</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>20</th>
+                                                    <th>A20</th>
+                                                    <th>Nc</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>21</th>
+                                                    <th>A21</th>
+                                                    <th>VBUS</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>22</th>
+                                                    <th>A22</th>
+                                                    <th>Nc</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>23</th>
+                                                    <th>A23</th>
+                                                    <th>Nc</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>24</th>
+                                                    <th>A24</th>
+                                                    <th>Gnd</th>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 flex flex-row align-center">
+                                    <img class="mb-4" src="assets/img/conexiones/USBPinoutTipo-C.jpg" alt="">
+                                    <p>Puerto USB tipo A - USB Pinout (Tipo-C</p>
+                                </div>
+                            </div>
+                            <div class="row mt-5">
+                                <h2 class="title mt-5">MDB</h2>
+                                <!--Falta parrafo-->
+                                <div class="col-12 col-md-6">
+                                    <div class=" border-table">
+                                        <table class="cont-table">
+                                            <thead class="table-head">
+                                                <tr>
                                                     <th>Anclar</th>
                                                     <th>Señal</th>
                                                 </tr>
@@ -792,62 +850,732 @@ Al combinar una amplia variedad de opciones de pago, como tarjetas de banda magn
                                     </div>
                                 </div>
                                 <div class="col-12 col-md-6 flex flex-row align-center">
-                                    <img class="mb-4" src="assets/img/conexiones/USBPinoutTipo-C.jpg" alt="">
-                                    <p>Puerto USB tipo A - USB Pinout (Tipo-C</p>
+                                    <img class="mb-4" src="assets/img/conexiones/MDB-port.jpg" alt="">
+                                    <p>Figure 8: MDB port</p>
                                 </div>
                             </div>
 
                         </div>
+                        <div class="row mt-5">
+                            <h2 class="title mt-5">MDB</h2>
+                            <div class="col-12 col-md-6">
+                                <div class=" border-table">
+                                    <table class="cont-table">
+                                        <thead class="table-head">
+                                            <tr>
+                                                <th>Anclar</th>
+                                                <th>Señal</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th>1</th>
+                                                <th>MDB_PWR_IN</th>
+                                            </tr>
+                                            <tr>
+                                                <th>2</th>
+                                                <th>Gnd</th>
+                                            </tr>
+                                            <tr>
+                                                <th>3</th>
+                                                <th>V_OUT(sin conmutar)</th>
+                                            </tr>
+                                            <tr>
+                                                <th>4</th>
+                                                <th>Gnd</th>
+                                            </tr>
+                                            <tr>
+                                                <th>5</th>
+                                                <th>MDB_MASTER_RX</th>
+                                            </tr>
+                                            <tr>
+                                                <th>6</th>
+                                                <th>MDB_MASTER_TX</th>
+                                            </tr>
+                                            <tr>
+                                                <th>7</th>
+                                                <th>Gnd</th>
+                                            </tr>
+                                            <tr>
+                                                <th>8</th>
+                                                <th>Gnd</th>
+                                            </tr>
+                                            <tr>
+                                                <th>9</th>
+                                                <th>EXE_MASTER_RX+</th>
+                                            </tr>
+                                            <tr>
+                                                <th>10</th>
+                                                <th>EXE_MASTER_RX+</th>
+                                            </tr>
+                                            <tr>
+                                                <th>11</th>
+                                                <th>Gnd</th>
+                                            </tr>
+                                            <tr>
+                                                <th>12</th>
+                                                <th>Gnd</th>
+                                            </tr>
+                                            <tr>
+                                                <th>13</th>
+                                                <th>DIGI_IN4_H</th>
+                                            </tr>
+                                            <tr>
+                                                <th>14</th>
+                                                <th>DIGI_OUT2_H</th>
+                                            </tr>
+                                            <tr>
+                                                <th>15</th>
+                                                <th>DIGI_IN4_L</th>
+                                            </tr>
+                                            <tr>
+                                                <th>16</th>
+                                                <th>DIGI_OUT2_L</th>
+                                            </tr>
+                                            <tr>
+                                                <th>17</th>
+                                                <th>MDB_MAKEUP</th>
+                                            </tr>
+                                            <tr>
+                                                <th>18</th>
+                                                <th>V_OUT #(conmutado)</th>
+                                            </tr>
+                                            <tr>
+                                                <th>19</th>
+                                                <th>EXE_PWR_L</th>
+                                            </tr>
+                                            <tr>
+                                                <th>20</th>
+                                                <th>EXE_PWR_N</th>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 flex flex-row align-center">
+                                <img class="mb-4" src="assets/img/conexiones/amphenol-69168.jpg" alt="">
+                                <p>20 pin connector (Amphenol 69168)</p>
+                            </div>
+                        </div>
+                        <div class="row mt-5">
+                            <h2 class="title mt-5">E/S digital</h2>
+                            <!--Falta parrafo-->
+                            <div class="col-12 col-md-6">
+                                <div class=" border-table">
+                                    <table class="cont-table">
+                                        <thead class="table-head">
+                                            <tr>
+                                                <th>Anclar</th>
+                                                <th>Señal</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th>1</th>
+                                                <th>DIGI_IN3</th>
+                                            </tr>
+                                            <tr>
+                                                <th>2</th>
+                                                <th>DIGI_IN2</th>
+                                            </tr>
+                                            <tr>
+                                                <th>3</th>
+                                                <th>DIGI_IN1</th>
+                                            </tr>
+                                            <tr>
+                                                <th>4</th>
+                                                <th>DOGI_OUT1</th>
+                                            </tr>
+                                            <tr>
+                                                <th>5</th>
+                                                <th>Gnd</th>
+                                            </tr>
+                                            <tr>
+                                                <th>6</th>
+                                                <th>MDB_PWR_OUT</th>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 flex flex-row align-center">
+                                <img class="mb-4" src="assets/img/conexiones/Puerto-de-E-S-digital.jpg" alt="">
+                                <p>Puerto de E/S digital</p>
+                            </div>
+                        </div>
+                        <div class="row mt-5">
+                            <h2 class="title mt-5">Ethernet</h2>
+                            <!--Falta parrafo-->
+                            <div class="col-12 col-md-6">
+                                <div class=" border-table">
+                                    <table class="cont-table">
+                                        <thead class="table-head">
+                                            <tr>
+                                                <th>Anclar</th>
+                                                <th>Señal</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th>1</th>
+                                                <th>TX+</th>
+                                            </tr>
+                                            <tr>
+                                                <th>2</th>
+                                                <th>Tx-</th>
+                                            </tr>
+                                            <tr>
+                                                <th>3</th>
+                                                <th>RX+</th>
+                                            </tr>
+                                            <tr>
+                                                <th>4</th>
+                                                <th>Nc</th>
+                                            </tr>
+                                            <tr>
+                                                <th>5</th>
+                                                <th>Nc</th>
+                                            </tr>
+                                            <tr>
+                                                <th>6</th>
+                                                <th>Rx-</th>
+                                            </tr>
+                                            <tr>
+                                                <th>7</th>
+                                                <th>Nc</th>
+                                            </tr>
+                                            <tr>
+                                                <th>8</th>
+                                                <th>Nc</th>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 flex flex-row align-center">
+                                <img class="mb-4" src="assets/img/conexiones/Puerto-Ethernet.jpg" alt="">
+                                <p>Puerto Ethernet</p>
+                            </div>
+                        </div>
+                        <div class="row mt-5">
+                            <h2 class="title mt-5">AUX Jack:</h2>
+                            <!--Falta parrafo-->
+                            <div class="col-12 col-md-6">
+                                <div class=" border-table">
+                                    <table class="cont-table">
+                                        <thead class="table-head">
+                                            <tr>
+                                                <th>Anclar</th>
+                                                <th>Señal</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th>1</th>
+                                                <th>Pequeño</th>
+                                            </tr>
+                                            <tr>
+                                                <th>2</th>
+                                                <th>Gnd</th>
+                                            </tr>
+                                            <tr>
+                                                <th>3</th>
+                                                <th>AUDIO_LEFT</th>
+                                            </tr>
+                                            <tr>
+                                                <th>4</th>
+                                                <th>AUDIO_FEEDBACK</th>
+                                            </tr>
+                                            <tr>
+                                                <th>5</th>
+                                                <th>AUDIO_DETECT</th>
+                                            </tr>
+                                            <tr>
+                                                <th>6</th>
+                                                <th>AUDIO_RIGHT</th>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 flex flex-row align-center">
+                                <img class="mb-4" src="assets/img/conexiones/Esquema-de-jack-auxiliar.jpg" alt="">
+                                <p>Esquema de jack auxiliar</p>
+                            </div>
+                        </div>
+
+                    </section>
+                </div>
+
+            </div>
+            <section id="tarjeta-sim" class="container mt-32 mb-pb16 ">
+                <section class="background-card d-block last-child p-4">
+                    <div class="p-4 text-center">
+                        <h2 class="title mt-5">Instalación de la tarjeta SAM/SIM</h2>
+                        <p>El IM30 está disponible en múltiples configuraciones que tienen un número variable de ranuras
+                            para tarjetas SAM y SIM
+                            disponibles para su uso.
+                        </p>
+                        <img src="assets/img/conexiones/MicrosoftTeams-image (1).png" alt="">
+                        <img src="assets/img/conexiones/Ranura-para-tarjeta-SIM.jpg" alt="">
+                    </div>
+                    <div>
+                        <p>El modelo disponible del IM30 tiene al menos 2 ranuras para tarjetas SAM de tamaño micro-SIM
+                            en el cuerpo principal del
+                            dispositivo, como se ilustra en la Figura Montajes de tarjetas SAM. Estas dos ranuras para
+                            tarjetas normalmente están
+                            ocultas debajo del módulo 4G descrito en la Figura Módulo 4G (delineado en una escotilla
+                            azul). Si el tornillo que sostiene
+                            el módulo 4G en su lugar se afloja, se puede quitar del cuerpo principal del dispositivo
+                            haciendo palanca en la pestaña
+                            en el lado derecho del módulo. Para instalar una tarjeta SAM en cualquiera de estas dos
+                            ranuras para tarjetas, abra el
+                            soporte e inserte la tarjeta en la ranura con los contactos hacia abajo y el recortado en la
+                            esquina de la tarjeta en la parte
+                            superior derecha, luego bloquee el soporte con la tarjeta dentro.
+                            El módulo 4G está disponible en varias configuraciones, una configuración no tiene
+                            funcionalidad 4G y el módulo simplemente sirve como cubierta para ranuras para tarjetas SAM
+                            (que se muestra en la Figura sin ranuras para tarjetas), la
+                            configuración de otra, tiene 1 ranura para tarjetas SIM de tamaño micro-SIM (que se muestra
+                            en la Figura Ranura para tarjetas SIM), y otra configuración tiene 2 ranuras para tarjetas
+                            SAM de tamaño micro-SIM además de la ranura para tarjetas
+                            SIM (que se muestra en la Figura Ranuras para tarjetas SIM y SAM). Para instalar una tarjeta
+                            SIM o SAM en cualquiera
+                            de estas ranuras en el módulo 4G, inserte una tarjeta en la ranura de la tarjeta con los
+                            contactos hacia arriba y la esquina
+                            recortada de la tarjeta hacia adelante y hacia la derecha.
+                        </p>
+                    </div>
 
                 </section>
-            </div>
+            </section>
+            <section id="tarjeta-sim" class="container mt-32 mb-pb16 ">
+                <section class="background-card d-block last-child p-4">
+                    <div class="p-4 text-center">
+                        <h2 class="title mt-5">Pantalla táctil</h2>
+                        <p>El IM30 tiene una pantalla táctil capacitiva LCD de 5 pulgadas ubicada en su cara frontal.v
+                        </p>
+                        <img src="assets/img/conexiones/Pantalla-tactil.jpg" alt="">
+                    </div>
+                    <div>
+                        <p>La pantalla tiene una resolución de 1280 x 720 píxeles y está equipada con una
+                            retroiluminación
+                            LED ajustable. Esta
+                            pantalla táctil funciona como la interfaz de usuario principal para el dispositivo, así como
+                            el
+                            mecanismo principal para
+                            que el dispositivo muestre información a los usuarios. El brillo de la luz de fondo está
+                            controlado por software y se puede
+                            ajustar para satisfacer las necesidades del usuario.
+                        </p>
+                    </div>
+
+                </section>
+            </section>
+            <section id="tarjeta-sim" class="container mt-32 mb-pb16 ">
+                <section class="background-card d-block last-child p-4">
+                    <div class="p-4 text-center">
+                        <h2 class="title mt-5">Camara frontal</h2>
+                        <p>El IM30 tiene una cámara frontal ubicada en la parte superior de su cara delantera.</p>
+                        <img src="assets/img/conexiones/Camara-frontal.jpg" alt="">
+                        <h5>Cámara frontal (en azul)</h5>
+                    </div>
+                    <div>
+                        <p>Esta cámara es de 2 megapíxeles (1616 x 1232) es capaz de capturar video o fotos de cualquier
+                            cosa que se enfrente a la
+                            parte frontal de la unidad IM30. Su propósito principal es el reconocimiento facial en
+                            localidades donde tal función sería
+                            útil.
+                        </p>
+                    </div>
+
+                </section>
+            </section>
+            <section id="tarjeta-sim" class="container mt-32 mb-pb16 ">
+                <section class="background-card d-block last-child p-4">
+                    <div class="p-4 text-center">
+                        <h2 class="title mt-5">Cámara de escaneo de código</h2>
+                        <p>El IM30 tiene una cámara de escaneo de código ubicada cerca de la esquina inferior derecha de
+                            su cara delantera.</p>
+                        <img src="assets/img/conexiones/escaneo-de-codigo-y-LED-indicador.jpg" alt="">
+                        <h5>Cámara de escaneo de código y LED indicador de posición
+                            (en azul y verde respectivamente)</h5>
+                    </div>
+                    <div>
+                        <p>Esta cámara de 0,3 megapíxeles (648 x 488) ubicada cerca de la parte inferior del IM30 está
+                            diseñada para leer códigos
+                            1D o 2D comunes (como códigos de barras y códigos QR). La cámara está emparejada con un
+                            INDICADOR LED de posición que permite a los usuarios orientar sus cupones, tarjetas o
+                            dispositivos móviles para que el código se coloque en la
+                            ubicación y distancia óptimas cuando la luz del LED ilumine directamente el código.
+                        </p>
+                    </div>
+
+                </section>
+            </section>
+            <section id="tarjeta-sim" class="container mt-32 mb-pb16 ">
+                <section class="background-card d-block last-child p-4">
+                    <div class="p-4 text-center">
+                        <h2 class="title mt-5">Lector de tarjetas inteligentes</h2>
+                        <p>El IM30 tiene un lector de tarjetas inteligentes magnético ubicado en la parte inferior del
+                            dispositivo.</p>
+                        <img src="assets/img/conexiones/Lector-de-tarjetas-inteligentes.jpg" alt="">
+                        <h5> Lector de tarjetas inteligentes (delineado en azul)</h5>
+                    </div>
+                    <div>
+                        <h4>Lector de tarjetas inteligentes</h4>
+                        <ul class="lista">
+                            <li> Lee tarjetas síncronas y asincrónicas de 1,8 V, 3 V y 5 V</li>
+                            <li> Ranura para lector de tarjetas iluminada con un indicador LED RGB.</li>
+                            <li> Ciclo de vida de más de 500k lecturas</li>
+                            <li> Cumple con ISO/IEC 7810:2003, ISO/IEC 7816 y EMVCo L1 y L2</li>
+                            <li>Uso del lector de tarjetas: Inserte la tarjeta completamente en el lector con los
+                                contactos metálicos hacia arriba y
+                                hacia el dispositivo. Asegúrese de que la tarjeta esté completamente insertada en el
+                                lector de tarjetas mientras escanea la tarjeta.</li>
+                        </ul>
+                    </div>
+
+                </section>
+            </section>
+            <section id="tarjeta-sim" class="container mt-32 mb-pb16 ">
+                <section class="background-card d-block last-child p-4">
+                    <div class="p-4 text-center">
+                        <h2 class="title mt-5">Lector de tarjetas sin contacto</h2>
+                        <p>El IM30 tiene un lector de tarjetas sin contacto con una antena de RF ubicada en su cara
+                            frontal. El área de lectura para
+                            este lector de tarjetas corresponde aproximadamente a la mitad superior de la pantalla
+                            táctil en la parte frontal del dispositivo</p>
+                        <img src="assets/img/conexiones/Lector-de-tarjetas-sin-contacto.jpg" alt="">
+                        <h5> Lector de tarjetas sin contacto (tarjeta sin contacto delineada en azul)</h5>
+                    </div>
+                    <div>
+                        <h4>Lector de tarjetas sin contacto</h4>
+                        <ul class="lista">
+                            <li> Soporta ISO14443 Tipo A/B</li>
+                            <li> Uso del lector de tarjetas: El lector de tarjetas sin contacto lee tarjetas y
+                                dispositivos colocados aproximadamente
+                                paralelos al área indicada en la Figura 23:lector de tarjetas de contacto (tarjeta sin
+                                contacto delineada en azul) desde
+                                una distancia de 0 a 4 cm. Para obtener los mejores resultados, colóquela lo más cerca
+                                posible de la pantalla y centre la tarjeta sobre el área indicada</li>
+
+                    </div>
+                </section>
+            </section>
+            <section id="tarjeta-sim" class="container mt-32 mb-pb16 ">
+                <section class="background-card d-block last-child p-4">
+                    <div class="p-4 text-center">
+                        <h2 class="title mt-5">Detector de proximidad</h2>
+                        <p>El IM30 tiene un detector de proximidad óptico ubicado cerca de la parte inferior derecha de
+                            su cara frontal.</p>
+                        <img src="assets/img/conexiones/Detector-de-proximidad.jpg" alt="">
+                        <h5>Detector de proximidad (emisor óptico en azul, receptor en
+                            verde)</h5>
+                    </div>
+                    <div>
+                        <p>El sensor de proximidad detecta la luz en el espectro visible y está sintonizado para
+                            detectar objetos dentro de los 5 a 8
+                            cm del sensor. Está destinado a realizar funciones como proporcionar una señal de activación
+                            al resto del dispositivo
+                            cuando se detecta un usuario o calibrar la intensidad de la luz de backlight para que se
+                            ajuste al brillo de un entorno determinado.</p>
+
+                    </div>
+
+                </section>
+            </section>
+            <section id="tarjeta-sim" class="container mt-32 mb-pb16 ">
+                <section class="background-card d-block last-child p-4">
+                    <div class="p-4 text-center">
+                        <h2 class="title mt-5">Indicador led de estado</h2>
+                        <p>El IM30 tiene un indicador de estado RGB LED ubicado cerca de la parte inferior derecha de su
+                            cara frontal cerca del detector de proximidad.</p>
+                        <img src="assets/img/conexiones/Indicador-de-estado-LED.jpg" alt="">
+                        <h5>Indicador de estado LED (resaltado en azul)</h5>
+                    </div>
+                    <div>
+                        <p>El funcionamiento del indicador de estado LED está controlado por software y depende de la
+                            configuración específica del
+                            dispositivo. Puede mostrar una luz indicadora en rojo, verde o azul.
+                    </div>
+
+                </section>
+            </section>
+            <section id="tarjeta-sim" class="container mt-32 mb-pb16 ">
+                <section class="background-card d-block last-child p-4">
+                    <div class="p-4 text-center">
+                        <h2 class="title mt-5">Instalación del producto</h2>
+                        <h6>Dimensiones del dispositivo</h6>
+                        <p>El IM30 tiene las dimensiones físicas que se muestran en la Figura. Tenga en cuenta que
+                            varios cables se conectan
+                            directamente a la parte posterior del dispositivo, por lo que se necesita una mayor holgura
+                            que la que se muestra para el
+                            extremo posterior del dispositivo para instalar correctamente una unidad IM30.</p>
+                        <img src="assets/img/conexiones/Dimensiones-del-dispositivo.jpg" alt="">
+                        <h5>Dimensiones del dispositivo (mm)</h5>
+                    </div>
+                    <div>
+                        <p>El funcionamiento del indicador de estado LED está controlado por software y depende de la
+                            configuración específica del
+                            dispositivo. Puede mostrar una luz indicadora en rojo, verde o azul.
+                    </div>
+
+                </section>
+            </section>
+            <section id="tarjeta-sim" class="container mt-32 mb-pb16 ">
+                <section class="background-card d-block last-child p-4">
+                    <div class="p-4 text-center">
+                        <h2 class="title mt-5">Soporte de montaje </h2>
+                        <p>El IM30 está equipado con un soporte de montaje de plástico que permite fijarlo en su lugar
+                            en una placa de montaje</p>
+                        <img src="assets/img/conexiones/cara-orientada-hacia-el-exterior.jpg" alt="">
+                        <img src="assets/img/conexiones/Dimensiones-del-soporte-de-montaje.jpg" alt="">
+                        <h5>Dimensiones del soporte
+                            de montaje</h5>
+                    </div>
+                </section>
+            </section>
+            <section id="tarjeta-sim" class="container mt-32 mb-pb16 ">
+                <section class="background-card d-block last-child p-4">
+                    <div class="p-4 text-center">
+                        <h2 class="title mt-5">Dimensión de la placa de montaje</h2>
+
+                        <p>El IM30 está diseñado para ser montado en superficies verticales a través de una placa de
+                            montaje.</p>
+                        <img src="assets/img/conexiones/placa-de-montaje.jpg" alt="">
+                        <h5>Indicador de estado LED (resaltado en azul)</h5>
+                    </div>
+                    <div>
+                        <p>Estas dimensiones son las de un módulo de puerta estándar según lo definido por la Asociación
+                            Europea de Vending.
+                            Los pernos de pernos M4 deben extruirse de la parte posterior de la placa de montaje para
+                            permitir que el soporte de
+                            montaje se coloque en su lugar.
+                    </div>
+
+                </section>
+            </section>
+            <section id="tarjeta-sim" class="container mt-32 mb-pb16 ">
+                <section class="background-card d-block last-child p-4">
+                    <div class="p-4 text-center">
+                        <h2 class="title mt-5">Instalación del soporte de montaje</h2>
+
+                        <p>El primer paso para instalar el IM30 como parte de un terminal de pago desatendido es
+                            asegurar el soporte de montaje
+                            en la placa de montaje. La parte posterior de la placa de montaje debe tener cuatro pernos
+                            de pernos M4 que correspondan a los cuatro puntos de montaje exteriores en el soporte de
+                            montaje. Deslice el soporte de montaje sobre los cuatro
+                            pernos con él como se ilustra, conecte el soporte de montaje a la placa de montaje, luego
+                            use cuatro tuercas M4 para
+                            asegurarlo en su lugar.</p>
+                        <img src="assets/img/conexiones/placa-de-montaje.jpg" alt="">
+                        <h5>Fijación del soporte de montaje a la placa de montaje</h5>
+                    </div>
+                </section>
+            </section>
+            <section id="tarjeta-sim" class="container mt-32 mb-pb16 ">
+                <section class="background-card d-block last-child p-4">
+                    <div class="p-4 text-center">
+                        <h2 class="title mt-5">Instalación de la unidad IM30</h2>
+
+                        <p>Después de asegurar el soporte de montaje a la placa de montaje, inserte la unidad IM30 a
+                            través de la parte frontal de la
+                            placa de montaje en el soporte de montaje. A continuación, aplique un par de 1,2 ± 0,2 Nm a
+                            los cuatro tornillos M4 para
+                            asegurar el IM30 al soporte de montaje a través de sus cuatro puntos de montaje internos.
+                        </p>
+                        <img src="assets/img/conexiones/placa-de-montaje.jpg" alt="">
+                        <h5>Inserción de la unidad IM30 en la parte frontal de la placa de montaje. Asegurar la unidad
+                            IM30 en su lugar con los cuatro
+                            tornillos M4</h5>
+                    </div>
+                </section>
+            </section>
+            <section id="tarjeta-sim" class="container mt-32 mb-pb16 ">
+                <section class="background-card d-block last-child p-4">
+                    <div class="p-4 text-center">
+                        <h2 class="title mt-5">Cables y Comunicación</h2>
+
+                        <p>La caja requiere tener disponible una puerta serial RS232A, RS232B, USB tipo A (Host) o un
+                            puerto USB tipo C (OTG) para
+                            la conexión del POS.</p>
+                        <p>
+                            La comunicación con Transbank puede ser Lan, Gprs o Wifi, por lo que requiere un punto de
+                            red disponible, además de un
+                            enchufe con 220 Volts para alimentación del terminal IM30</p>
+                        <img src="assets/img/conexiones/placa-de-montaje.jpg" alt="">
+                        <h5>Inserción de la unidad IM30 en la parte frontal de la placa de montaje. Asegurar la unidad
+                            IM30 en su lugar con los cuatro
+                            tornillos M4</h5>
+                    </div>
+                </section>
+            </section>
+            <section id="tarjeta-sim" class="container mt-32 mb-pb16 ">
+                <section class="background-card d-block last-child p-4">
+                    <div class="p-4 text-center">
+                        <h2 class="title mt-5">Cables y Comunicación</h2>
+
+                        <p>La caja requiere tener disponible una puerta serial RS232A, RS232B, USB tipo A (Host) o un
+                            puerto USB tipo C (OTG) para
+                            la conexión del POS.</p>
+                        <p>
+                            La comunicación con Transbank puede ser Lan, Gprs o Wifi, por lo que requiere un punto de
+                            red disponible, además de un
+                            enchufe con 220 Volts para alimentación del terminal IM30</p>
+                        <h5>Caja con Conexión USB:</h5>
+                        <img src="assets/img/conexiones/cable-01.svg" alt="">
+                        <h5>Cable USB tipo C a tipo A</h5>
+                        <p>Opción 1: Requiere un cable RS232A o RS232B – Serial y Conversor Usb – Serial</p>
+                        <img src="assets/img/conexiones/cable-02.svg" alt="">
+                        <img src="assets/img/conexiones/cable-03.svg" alt="">
+                    </div>
+                </section>
+            </section>
+
+            <section id="tarjeta-sim" class="container mt-32 mb-pb16 ">
+                <section class="background-card d-block last-child p-4">
+                    <div id="MDB" class="container mt-32 mb-pb16 ">
+                        <div class="background-card d-block last-child p-4">
+                            <section class="p-4">
+                                <div>
+                                    <h2 class="title mt-5">Transacciones y Diagramas de Secuencia</h2>
+                                    <span>
+                                        <h5>Transacción de Venta:</h5>
+                                    </span>
+                                    <p>El comando de Venta 200 enviado por la caja solicitando la ejecución de una venta
+                                        hacia el POS, como parámetro se
+                                        envía el monto, número de ticket o boleta, tipo de impresión (0=Parámetros de
+                                        impresión, 1=Voucher formateado), y el
+                                        parámetro que indica si el POS envía mensajes indicando el estado de la
+                                        transacción
+                                    </p>
+                                    <p>El POS solicita confirmar monto, operar tarjeta, ingreso de clave, y envía
+                                        solicitud al Autorizador, luego si la transacción es
+                                        aprobada, guarda la transacción y envía la respuesta a la caja, incluyendo
+                                        código de aprobación, numero de operación y
+                                        datos de impresión.
+                                        (Para venta crédito, ofrece opción de cuotas y en modo sin contacto, si es mayor
+                                        al monto establecido por la banca nacional como límite pedirá el PIN)</p>
+                                </div>
+                            </section>
+                            <section id="transacciones" class="p-4 pt-5">
+                                <h2 class="title mt-5">Excepciones:</h2>
+                                <ul class="lista">
+                                    <li> No se permiten transacción con tarjetas no bancarias</li>
+                                    <li>No se permiten transacciones con firma.</li>
+                                </ul>
+                            </section>
+                            <div class="w-100 p-5">
+                                <img src="assets/img/diagramas/funcionamientoDelPosAutoservicio.svg">
+                            </div>
+                            <span>
+                                <h5>Descripción:</h5>
+                            </span>
+                            <p>La caja envía el requerimiento y espera como respuesta ACK/NAK, en caso de que llegue un
+                                NAK, debe reintentar el envío
+                                del requerimiento 2 veces. Si recibe un ACK debe esperar la respuesta de la transacción.
+                                El POS solicita los datos al usuario, y envía requerimiento al AUTORIZADOR, en caso de
+                                ser aprobada, se guarda en Batch
+                                y se envía respuesta a la caja. En caso de ser rechazada se envía respuesta a la caja
+                                indicando el estado de rechazo.
+                                La caja al recibir la respuesta envía un ACK al POS si el mensaje está correcto, o un
+                                NAK para el caso en que el LRC no
+                                corresponda.
+                                El POS al recibir el ACK desde la caja vuelve al inicio a esperar un nuevo comando, para
+                                el caso que recibe un NAK vuelve
+                                a enviar la respuesta 2 veces más.</p>
+                </section>
+            </section>
+            <section id="tarjeta-sim" class="container mt-32 mb-pb16 ">
+                <section class="background-card d-block last-child p-4">
+                    <div class="p-4 text-center">
+                        <h2 class="title mt-5">Lector de tarjetas sin contacto</h2>
+                        <p>El IM30 tiene un lector de tarjetas sin contacto con una antena de RF ubicada en su cara
+                            frontal. El área de lectura para
+                            este lector de tarjetas corresponde aproximadamente a la mitad superior de la pantalla
+                            táctil en la parte frontal del dispositivo</p>
+                        <img src="assets/img/conexiones/Lector-de-tarjetas-sin-contacto.jpg" alt="">
+                        <h5> Lector de tarjetas sin contacto (tarjeta sin contacto delineada en azul)</h5>
+                    </div>
+                    <div>
+                        <h4>Lector de tarjetas sin contacto</h4>
+                        <ul class="lista">
+                            <li> Soporta ISO14443 Tipo A/B</li>
+                            <li> Uso del lector de tarjetas: El lector de tarjetas sin contacto lee tarjetas y
+                                dispositivos colocados aproximadamente
+                                paralelos al área indicada en la Figura 23:lector de tarjetas de contacto (tarjeta sin
+                                contacto delineada en azul) desde
+                                una distancia de 0 a 4 cm. Para obtener los mejores resultados, colóquela lo más cerca
+                                posible de la pantalla y centre la tarjeta sobre el área indicada</li>
+
+                    </div>
+                </section>
+            </section>
+            <section id="tarjeta-sim" class="container mt-32 mb-pb16 ">
+                <section class="background-card d-block last-child p-4">
+                    <div id="MDB" class="container mt-32 mb-pb16 ">
+                        <div class="background-card d-block last-child p-4">
+                            <section class="p-4">
+                                <div>
+                                    <span>
+                                        <h2 class="title mt-5">Datos Última Venta</h2>
+                                    </span>
+                                    <p>Comando enviado por la caja solicitando al POS los datos de la última venta
+                                        guardada en memoria, teniendo como dato
+                                        relevante en la respuesta el número de ticket o boleta
+                                    </p>
+                                    <p>
+                                        Este comando debe ser utilizado por la caja para el caso en que no recibe
+                                        respuesta al comando de venta, y validará el
+                                        campo ticket o boleta contra el número de ticket asignado al cobro de la
+                                        transacción, en caso de que los números comparados sean distintos, la caja debe
+                                        reintentar el cobro ejecutando nuevamente de la transacción de venta, para el
+                                        caso en
+                                        que coincidan, significa que el cobro ya fue realizado.
+                                    </p>
+                                    <h4><span>Excepciones:</span> </h4>
+                                    <p>Al momento de ejecutar un cierre se borran todas las transacciones almacenadas en
+                                        memoria del Terminal POS. Si al
+                                        recibir el comando última venta, no existe en memoria del POS, se envía la
+                                        respuesta a la caja indicando el error
+                                        <span>(ver Códigos de Respuesta)</span>.
+                                    </p>
+                                </div>
+                            </section>
+                            <section id="transacciones" class="p-4 pt-5">
+                                <div class="row flex justify-center mt-5">
+                                    <span><h5>Descripción:</h5></span>
+                                    <div class="col-12 col-md-6 flex align-center ">
+                                        <p>La caja envía el requerimiento y espera como
+                                            respuesta ACK, Si recibe un ACK la caja debe
+                                            esperar la respuesta del POS, en caso de
+                                            recibir un NAK debe
+                                            reintentar enviando el comando 2 veces. <br>
+                                            Una vez recibida la respuesta, la caja calcula el LRC (especificado más
+                                            adelante en el
+                                            protocolo de comunicación) del mensaje y lo
+                                            compara con el
+                                            recibido, si coinciden la caja envía un ACK
+                                            al POS dando por finalizado el comando, en
+                                            caso contrario envía un NAK, y vuelve a
+                                            esperar la respuesta del POS
+                                            </p>
+                                    </div>
+                                    <div class="w-100 p-5">
+                                        <img src="assets/img/diagramas/Mesa de trabajo 1 copia 9.svg" alt="">
+                                    </div>
+
+                                </div>
+                            </section>
+                </section>
+            </section>
 
         </div>
-        <section id="tarjeta-sim" class="container mt-32 mb-pb16 ">
-            <section class="background-card d-block last-child p-4">
-                <div class="p-4 text-center">
-                    <h2 class="title mt-5">Pantalla táctil</h2>
-                    <p>El IM30 tiene una pantalla táctil capacitiva LCD de 5 pulgadas ubicada en su cara frontal.v</p>
-                    <img src="assets/img/Frame.svg" alt="">
-                </div>
-                <div>
-                    <p>La pantalla tiene una resolución de 1280 x 720 píxeles y está equipada con una retroiluminación
-                        LED ajustable. Esta
-                        pantalla táctil funciona como la interfaz de usuario principal para el dispositivo, así como el
-                        mecanismo principal para
-                        que el dispositivo muestre información a los usuarios. El brillo de la luz de fondo está
-                        controlado por software y se puede
-                        ajustar para satisfacer las necesidades del usuario.
-                    </p>
-                </div>
-
-            </section>
-        </section>
-        <section id="tarjeta-sim" class="container mt-32 mb-pb16 ">
-            <section class="background-card d-block last-child p-4">
-                <div class="p-4 text-center">
-                    <h2 class="title mt-5">Camara frontal</h2>
-                    <p>El IM30 tiene una cámara frontal ubicada en la parte superior de su cara delantera.</p>
-                    <img src="assets/img/Frame.svg" alt="">
-                    <h5>Cámara frontal (en azul)</h5>
-                </div>
-                <div>
-                    <p>Esta cámara es de 2 megapíxeles (1616 x 1232) es capaz de capturar video o fotos de cualquier
-                        cosa que se enfrente a la
-                        parte frontal de la unidad IM30. Su propósito principal es el reconocimiento facial en
-                        localidades donde tal función sería
-                        útil.
-                    </p>
-                </div>
-
-            </section>
-        </section>
-
-
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/nav.js"></script>
-    <script src="assets/js/copy.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/js/nav.js"></script>
+        <script src="assets/js/copy.js"></script>
 
 </body>
 

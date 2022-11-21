@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 431.08 146.16">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        font-family: Roboto-Medium, Roboto;
+        font-size: 12px;
+        font-weight: 500;
+      }
+
+      .cls-2 {
+        letter-spacing: -.01em;
+      }
+
+      .cls-3, .cls-4 {
+        fill: #d5006c;
+      }
+
+      .cls-5, .cls-6 {
+        fill: #2d3338;
+      }
+
+      .cls-7 {
+        letter-spacing: -.01em;
+      }
+
+      .cls-8 {
+        letter-spacing: -.01em;
+      }
+
+      .cls-9 {
+        fill: none;
+        stroke: #2d3338;
+        stroke-miterlimit: 10;
+        stroke-width: .75px;
+      }
+
+      .cls-10 {
+        letter-spacing: -.16em;
+      }
+
+      .cls-11 {
+        letter-spacing: 0em;
+      }
+
+      .cls-6, .cls-4 {
+        font-family: Roboto-Regular, Roboto;
+        font-size: 10px;
+      }
+
+      .cls-12 {
+        letter-spacing: 0em;
+      }
+
+      .cls-13 {
+        letter-spacing: -.06em;
+      }
+
+      .cls-14 {
+        letter-spacing: 0em;
+      }
+    </style>
+  </defs>
+  <g>
+    <line class="cls-9" x1="322.05" y1="28.94" x2="100.76" y2="28.94"/>
+    <polygon class="cls-5" points="320.96 25.2 327.43 28.94 320.96 32.68 320.96 25.2"/>
+  </g>
+  <g>
+    <line class="cls-9" x1="327.43" y1="48.52" x2="106.15" y2="48.52"/>
+    <polygon class="cls-5" points="107.24 44.78 100.76 48.52 107.24 52.26 107.24 44.78"/>
+  </g>
+  <rect class="cls-3" x="338.37" width="92.71" height="146.16"/>
+  <g>
+    <rect class="cls-3" width="92.71" height="146.16"/>
+    <text class="cls-1" transform="translate(30.94 77.35)"><tspan x="0" y="0">CA</tspan><tspan class="cls-8" x="15.82" y="0">J</tspan><tspan x="22.35" y="0">A</tspan></text>
+  </g>
+  <text class="cls-1" transform="translate(363.6 77.35)"><tspan x="0" y="0">POS UX</tspan></text>
+  <text class="cls-6" transform="translate(149.09 23.02)"><tspan x="0" y="0">REQ. &lt;STX&gt;</tspan><tspan class="cls-2" x="52.3" y="0">D</tspan><tspan class="cls-13" x="58.75" y="0">A</tspan><tspan class="cls-7" x="64.65" y="0">T</tspan><tspan x="70.48" y="0">OS&lt;</tspan><tspan class="cls-14" x="88.37" y="0">E</tspan><tspan x="94.15" y="0">TX&gt;LRC</tspan></text>
+  <text class="cls-6" transform="translate(192.41 44.09)"><tspan class="cls-12" x="0" y="0">A</tspan><tspan x="6.47" y="0">CK/</tspan><tspan class="cls-11" x="23.37" y="0">N</tspan><tspan x="30.59" y="0">AK</tspan></text>
+  <text class="cls-4" transform="translate(114.98 44.7)"><tspan x="0" y="0">TIMEOUT1</tspan></text>
+  <g>
+    <line class="cls-9" x1="322.05" y1="110.29" x2="100.76" y2="110.29"/>
+    <polygon class="cls-5" points="320.96 106.55 327.43 110.28 320.96 114.02 320.96 106.55"/>
+  </g>
+  <g>
+    <line class="cls-9" x1="327.43" y1="129.87" x2="106.15" y2="129.87"/>
+    <polygon class="cls-5" points="107.24 126.13 100.76 129.87 107.24 133.61 107.24 126.13"/>
+  </g>
+  <text class="cls-6" transform="translate(147.19 104.37)"><tspan x="0" y="0">RES</tspan><tspan class="cls-10" x="17.77" y="0">P</tspan><tspan x="22.5" y="0">. &lt;STX&gt;</tspan><tspan class="cls-2" x="56.08" y="0">D</tspan><tspan class="cls-13" x="62.54" y="0">A</tspan><tspan class="cls-7" x="68.43" y="0">T</tspan><tspan x="74.26" y="0">OS&lt;</tspan><tspan class="cls-14" x="92.15" y="0">E</tspan><tspan x="97.93" y="0">TX&gt;LRC</tspan></text>
+  <text class="cls-6" transform="translate(192.41 125.44)"><tspan class="cls-12" x="0" y="0">A</tspan><tspan x="6.47" y="0">CK/</tspan><tspan class="cls-11" x="23.37" y="0">N</tspan><tspan x="30.59" y="0">AK</tspan></text>
+  <text class="cls-4" transform="translate(114.98 126.05)"><tspan x="0" y="0">TIMEOUT2</tspan></text>
+</svg>

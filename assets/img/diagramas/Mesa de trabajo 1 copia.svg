@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 442.48 333.03">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        font-family: Roboto-Medium, Roboto;
+        font-size: 12px;
+        font-weight: 500;
+      }
+
+      .cls-2 {
+        fill: #6b196b;
+      }
+
+      .cls-3 {
+        fill: #d5006c;
+      }
+
+      .cls-4, .cls-5 {
+        fill: #2d3338;
+      }
+
+      .cls-6 {
+        letter-spacing: -.01em;
+      }
+
+      .cls-7, .cls-8, .cls-9 {
+        fill: none;
+        stroke: #2d3338;
+        stroke-miterlimit: 10;
+        stroke-width: .75px;
+      }
+
+      .cls-10 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-8 {
+        stroke-dasharray: 0 0 2.99 2.99;
+      }
+
+      .cls-11 {
+        letter-spacing: 0em;
+      }
+
+      .cls-5 {
+        font-family: Roboto-Regular, Roboto;
+        font-size: 10px;
+      }
+
+      .cls-9 {
+        stroke-dasharray: 0 0 2.97 2.97;
+      }
+
+      .cls-12 {
+        letter-spacing: 0em;
+      }
+
+      .cls-13 {
+        letter-spacing: 0em;
+      }
+
+      .cls-14 {
+        letter-spacing: -.01em;
+      }
+    </style>
+  </defs>
+  <g>
+    <line class="cls-7" x1="197.36" y1="83.52" x2="37.43" y2="83.52"/>
+    <polygon class="cls-4" points="196.27 79.78 202.74 83.52 196.27 87.26 196.27 79.78"/>
+  </g>
+  <g>
+    <line class="cls-7" x1="202.74" y1="103.1" x2="42.81" y2="103.1"/>
+    <polygon class="cls-4" points="43.9 99.36 37.43 103.1 43.9 106.84 43.9 99.36"/>
+  </g>
+  <g>
+    <line class="cls-7" x1="381.41" y1="264.58" x2="221.48" y2="264.58"/>
+    <polygon class="cls-4" points="380.32 260.84 386.79 264.58 380.32 268.32 380.32 260.84"/>
+  </g>
+  <g>
+    <line class="cls-7" x1="386.79" y1="284.17" x2="226.86" y2="284.17"/>
+    <polygon class="cls-4" points="227.95 280.43 221.48 284.17 227.95 287.91 227.95 280.43"/>
+  </g>
+  <g>
+    <line class="cls-7" x1="212.03" y1="23.72" x2="212.03" y2="25.22"/>
+    <line class="cls-8" x1="212.03" y1="28.21" x2="212.03" y2="326.04"/>
+    <line class="cls-7" x1="212.03" y1="327.53" x2="212.03" y2="329.03"/>
+  </g>
+  <g>
+    <line class="cls-7" x1="28.25" y1="23.72" x2="28.25" y2="25.22"/>
+    <line class="cls-9" x1="28.25" y1="28.19" x2="28.25" y2="330.05"/>
+    <line class="cls-7" x1="28.25" y1="331.53" x2="28.25" y2="333.03"/>
+  </g>
+  <g>
+    <line class="cls-7" x1="397.25" y1="23.72" x2="397.25" y2="25.22"/>
+    <line class="cls-8" x1="397.25" y1="28.21" x2="397.25" y2="326.04"/>
+    <line class="cls-7" x1="397.25" y1="327.53" x2="397.25" y2="329.03"/>
+  </g>
+  <rect class="cls-3" width="56.51" height="23.66"/>
+  <rect class="cls-2" x="-116.96" y="183.46" width="290.43" height="8.72" rx="2.43" ry="2.43" transform="translate(216.07 159.56) rotate(90)"/>
+  <rect class="cls-2" x="373.06" y="268.62" width="48.38" height="8.72" rx="2.04" ry="2.04" transform="translate(670.22 -124.27) rotate(90)"/>
+  <rect class="cls-3" x="187.29" y=".06" width="56.51" height="23.66"/>
+  <rect class="cls-3" x="352.01" width="90.47" height="23.66"/>
+  <text class="cls-1" transform="translate(13.01 16.1)"><tspan x="0" y="0">CA</tspan><tspan class="cls-6" x="15.82" y="0">J</tspan><tspan x="22.35" y="0">A</tspan></text>
+  <text class="cls-1" transform="translate(203.72 16.16)"><tspan x="0" y="0">POS</tspan></text>
+  <text class="cls-1" transform="translate(371.79 16.1)"><tspan class="cls-12" x="0" y="0">A</tspan><tspan x="7.92" y="0">u</tspan><tspan class="cls-14" x="14.59" y="0">t</tspan><tspan x="18.4" y="0">orizador</tspan></text>
+  <text class="cls-5" transform="translate(264.21 260.1)"><tspan x="0" y="0">Req. </tspan><tspan class="cls-10" x="22.25" y="0">V</tspan><tspan x="28.39" y="0">enta (0200)</tspan></text>
+  <text class="cls-5" transform="translate(261.66 279.89)"><tspan x="0" y="0">Resp. </tspan><tspan class="cls-10" x="27.33" y="0">V</tspan><tspan x="33.48" y="0">enta (0210)</tspan></text>
+  <text class="cls-5" transform="translate(91.34 77.6)"><tspan x="0" y="0" xml:space="preserve">Req.  </tspan><tspan class="cls-13" x="24.72" y="0">(</tspan><tspan class="cls-10" x="28.24" y="0">V</tspan><tspan x="34.38" y="0">enta)</tspan></text>
+  <text class="cls-5" transform="translate(98.32 98.68)"><tspan class="cls-12" x="0" y="0">A</tspan><tspan x="6.47" y="0">CK/</tspan><tspan class="cls-11" x="23.37" y="0">N</tspan><tspan x="30.59" y="0">AK</tspan></text>
+  <g>
+    <line class="cls-7" x1="202.69" y1="218.92" x2="42.75" y2="218.92"/>
+    <polygon class="cls-4" points="43.85 215.18 37.37 218.91 43.85 222.65 43.85 215.18"/>
+  </g>
+  <rect class="cls-2" x="64.41" y="180.36" width="295.12" height="8.72" rx="2.36" ry="2.36" transform="translate(396.69 -27.25) rotate(90)"/>
+  <text class="cls-5" transform="translate(74.02 214.49)"><tspan x="0" y="0">Mensaje 3 (0900|82)</tspan></text>
+  <g>
+    <line class="cls-7" x1="202.45" y1="200.77" x2="42.51" y2="200.77"/>
+    <polygon class="cls-4" points="43.61 197.03 37.13 200.77 43.61 204.51 43.61 197.03"/>
+  </g>
+  <text class="cls-5" transform="translate(74.02 196.34)"><tspan x="0" y="0">Mensaje 2 (0900|81)</tspan></text>
+  <g>
+    <line class="cls-7" x1="202.45" y1="180.59" x2="42.51" y2="180.59"/>
+    <polygon class="cls-4" points="43.61 176.85 37.13 180.59 43.61 184.33 43.61 176.85"/>
+  </g>
+  <text class="cls-5" transform="translate(74.02 176.16)"><tspan x="0" y="0">Mensaje 1 (0900|80)</tspan></text>
+  <g>
+    <line class="cls-7" x1="197.36" y1="298.31" x2="37.43" y2="298.31"/>
+    <polygon class="cls-4" points="196.27 294.57 202.74 298.31 196.27 302.05 196.27 294.57"/>
+  </g>
+  <g>
+    <line class="cls-7" x1="202.74" y1="317.9" x2="42.81" y2="317.9"/>
+    <polygon class="cls-4" points="43.9 314.16 37.43 317.9 43.9 321.64 43.9 314.16"/>
+  </g>
+  <text class="cls-5" transform="translate(90.03 292.39)"><tspan x="0" y="0">Resp. </tspan><tspan class="cls-13" x="27.33" y="0">(</tspan><tspan class="cls-10" x="30.84" y="0">V</tspan><tspan x="36.99" y="0">enta)</tspan></text>
+  <text class="cls-5" transform="translate(98.32 313.47)"><tspan class="cls-12" x="0" y="0">A</tspan><tspan x="6.47" y="0">CK/</tspan><tspan class="cls-11" x="23.37" y="0">N</tspan><tspan x="30.59" y="0">AK</tspan></text>
+</svg>
