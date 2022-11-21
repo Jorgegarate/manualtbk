@@ -84,6 +84,10 @@
 .table-puertos{
     width: 50%;
     margin-left: 5rem;
+    &.table-2 {
+        width: 80%;
+        margin-left: 0;
+    }
     table {
         margin: 0;
         width: 100%;
