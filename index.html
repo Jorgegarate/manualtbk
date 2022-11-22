@@ -1119,6 +1119,9 @@
                         </p>
                         <img src="assets/img/conexiones/MicrosoftTeams-image (1).png" alt="">
                         <img src="assets/img/conexiones/Ranura-para-tarjeta-SIM.jpg" alt="">
+                        <img src="assets/img/conexiones/Ranuras-para-tarjetas-SIM-y-SAM.jpg" alt="">
+                        <img src="assets/img/conexiones/Sin-ranuras-para-tarjetas.jpg" alt="">
+
                     </div>
                     <div>
                         <p>El modelo disponible del IM30 tiene al menos 2 ranuras para tarjetas SAM de tamaño micro-SIM
@@ -1515,63 +1518,900 @@
             </section>
             <section id="tarjeta-sim" class="container mt-32 mb-pb16 ">
                 <section class="background-card d-block last-child p-4">
-                    <div id="MDB" class="container mt-32 mb-pb16 ">
-                        <div class="background-card d-block last-child p-4">
-                            <section class="p-4">
-                                <div>
-                                    <span>
-                                        <h2 class="title mt-5">Datos Última Venta</h2>
-                                    </span>
-                                    <p>Comando enviado por la caja solicitando al POS los datos de la última venta
-                                        guardada en memoria, teniendo como dato
-                                        relevante en la respuesta el número de ticket o boleta
+                    <div class="background-card d-block last-child p-4">
+                        <section class="p-4">
+                            <div>
+                                <span>
+                                    <h2>Datos Última Venta</h2>
+                                </span>
+                                <p>Comando enviado por la caja solicitando al POS los datos de la última venta
+                                    guardada en memoria, teniendo como dato
+                                    relevante en la respuesta el número de ticket o boleta
+                                </p>
+                                <p>
+                                    Este comando debe ser utilizado por la caja para el caso en que no recibe
+                                    respuesta al comando de venta, y validará el
+                                    campo ticket o boleta contra el número de ticket asignado al cobro de la
+                                    transacción, en caso de que los números comparados sean distintos, la caja debe
+                                    reintentar el cobro ejecutando nuevamente de la transacción de venta, para el
+                                    caso en
+                                    que coincidan, significa que el cobro ya fue realizado.
+                                </p>
+                                <h4><span>Excepciones:</span> </h4>
+                                <p>Al momento de ejecutar un cierre se borran todas las transacciones almacenadas en
+                                    memoria del Terminal POS. Si al
+                                    recibir el comando última venta, no existe en memoria del POS, se envía la
+                                    respuesta a la caja indicando el error
+                                    <span>(ver Códigos de Respuesta)</span>.
+                                </p>
+                            </div>
+                        </section>
+                        <section id="#" class="p-4 pt-5">
+                            <div class="row flex justify-center mt-5">
+                                <span>
+                                    <h3>Descripción:</h3>
+                                </span>
+                                <div class="col-12 flex">
+                                    <p>La caja envía el requerimiento y espera como
+                                        respuesta ACK, Si recibe un ACK la caja debe
+                                        esperar la respuesta del POS, en caso de
+                                        recibir un NAK debe
+                                        reintentar enviando el comando 2 veces. <br>
+                                        Una vez recibida la respuesta, la caja calcula el LRC (especificado más
+                                        adelante en el
+                                        protocolo de comunicación) del mensaje y lo
+                                        compara con el
+                                        recibido, si coinciden la caja envía un ACK
+                                        al POS dando por finalizado el comando, en
+                                        caso contrario envía un NAK, y vuelve a
+                                        esperar la respuesta del POS
                                     </p>
-                                    <p>
-                                        Este comando debe ser utilizado por la caja para el caso en que no recibe
-                                        respuesta al comando de venta, y validará el
-                                        campo ticket o boleta contra el número de ticket asignado al cobro de la
-                                        transacción, en caso de que los números comparados sean distintos, la caja debe
-                                        reintentar el cobro ejecutando nuevamente de la transacción de venta, para el
-                                        caso en
-                                        que coincidan, significa que el cobro ya fue realizado.
-                                    </p>
-                                    <h4><span>Excepciones:</span> </h4>
-                                    <p>Al momento de ejecutar un cierre se borran todas las transacciones almacenadas en
-                                        memoria del Terminal POS. Si al
-                                        recibir el comando última venta, no existe en memoria del POS, se envía la
-                                        respuesta a la caja indicando el error
-                                        <span>(ver Códigos de Respuesta)</span>.
-                                    </p>
+                                    <!--Cambiar el tamaño de la imagen-->
+                                    <img class="text-center w-100"
+                                        src="assets/img/diagramas/Mesa de trabajo 1 copia 9.svg" alt="">
                                 </div>
-                            </section>
-                            <section id="transacciones" class="p-4 pt-5">
-                                <div class="row flex justify-center mt-5">
-                                    <span><h5>Descripción:</h5></span>
-                                    <div class="col-12 col-md-6 flex align-center ">
-                                        <p>La caja envía el requerimiento y espera como
-                                            respuesta ACK, Si recibe un ACK la caja debe
-                                            esperar la respuesta del POS, en caso de
-                                            recibir un NAK debe
-                                            reintentar enviando el comando 2 veces. <br>
-                                            Una vez recibida la respuesta, la caja calcula el LRC (especificado más
-                                            adelante en el
-                                            protocolo de comunicación) del mensaje y lo
-                                            compara con el
-                                            recibido, si coinciden la caja envía un ACK
-                                            al POS dando por finalizado el comando, en
-                                            caso contrario envía un NAK, y vuelve a
-                                            esperar la respuesta del POS
-                                            </p>
-                                    </div>
-                                    <div class="w-100 p-5">
-                                        <img src="assets/img/diagramas/Mesa de trabajo 1 copia 9.svg" alt="">
-                                    </div>
-
-                                </div>
-                            </section>
+                                <span>
+                                    <h2>Transacción de Cierre</h2>
+                                </span>
+                                <p>Esta es una transacción administrativa que se debe ejecutar diariamente o como
+                                    mínimo una vez a la semana. Esta transacción es gatillada por la caja, y no
+                                    recibe parámetros, el POS ejecuta la transacción de cierre contra la caja,
+                                    enviando
+                                    como parámetro el tipo de impresión (0=Parámetros de impresión, 1=Voucher
+                                    formateado). Como respuesta a la caja se
+                                    enviará un aprobado o rechazado (ver Códigos de Respuesta), y los datos de
+                                    impresión del voucher para el caso en que
+                                    fuera aprobado</p>
+                                <span>
+                                    <h5>Excepciones:</h5>
+                                </span>
+                                <h5>Para el cierre no se solicita tarjeta supervisora.</h5>
+                            </div>
+                        </section>
                 </section>
             </section>
+            <section id="tarjeta-sim" class="container mt-32 mb-pb16 ">
+                <section class="background-card d-block last-child p-4">
+                    <div class="text-center w-100 px-40">
+                        <img src="assets/img/diagramas/Mesa de trabajo 1 copia 5.svg" alt="">
+                    </div>
+                    <span>
+                        <h4>Descripción:</h4>
+                    </span>
+                    <p>La caja envía el requerimiento y espera como respuesta ACK/NAK, en caso de que llegue un NAK,
+                        debe reintentar el envío
+                        del requerimiento 2 veces. Si recibe un ACK debe esperar la respuesta de la transacción</p>
+                    <p>El POS envía requerimiento al Autorizador, en caso de ser aprobada se ejecuta un reinicio del
+                        contador de transacciones
+                        en el autorizador y se envía respuesta a la caja. En caso de ser rechazada se envía respuesta a
+                        la caja indicando el estado
+                        de rechazo.</p>
+                    <p>La caja al recibir la respuesta envía un ACK al POS si el mensaje está correcto, o un NAK para el
+                        caso en que el LRC no
+                        corresponda.</p>
+                    <p>El POS al recibir el ACK desde la caja vuelve al inicio a esperar un nuevo comando, para el caso
+                        que recibe un NAK vuelve
+                        a enviar la respuesta 2 veces más.</p>
+                    <span>
+                        <h2>Transacción Carga de Llaves</h2>
+                    </span>
+                    <span>
+                        <h5>Transacción de Venta:</h5>
+                    </span>
+                    <p>Esta transacción permite al Aplicativo de caja del comercio requerir y cargar nuevas llaves
+                        Working Key, desde Transbank.</p>
+                    <p>Su uso debe ser limitado como prueba de comunicación IP para validar conectividad hacia el
+                        exterior.</p>
+                    <div class="text-center w-100 px-40">
+                        <img src="assets/img/diagramas/Mesa de trabajo 1 copia 6.svg" alt="">
+                    </div>
+                    <span>
+                        <h3>Descripción:</h3>
+                    </span>
+                    <p>La caja envía el requerimiento y espera como respuesta ACK/NAK, en caso de que llegue un NAK,
+                        debe reintentar el envío
+                        del requerimiento 2 veces. Si recibe un ACK debe esperar la respuesta de la transacción.</p>
+                    <p>El POS envía requerimiento al Autorizador, en caso de ser aprobada, se guarda nueva llave y se
+                        envía respuesta a la caja.</p>
+                    <p>En caso de ser rechazada se envía respuesta a la caja indicando el estado de rechazo</p>
+                    <p>La caja al recibir la respuesta envía un ACK al POS si el mensaje está correcto, o un NAK para el
+                        caso en que el LRC no
+                        corresponda.</p>
+                    <p>El POS al recibir el ACK desde la caja vuelve al inicio a esperar un nuevo comando, para el caso
+                        que recibe un NAK vuelve
+                        a enviar la respuesta 2 veces más.
+                    </p>
+                </section>
+            </section>
+            <section id="tarjeta-sim" class="container mt-32 mb-pb16 ">
+                <section class="background-card d-block last-child p-4">
+                    <span>
+                        <h2>Transacción de Inicialización.</h2>
+                    </span>
+                    <p>Esta es una transacción administrativa que se utiliza para cargar los parámetros y aplicativo en
+                        el terminal de autoservicio de Transbank. Es usada por los técnicos al realizar la instalación
+                        de los equipos en el comercio. Previo a la ejecución
+                        de esta transacción, es necesario realizar una transacción de cierre. Debido a que la
+                        transacción de Inicialización tiene
+                        un tiempo superior a una venta normal y el tiempo en que el POS queda fuera de comunicación con
+                        la caja es variable, se
+                        dividió en 2 comandos:</p>
+                    <p>Transacción de Inicialización: Indica la acción</p>
+                    <p>Respuesta de Inicialización: Utilizado para conocer el resultado de la acción.</p>
+                    <p>Posterior a la ejecución del comando de Inicialización, el módulo de auto atención del comercio
+                        enviará un comando “Polling” para saber si el POS está activo o no. Una vez que se encuentre
+                        activo (enviando como respuesta un ACK) el módulo
+                        de auto atención enviará el comando: respuesta de Inicialización donde se responderá si la
+                        acción fue exitosa o no. En
+                        caso de que la inicialización no fuera exitosa el POS podrá seguir realizando ventas sin los
+                        parámetros actualizados.</p>
+                    <div class="text-center w-100 px-40">
+                        <img src="assets/img/diagramas/Mesa de trabajo 1 copia 7.svg" alt="">
+                    </div>
+                    <span>
+                        <h3>Descripción:</h3>
+                    </span>
+                    <p>La caja envía el requerimiento y espera como respuesta ACK/NAK, en caso de que llegue un NAK,
+                        debe reintentar el envío
+                        del requerimiento 2 veces. </p>
+                    <p>El POS envía requerimiento a Transbank, y realiza el proceso de actualización. Una vez terminada
+                        la conexión con Transbank, guarda fecha y hora además guarda un parámetro indicando éxito o
+                        fracaso de la inicialización</p>
+                    <p>Posterior a la inicialización (reinicio del POS) la caja enviará un comando polling para saber si
+                        el POS se encuentra activo
+                        o no. Si el POS está disponible responde un ACK.</p>
+                    <p>La caja al recibir un ACK, envía el comando al POS solicitando la respuesta de la inicialización,
+                        requerimiento y espera
+                        como respuesta ACK/NAK, en caso de que llegue un NAK, debe reintentar el envío del requerimiento
+                        2 veces. </p>
+                    <p>Para el caso en que llegue un ACK, debe esperar la respuesta del POS indicando el resultado de la
+                        inicialización, si el cálculo el LRC está correcto envía un ACK, en caso contrario un NAK.
+                    </p>
+                    <p>El POS al recibir el ACK vuelve al inicio a esperar un nuevo comando, para el caso que recibe un
+                        NAK vuelve a enviar la
+                        respuesta 2 veces más</p>
+                </section>
+            </section>
+            <section id="tarjeta-sim" class="container mt-32 mb-pb16 ">
+                <section class="background-card d-block last-child p-4">
+                    <span>
+                        <h1>Mensajes Intermedios</h1>
+                    </span>
+                    <p>Los mensajes intermedios permiten a la caja interactuar con mensajes propios del integrador en
+                        que el dispositivo IM30
+                        entrega la oportunidad que la caja muestre sus mensajes por pantalla.</p>
+                    <div class="text-center w-100 px-40">
+                        <img src="assets/img/diagramas/Mesa de trabajo 1 copia.svg" alt="">
+                    </div>
+                    <span>
+                        <h3>Descripción:</h3>
+                    </span>
+                    <p>La caja envía el requerimiento y espera como respuesta ACK/NAK, en caso de que llegue un NAK, la
+                        caja debe reintentar
+                        el envío del requerimiento 2 veces. Si recibe un ACK debe esperar la respuesta de la
+                        transacción.</p>
+                    <p>El POS solicita los datos al usuario, y envía requerimiento al Autorizador, en caso de ser
+                        aprobada, se guarda en Batch y
+                        se envía respuesta a la caja. En caso de ser rechazada se envía respuesta a la caja indicando el
+                        estado de rechazo.</p>
+                    <p>ientras el POS solicita datos al usuario, envía mensajes indicando a la caja en que instancia de
+                        la transacción se encuentra. Estos mensajes solo se envían si la caja lo indica en comando de
+                        venta.</p>
+                    <p>La caja al recibir la respuesta envía al POS un ACK si el mensaje está correcto, o un NAK para el
+                        caso en que el LRC no
+                        corresponda.</p>
+                    <p>El POS al recibir el ACK de la caja vuelve al inicio a esperar un nuevo comando, para el caso que
+                        recibe un NAK vuelve a
+                        enviar la respuesta 2 veces más.</p>
+                </section>
+            </section>
+            <section id="tarjeta-sim" class="container mt-32 mb-pb16 ">
+                <section class="background-card d-block last-child p-4">
+                    <span>
+                        <h2>Diagramas de Secuencia de Polling</h2>
+                    </span>
+                    <p>La caja envía el requerimiento y espera como respuesta ACK, Si recibe un ACK indica que el POS
+                        está funcionando y listo
+                        para recibir un comando.</p>
+                    <div class="text-center w-100 px-40">
+                        <img src="assets/img/diagramas/Mesa de trabajo 1 copia 9.svg" alt="">
+                    </div>
+                    <span>
+                        <h3>Descripción:</h3>
+                    </span>
+                    <p>en caso de no recibir el ACK, indica existe algún tipo de problema con la comunicación entra la
+                        caja y el POS, y debe reintentar enviando el comando de POLLING al menos 3 veces.</p>
+                </section>
+            </section>
+            <section id="tarjeta-sim" class="container mt-32 mb-pb16 ">
+                <section class="background-card d-block last-child p-4">
+                    <span>
+                        <h1>Mensajes Intermedios</h1>
+                    </span>
+                    <p>Los mensajes intermedios permiten a la caja interactuar con mensajes propios del integrador en
+                        que el dispositivo IM30
+                        entrega la oportunidad que la caja muestre sus mensajes por pantalla.</p>
+                    <div class="text-center w-100 px-40">
+                        <img src="assets/img/diagramas/Mesa de trabajo 1 copia.svg" alt="">
+                    </div>
+                    <span>
+                        <h3>Descripción:</h3>
+                    </span>
+                    <p>La caja envía el requerimiento y espera como respuesta ACK/NAK, en caso de que llegue un NAK, la
+                        caja debe reintentar
+                        el envío del requerimiento 2 veces. Si recibe un ACK debe esperar la respuesta de la
+                        transacción.</p>
+                    <p>El POS solicita los datos al usuario, y envía requerimiento al Autorizador, en caso de ser
+                        aprobada, se guarda en Batch y
+                        se envía respuesta a la caja. En caso de ser rechazada se envía respuesta a la caja indicando el
+                        estado de rechazo.</p>
+                    <p>ientras el POS solicita datos al usuario, envía mensajes indicando a la caja en que instancia de
+                        la transacción se encuentra. Estos mensajes solo se envían si la caja lo indica en comando de
+                        venta.</p>
+                    <p>La caja al recibir la respuesta envía al POS un ACK si el mensaje está correcto, o un NAK para el
+                        caso en que el LRC no
+                        corresponda.</p>
+                    <p>El POS al recibir el ACK de la caja vuelve al inicio a esperar un nuevo comando, para el caso que
+                        recibe un NAK vuelve a
+                        enviar la respuesta 2 veces más.</p>
+                </section>
+            </section>
+            <section id="tarjeta-sim" class="container mt-32 mb-pb16 ">
+                <section class="background-card d-block last-child p-4">
+                    <span>
+                        <h2>Especificación de Protocolo de Comunicación</h2>
+                    </span>
+                    <p>La comunicación a través de una puerta serial RS232A o RS232B tiene velocidades que van desde los
+                        1200 Bps hasta
+                        115200 Bps (8N1). La velocidad inicial del POS es de 19200 Bps 8N1.</p>
+                    <p>La comunicación a través del puerto USB, esta con velocidad de 115200 Bps (8N1). Si cambia el
+                        tipo de comunicación de
+                        serial a USB, quedara saeteada automáticamente a la velocidad anteriormente descrita.</p>
+                    <span>
+                        <h4>ESQUEMA DE COMUNICACIÓN:</h4>
+                    </span>
+                    <div class="text-center w-100 px-40">
+                        <img src="assets/img/diagramas/Mesa de trabajo 1 copia 2.svg" alt="">
+                    </div>
+                    <span>
+                        <h3>Flujo de comunicación:</h3>
+                    </span>
+                    <p>ACK: Lo envía el POS o la caja como aviso de recepción OK (valor Hexa 0x06).</p>
+                    <p>NAK: Lo envía el POS o la caja cuando el LRC calculado no corresponde al enviado (valor Hexa
+                        0x15).</p>
+                    <p>Timeout1: Es el tiempo de espera del ACK o NAK para reintentar él envió del requerimiento por la
+                        caja y la respuesta desde el POS.</p>
+                    <p>El formato para los requerimientos y respuestas: < STX>
+                            < DATA>
+                                < ETX>
+                                    < LRC>
+                                        < LRC>
+                    </p>
+                    <p>LRC: Es un byte que se concatena luego del < FIN COMANDO>, y que se calcula realizando un XOR
+                            byte a byte del mensaje, el cual consta de: < DATA> + < FIN COMANDO>
+                    </p>
+                    <p>Ejemplo. Calcular el LRC del siguiente comando: 0200|123|< LRC></>
+                    </p>
+                </section>
+            </section>
+            <section id="tarjeta-sim" class="container mt-32 mb-pb16 ">
+                <section class="background-card d-block last-child p-4">
+                    <span>
+                        <h2>Especificación de Protocolo de Comunicación</h2>
+                    </span>
+                    <p>La comunicación a través de una puerta serial RS232A o RS232B tiene velocidades que van desde los
+                        1200 Bps hasta
+                        115200 Bps (8N1). La velocidad inicial del POS es de 19200 Bps 8N1.</p>
+                    <p>La comunicación a través del puerto USB, esta con velocidad de 115200 Bps (8N1). Si cambia el
+                        tipo de comunicación de
+                        serial a USB, quedara saeteada automáticamente a la velocidad anteriormente descrita.</p>
+                    <span>
+                        <h4>ESQUEMA DE COMUNICACIÓN:</h4>
+                    </span>
+                    <div class="text-center w-100 px-40">
+                        <img src="assets/img/diagramas/Mesa de trabajo 1 copia 2.svg" alt="">
+                    </div>
+                    <span>
+                        <h3>Flujo de comunicación:</h3>
+                    </span>
+                    <p>ACK: Lo envía el POS o la caja como aviso de recepción OK (valor Hexa 0x06).</p>
+                    plo. Calcular el LRC del siguiente comando: 0200|123|< LRC></>
+                    </p>
+                </section>
+            </section>
+            <section id="tarjeta-sim" class="container mt-32 mb-pb16 ">
+                <section class="background-card d-block last-child p-4">
+                    <p>Ejemplo. Calcular el LRC del siguiente comando: 0200|123|< LRC>
+                    </p>
+                    <p>Transforma el siguiente valor a hexadecimal “0200|123|”, este valor queda:
+                        30 32 30 30 7C 31 32 33 7C</p>
+                    <p>Se ejecuta la siguiente operación. </p>
+                    <p> ( ( ( ( ( ( ( (30 XOR 32) XOR 30) XOR 30) XOR 7C) XOR 31) XOR 32) XOR 33) XOR 7C)</p>
+                </section>
+            </section>
+            <div class="container mt-32 mb-pb16 ">
+                <div class="background-card d-block last-child p-4">
+                    <section class="p-4">
+                        <span>
+                            <h2 class="title mt-5">Comandos</h2>
+                            <span>
+                                <h5>0200 - Solicitud Transacción de Venta</h5>
+                            </span>
+                        </span>
+                        <div class="col-12 w-100">
+                            <div class=" border-table table-puertos">
+                                <table class="cont-table">
+                                    <thead class="table-head">
+                                        <tr>
+                                            <th>DATO</th>
+                                            <th>LARGO</th>
+                                            <th>COMENTARIO</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th>
+                                                < STX>
+                                            </th>
+                                            <th>1</th>
+                                            <th>Indica inicio de comando Valor Hexa 0x02</th>
+                                        </tr>
+                                        <tr>
+                                            <th>Comando</th>
+                                            <th>4</th>
+                                            <th>Comando</th>
+                                        </tr>
+                                        <tr>
+                                            <th>Separador de campo</th>
+                                            <th>1</th>
+                                            <th>Valor “|” Hexa 0x7c</th>
+                                        </tr>
+                                        <tr>
+                                            <th>Monto</th>
+                                            <th>9</th>
+                                            <th>Valor Numérico</th>
+                                        </tr>
+                                        <tr>
+                                            <th>Separador de campo</th>
+                                            <th>1</th>
+                                            <th>Valor “|” Hexa 0x7c</th>
+                                        </tr>
+                                        <tr>
+                                            <th>Número Ticket/Boleta</th>
+                                            <th>20</th>
+                                            <th>Valor alfanumérico. Se requiere enviar un
+                                                valor o en su defecto un cero “0”.</th>
+                                        </tr>
+                                        <tr>
+                                            <th>Separador de campo</th>
+                                            <th>1</th>
+                                            <th>Valor “|” Hexa 0x7c</th>
+                                        </tr>
+                                        <tr>
+                                            <th>Campo Impresión</th>
+                                            <th>1</th>
+                                            <th>Indica si entrega voucher formateado
+                                                (1=Envía Voucher, 0=No envía Voucher).</th>
+                                        </tr>
+                                        <tr>
+                                            <th>Enviar Mensajes</th>
+                                            <th>1</th>
+                                            <th>Indica si el POS debe enviar mensajes de
+                                                estatus de la transacción (1=Envía Mensajes, 0=No envía mensajes).
+                                                En caso de no ir este campo POS asume
+                                                valor “1”</th>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                < ETX>
+                                            </th>
+                                            <th>1</th>
+                                            <th>Indica Fin de comando Valor Hexa 0x03</th>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                < LRC>
+                                            </th>
+                                            <th>1</th>
+                                            <th>Byte resultado de la operación XOR del
+                                                mensaje</th>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                </div>
+                </section>
+            </div>
+            <div class="container mt-32 mb-pb16 ">
+                <div class="background-card d-block last-child p-4">
+                    <section class="p-4">
+                        <span>
+                            <h5>0210 - Respuesta Transacción de Venta</h5>
+                        </span>
+                        <div class="col-12 w-100">
+                            <div class=" border-table table-puertos">
+                                <table class="cont-table">
+                                    <thead class="table-head">
+                                        <tr>
+                                            <th>DATO</th>
+                                            <th>LARGO</th>
+                                            <th>COMENTARIO</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th>
+                                                < STX>
+                                            </th>
+                                            <th>1</th>
+                                            <th>Indica inicio de comando Valor Hexa 0x02</th>
+                                        </tr>
+                                        <tr>
+                                            <th>Comando</th>
+                                            <th>4</th>
+                                            <th>Valor 0210</th>
+                                        </tr>
+                                        <tr>
+                                            <th>Separador de campo</th>
+                                            <th>1</th>
+                                            <th>Valor “|” Hexa 0x7c</th>
+                                        </tr>
+                                        <tr>
+                                            <th>Código Respuesta</th>
+                                            <th>2</th>
+                                            <th>Valor Numérico</th>
+                                        </tr>
+                                        <tr>
+                                            <th>Separador de campo</th>
+                                            <th>1</th>
+                                            <th>Valor “|” Hexa 0x7c</th>
+                                        </tr>
+                                        <tr>
+                                            <th>Código de comercio</th>
+                                            <th>12</th>
+                                            <th>Valor Numérico</th>
+                                        </tr>
+                                        <tr>
+                                            <th>Separador de campo</th>
+                                            <th>1</th>
+                                            <th>Valor “|” Hexa 0x7c</th>
+                                        </tr>
+                                        <tr>
+                                            <th>Terminal ID</th>
+                                            <th>8</th>
+                                            <th>Valor Alfanumérico</th>
+                                        </tr>
+                                        <tr>
+                                            <th>Separador de campo</th>
+                                            <th>1</th>
+                                            <th>Valor “|” Hexa 0x7c</th>
+                                        </tr>
+                                        <tr>
+                                            <th>Número Ticket/Boleta</th>
+                                            <th>20</th>
+                                            <th>Valor alfanumérico</th>
+                                        </tr>
+                                        <tr>
+                                            <th>Separador de campo</th>
+                                            <th>1</th>
+                                            <th>Valor “|” Hexa 0x7c</th>
+                                        </tr>
+                                        <tr>
+                                            <th>Código Autorización</th>
+                                            <th>6 (maxímo)</th>
+                                            <th>Valor Alfanumérico, (Opcional)</th>
+                                        </tr>
+                                        <tr>
+                                            <th>Separador de campo</th>
+                                            <th>1</th>
+                                            <th>Valor “|” Hexa 0x7c</th>
+                                        </tr>
+                                        <tr>
+                                            <th>Monto</th>
+                                            <th>9 (Máximo)</th>
+                                            <th>Valor Numérico</th>
+                                        </tr>
+                                        <tr>
+                                            <th>Separador de campo</th>
+                                            <th>1</th>
+                                            <th>Valor “|” Hexa 0x7c</th>
+                                        </tr>
+                                        <tr>
+                                            <th>Últimos 4 Dígitos Tarjeta</th>
+                                            <th>4</th>
+                                            <th>Valor Numérico</th>
+                                        </tr>
+                                        <tr>
+                                            <th>Número Operación</th>
+                                            <th>6 (Máximo)</th>
+                                            <th>Correlativo de Transacción del Terminal</th>
+                                        </tr>
+                                        <tr>
+                                            <th>Separador de campo</th>
+                                            <th>1</th>
+                                            <th>Valor “|” Hexa 0x7c</th>
+                                        </tr>
+                                        <tr>
+                                            <th>Tipo de Tarjeta (Crédito/Debito</th>
+                                            <th>2</th>
+                                            <th>CR=Crédito
+                                                DB=Debito</th>
+                                        </tr>
+                                        <tr>
+                                            <th>Separador de campo</th>
+                                            <th>1</th>
+                                            <th>Valor “|” Hexa 0x7c</th>
+                                        </tr>
+                                        <tr>
+                                            <th>Fecha Contable</th>
+                                            <th>6</th>
+                                            <th>Valor ASCII. Se utiliza si es tarjeta Debito,
+                                                (Opcional)
+                                            </th>
+                                        </tr>
+                                        <tr>
+                                            <th>Separador de campo</th>
+                                            <th>1</th>
+                                            <th>Valor “|” Hexa 0x7c
+                                            </th>
+                                        </tr>
+                                        <tr>
+                                            <th>Número de Cuenta</th>
+                                            <th>19</th>
+                                            <th>Valor ASCII. Se utiliza si es tarjeta Debito
+                                            </th>
+                                        </tr>
+                                        <tr>
+                                            <th>Separador de campo</th>
+                                            <th>1</th>
+                                            <th>Valor “|” Hexa 0x7c
+                                            </th>
+                                        </tr>
+                                        <tr>
+                                            <th>Abreviación Tarjeta</th>
+                                            <th>2</th>
+                                            <th>Ejemplo: VI=VISA
+                                                MC=Mastercard
+                                                Etc
+                                            </th>
+                                        </tr>
+                                        <tr>
+                                            <th>Separador de campo</th>
+                                            <th>1</th>
+                                            <th>Valor “|” Hexa 0x7c</th>
+                                        </tr>
+                                        <tr>
+                                            <th>Fecha Transacción</th>
+                                            <th>8</th>
+                                            <th>Formato DDMMAAAA</th>
+                                        </tr>
+                                        <tr>
+                                            <th>Separador de campo</th>
+                                            <th>1</th>
+                                            <th>Valor “|” Hexa 0x7c</th>
+                                        </tr>
+                                        <tr>
+                                            <th>Hora Transacción</th>
+                                            <th>6</th>
+                                            <th>Formato HHMMSS</th>
+                                        </tr>
+                                        <tr>
+                                            <th>Separador de campo</th>
+                                            <th>1 (opcional)</th>
+                                            <th>Valor “|” Hexa 0x7c</th>
+                                        </tr>
+                                        <tr>
+                                            <th>Campo Impresión</th>
+                                            <th>Variable (Opcional)</th>
+                                            <th>Campo depende si la caja requiere voucher formateado</th>
+                                        </tr>
+                                        <tr>
+                                            <th>Separador de campo</th>
+                                            <th>1 (Opcional)</th>
+                                            <th>Valor “|” Hexa 0x7c</th>
+                                        </tr>
+                                        <tr>
+                                            <th>Tipo cuota</th>
+                                            <th>2 (Opcional)</th>
+                                            <th>Campo correspondiente al tipo de cuota.
+                                                Depende si comercio cuenta con el producto Cuotas contratado.
+                                                Valores:
+                                                00 = sin cuota (valor por default)
+                                                01 = cuota normal
+                                                03 = cuota contado
+                                                04 = n cuotas</th>
+                                        </tr>
+                                        <tr>
+                                            <th>Separador de campo</th>
+                                            <th>1 (Opcional)</th>
+                                            <th>Valor “|” Hexa 0x7c</th>
+                                        </tr>
+                                        <tr>
+                                            <th>Número Cuota</th>
+                                            <th>2 (Opcional)</th>
+                                            <th>Campo correspondiente al número de
+                                                cuota. Depende si comercio cuenta con el
+                                                producto Cuotas contratado.
+                                                Valores:
+                                                02 = 2 cuotas
+                                                03 = 3 cuotas
+                                                xx = xx cuotas</th>
+                                        </tr>
+                                        <tr>
+                                            <th>Número Cuota</th>
+                                            <th>2 (Opcional)</th>
+                                            <th>Campo correspondiente al número de
+                                                cuota. Depende si comercio cuenta con el
+                                                producto Cuotas contratado.
+                                                Valores:
+                                                02 = 2 cuotas
+                                                03 = 3 cuotas
+                                                xx = xx cuotas</th>
+                                        </tr>
+                                        <tr>
+                                            <th>Separador de campo</th>
+                                            <th>1 (Opcional)</th>
+                                            <th>Valor “|” Hexa 0x7c</th>
+                                        </tr>
+                                        <tr>
+                                            <th>Monto cuota</th>
+                                            <th>12 (máximo) opcional</th>
+                                            <th>Campo correspondiente al monto de
+                                                cuota. Depende si comercio cuenta con el
+                                                producto Cuotas contratado.</th>
+                                        </tr>
+                                        <tr>
+                                            <th>Separador de campo</th>
+                                            <th>1 (opcional) </th>
+                                            <th>Valor “|” Hexa 0x7c</th>
+                                        </tr>
+                                        <tr>
+                                            <th>Glosa tipo cuota</th>
+                                            <th>30 (máximo)</th>
+                                            <th>Valor “|” Hexa 0x7c</th>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                < ETX>
+                                            </th>
+                                            <th>1</th>
+                                            <th>Indica Fin de comando Valor Hexa 0x03</th>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                < LRC>
+                                            </th>
+                                            <th>1</th>
+                                            <th>Byte resultado de la operación XOR del
+                                                mensaje</th>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                </div>
+                </section>
+            </div>
+            <section id="tarjeta-sim" class="container mt-32 mb-pb16 ">
+                <section class="background-card d-block last-child p-4">
+                    <span>
+                        <h2>Ejemplos:</h2>
+                    </span>
+                    <p>Venta con Cuotas</p>
+                    <span>
+                        <h3>Requerimiento: </h3>
+                    </span>
+                    <p>
+                        < STX>0200|10000|123456|1|0< ETX>
+                                < LRC>
+                    </p>
+                    <span>
+                        <h3>Respuesta:</h3>
+                    </span>
+                    <p>
+                        < STX>0210|00|597033311777|V1700005||395561|000010000|1679|000054|CR|||VI|2610
+                            2018|145117| COMPROBANTE DE VENTA CON PIN PAGO EN CUOTAS
+                            TARJETA DE CREDITO Pruebas IM30 Desa Huerfanos 770 Piso 8
+                            Santiago 597033311777-P20.1A1 FECHA HORA TERMINAL26/10/18
+                            14:51:17 V1700005 NUMERO DE TARJETA B-VI************1679
+                            TOTAL: $ 10.000NUMERO DE CUOTAS: 02TIPO DE CUOTAS: CUOTAS
+                            SIN INTERESVALOR CUOTA 1: $ 5.000VALOR CUOTA 2: $ 5.000NUMERO DE
+                            BOLETA: NUMERO DE OPERACION: 000054CODIGO DE AUTORIZACION:
+                            395561 GRACIAS POR SU COMPRA ACEPTO PAGAR SEGÚN
+                            CONTRATO CON EMISOR |01|03|5000|CUOTAS SIN INTERES< ETX>
+                                < LRC>
+                    </p>
 
+                </section>
+            </section>
+            <section id="tarjeta-sim" class="container mt-32 mb-pb16 ">
+                <section class="background-card d-block last-child p-4">
+                    <span>
+                        <h2>Ejemplos:</h2>
+                    </span>
+                    <p>Venta con Cuotas</p>
+                    <span>
+                        <h3>Requerimiento: </h3>
+                    </span>
+                    <p>
+                        < STX>0200|10000|123456|1|0< ETX>
+                                < LRC>
+                    </p>
+                    <span>
+                        <h3>Respuesta:</h3>
+                    </span>
+                    <p>
+                        < STX>0210|00|597033311777|V1700005||395561|000010000|1679|000054|CR|||VI|2610
+                            2018|145117| COMPROBANTE DE VENTA CON PIN PAGO EN CUOTAS
+                            TARJETA DE CREDITO Pruebas IM30 Desa Huerfanos 770 Piso 8
+                            Santiago 597033311777-P20.1A1 FECHA HORA TERMINAL26/10/18
+                            14:51:17 V1700005 NUMERO DE TARJETA B-VI************1679
+                            TOTAL: $ 10.000NUMERO DE CUOTAS: 02TIPO DE CUOTAS: CUOTAS
+                            SIN INTERESVALOR CUOTA 1: $ 5.000VALOR CUOTA 2: $ 5.000NUMERO DE
+                            BOLETA: NUMERO DE OPERACION: 000054CODIGO DE AUTORIZACION:
+                            395561 GRACIAS POR SU COMPRA ACEPTO PAGAR SEGÚN
+                            CONTRATO CON EMISOR |01|03|5000|CUOTAS SIN INTERES< ETX>
+                                < LRC>
+                    </p>
+                    <p>Venta sin Cuotas</p>
+                    <span>
+                        <h4>Requerimiento: </h4>
+                    </span>
+                    <p>
+                        < STX>0200|2500|123456|1|0< ETX>
+                                < LRC>
+                    </p>
+                    <p> <span>Respuesta: </span>
+                        < STX>0210|00|597033311777|V1700005|123456|718190|000002500|1679|000057|CR|||V
+                            I|26102018|160635| COMPROBANTE DE VENTA CON PIN TARJETA DE CREDITO
+                            Pruebas IM30 Desa Huerfanos 770 Piso 8 Santiago
+                            597033311777-P20.1A1 FECHA HORA TERMINAL26/10/18 16:06:35
+                            V1700005 NUMERO DE TARJETA B-VI************1679
+                            TOTAL: $ 2.500NUMERO DE BOLETA: 123456NUMERO DE OPERACION:
+                            000057CODIGO DE AUTORIZACION: 718190 GRACIAS POR SU
+                            COMPRA ACEPTO PAGAR SEGUN CONTRATO CON EMISOR< ETX>
+                                < LRC>
+                    </p>
+                </section>
+            </section>
+            <section id="tarjeta-sim" class="container mt-32 mb-pb16 ">
+                <section class="background-card d-block last-child p-4">
+                    <span>
+                        <h2>Multicódigo</h2>
+                    </span>
+
+                    <h5><span>0270 - Solicitud de venta </span>Habilitar previamente la función de Multicódigo (Previa
+                        gestión con Transbank para la habilitación de los productos)</h5>
+
+                    <div class="container mt-32 mb-pb16 ">
+                        <div class="background-card d-block last-child p-4">
+                            <section class="p-4">
+                                <span>
+                                    <h5>0210 - Respuesta Transacción de Venta</h5>
+                                </span>
+                                <div class="col-12 w-100">
+                                    <div class=" border-table table-puertos">
+                                        <table class="cont-table">
+                                            <thead class="table-head">
+                                                <tr>
+                                                    <th>DATO</th>
+                                                    <th>LARGO</th>
+                                                    <th>COMENTARIO</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th>
+                                                        < STX>
+                                                    </th>
+                                                    <th>1</th>
+                                                    <th>Indica inicio de comando Valor Hexa 0x02</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>Comando</th>
+                                                    <th>4</th>
+                                                    <th>Valor 0270</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>Monto</th>
+                                                    <th>9</th>
+                                                    <th>Valor Numérico</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>Separador de campo</th>
+                                                    <th>1</th>
+                                                    <th>Valor “|” Hexa 0x7c</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>Número Ticket/Boleta</th>
+                                                    <th>20</th>
+                                                    <th>Valor alfanumérico.</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>Separador de campo</th>
+                                                    <th>1</th>
+                                                    <th>Valor “|” Hexa 0x7c</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>Campo Impresión</th>
+                                                    <th>1</th>
+                                                    <th>Indica si entrega voucher formateado 
+                                                        (1=Envía Voucher, 0=No envía Voucher).</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>Separador de campo</th>
+                                                    <th>1</th>
+                                                    <th>Valor “|” Hexa 0x7c</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>Enviar Mensajes</th>
+                                                    <th>1</th>
+                                                    <th>ndica si el POS debe enviar mensajes de 
+                                                        estatus de la transacción (1=Envía Mensajes, 0=No envía mensajes). 
+                                                        En caso de no ir este campo POS asume 
+                                                        valor “1”</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>ndica si el POS debe enviar mensajes de 
+                                                        estatus de la transacción (1=Envía Mensajes, 0=No envía mensajes). 
+                                                        En caso de no ir este campo POS asume 
+                                                        valor “1”</th>
+                                                    <th>1</th>
+                                                    <th>Indica si el POS debe enviar mensajes de 
+                                                        estatus de la transacción (1=Envía Mensajes, 0=No envía mensajes). 
+                                                        En caso de no ir este campo POS asume 
+                                                        valor “1”</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>Separador de campo</th>
+                                                    <th>1</th>
+                                                    <th>Valor “|” Hexa 0x7c</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>Comercio Prestador</th>
+                                                    <th>12</th>
+                                                    <th>Valor que indica el código de comercio del 
+                                                        prestador</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>< ETX ></th>
+                                                    <th>1</th>
+                                                    <th>Indica Fin de comando Valor Hexa 0x03</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>< LRC></th>
+                                                    <th>1</th>
+                                                    <th>Byte resultado de la operación XOR del 
+                                                        mensaje</th>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                        </div>
+                </section>
+            </section>
         </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
         <script src="assets/js/nav.js"></script>

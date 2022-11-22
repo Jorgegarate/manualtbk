@@ -23,26 +23,28 @@
 }
 
 .main {
-@media(min-width: 992px){
-  transition: .4s;
-  &.active {
-    margin-left: 11%;
-    
-    transition: .45s;
-  }
+  @media(min-width: 992px) {
+    transition: .4s;
+
+    &.active {
+      margin-left: 11%;
+
+      transition: .45s;
+    }
   }
 }
 
 .nav-fixed {
   position: sticky;
 }
+
 @media (min-width:992px) {
   .nav-fixed {
-    top:0;
+    top: 0;
   }
 
-  
- }
+
+}
 
 
 .menu-btn {
