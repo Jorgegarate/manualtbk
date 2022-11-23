@@ -2356,7 +2356,7 @@
                                                 <tr>
                                                     <th>Campo Impresión</th>
                                                     <th>1</th>
-                                                    <th>Indica si entrega voucher formateado 
+                                                    <th>Indica si entrega voucher formateado
                                                         (1=Envía Voucher, 0=No envía Voucher).</th>
                                                 </tr>
                                                 <tr>
@@ -2367,20 +2367,23 @@
                                                 <tr>
                                                     <th>Enviar Mensajes</th>
                                                     <th>1</th>
-                                                    <th>ndica si el POS debe enviar mensajes de 
-                                                        estatus de la transacción (1=Envía Mensajes, 0=No envía mensajes). 
-                                                        En caso de no ir este campo POS asume 
+                                                    <th>ndica si el POS debe enviar mensajes de
+                                                        estatus de la transacción (1=Envía Mensajes, 0=No envía
+                                                        mensajes).
+                                                        En caso de no ir este campo POS asume
                                                         valor “1”</th>
                                                 </tr>
                                                 <tr>
-                                                    <th>ndica si el POS debe enviar mensajes de 
-                                                        estatus de la transacción (1=Envía Mensajes, 0=No envía mensajes). 
-                                                        En caso de no ir este campo POS asume 
+                                                    <th>ndica si el POS debe enviar mensajes de
+                                                        estatus de la transacción (1=Envía Mensajes, 0=No envía
+                                                        mensajes).
+                                                        En caso de no ir este campo POS asume
                                                         valor “1”</th>
                                                     <th>1</th>
-                                                    <th>Indica si el POS debe enviar mensajes de 
-                                                        estatus de la transacción (1=Envía Mensajes, 0=No envía mensajes). 
-                                                        En caso de no ir este campo POS asume 
+                                                    <th>Indica si el POS debe enviar mensajes de
+                                                        estatus de la transacción (1=Envía Mensajes, 0=No envía
+                                                        mensajes).
+                                                        En caso de no ir este campo POS asume
                                                         valor “1”</th>
                                                 </tr>
                                                 <tr>
@@ -2391,25 +2394,1723 @@
                                                 <tr>
                                                     <th>Comercio Prestador</th>
                                                     <th>12</th>
-                                                    <th>Valor que indica el código de comercio del 
+                                                    <th>Valor que indica el código de comercio del
                                                         prestador</th>
                                                 </tr>
                                                 <tr>
-                                                    <th>< ETX ></th>
+                                                    <th>
+                                                        < ETX>
+                                                    </th>
                                                     <th>1</th>
                                                     <th>Indica Fin de comando Valor Hexa 0x03</th>
                                                 </tr>
                                                 <tr>
-                                                    <th>< LRC></th>
+                                                    <th>
+                                                        < LRC>
+                                                    </th>
                                                     <th>1</th>
-                                                    <th>Byte resultado de la operación XOR del 
+                                                    <th>Byte resultado de la operación XOR del
                                                         mensaje</th>
                                                 </tr>
                                             </tbody>
                                         </table>
                                     </div>
                                 </div>
+                                <p><span>requerimientos:</span>
+                                    < STX>0270|25000|123456|1|0|597001600402< ETX>
+                                            < LRC>
+                                </p>
                         </div>
+                </section>
+            </section>
+            <div class="container mt-32 mb-pb16 ">
+                <div class="background-card d-block last-child p-4">
+                    <section class="p-4">
+                        <span>
+                            <h4>0271 - Respuesta Solicitud de venta</h4>
+                        </span>
+                        <div class="col-12 w-100">
+                            <div class=" border-table table-puertos">
+                                <table class="cont-table">
+                                    <thead class="table-head">
+                                        <tr>
+                                            <th>DATO</th>
+                                            <th>LARGO</th>
+                                            <th>COMENTARIO</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th>
+                                                < STX>
+                                            </th>
+                                            <th>1</th>
+                                            <th>Indica inicio de comando Valor Hexa 0x02</th>
+                                        </tr>
+                                        <!--campo 1-->
+                                        <tr>
+                                            <th>Comando</th>
+                                            <th>4</th>
+                                            <th>Valor 0271</th>
+                                        </tr>
+                                        <tr>
+                                            <th>Separador de campo</th>
+                                            <th>1</th>
+                                            <th>Valor “|” Hexa 0x7c</th>
+                                        </tr>
+                                        <tr>
+                                            <th>Código Respuesta</th>
+                                            <th>2</th>
+                                            <th>Valor Numérico</th>
+                                        </tr>
+                                        <tr>
+                                            <th>Separador de campo</th>
+                                            <th>1</th>
+                                            <th>Valor “|” Hexa 0x7c</th>
+                                        </tr>
+                                        <tr>
+                                            <th>Código de comercio</th>
+                                            <th>12</th>
+                                            <th>Valor Numérico</th>
+                                        </tr>
+                                        <tr>
+                                            <th>Separador de campo</th>
+                                            <th>1</th>
+                                            <th>Valor “|” Hexa 0x7c</th>
+                                        </tr>
+                                        <tr>
+                                            <th>Terminal ID</th>
+                                            <th>8</th>
+                                            <th>Valor Alfanumérico</th>
+                                        </tr>
+                                        <tr>
+                                            <th>Separador de campo</th>
+                                            <th>1</th>
+                                            <th>Valor “|” Hexa 0x7c</th>
+                                        </tr>
+                                        <tr>
+                                            <th>Número Ticket/Boleta</th>
+                                            <th>20</th>
+                                            <th>Valor alfanumérico</th>
+                                        </tr>
+                                        <tr>
+                                            <th>Separador de campo</th>
+                                            <th>1</th>
+                                            <th>Valor “|” Hexa 0x7c</th>
+                                        </tr>
+                                        <tr>
+                                            <th>Monto</th>
+                                            <th>9 (maxímo)</th>
+                                            <th>Valor Numérico</th>
+                                        </tr>
+                                        <tr>
+                                            <th>Separador de campo</th>
+                                            <th>1</th>
+                                            <th>Valor “|” Hexa 0x7c</th>
+                                        </tr>
+                                        <tr>
+                                            <th>Últimos 4 Dígitos Tarjeta</th>
+                                            <th>4</th>
+                                            <th>Valor Numérico</th>
+                                        </tr>
+                                        <tr>
+                                            <th>Separador de campo</th>
+                                            <th>1</th>
+                                            <th>Valor “|” Hexa 0x7c</th>
+                                        </tr>
+                                        <tr>
+                                            <th>Últimos 4 Dígitos Tarjeta</th>
+                                            <th>4</th>
+                                            <th>Valor Numérico</th>
+                                        </tr>
+                                        <tr>
+                                            <th>Separador de campo</th>
+                                            <th>1</th>
+                                            <th>Valor “|” Hexa 0x7c</th>
+                                        </tr>
+                                        <tr>
+                                            <th>Número Operación</th>
+                                            <th>6 (Máximo)</th>
+                                            <th>Correlativo de Transacción del Terminal</th>
+                                        </tr>
+                                        <tr>
+                                            <th>Separador de campo</th>
+                                            <th>1</th>
+                                            <th>Valor “|” Hexa 0x7c</th>
+                                        </tr>
+                                        <tr>
+                                            <th>Tipo de Tarjeta (Crédito/Debito)</th>
+                                            <th>2</th>
+                                            <th>CR=Crédito
+                                                DB=Debito</th>
+                                        </tr>
+                                        <tr>
+                                            <th>Separador de campo</th>
+                                            <th>1</th>
+                                            <th>Valor “|” Hexa 0x7c
+                                            </th>
+                                        </tr>
+                                        <tr>
+                                            <th>Fecha Contable</th>
+                                            <th>6</th>
+                                            <th>Valor ASCII. Se utiliza si es tarjeta Debito,
+                                                (Opcional)
+                                            </th>
+                                        </tr>
+                                        <tr>
+                                            <th>Separador de campo</th>
+                                            <th>1</th>
+                                            <th>Valor “|” Hexa 0x7c
+                                            </th>
+                                        </tr>
+                                        <tr>
+                                            <th>Número de Cuenta</th>
+                                            <th>19</th>
+                                            <th>Valor ASCII. Se utiliza si es tarjeta Debito
+                                            </th>
+                                        </tr>
+                                        <tr>
+                                            <th>Separador de campo</th>
+                                            <th>1</th>
+                                            <th>Valor “|” Hexa 0x7c</th>
+                                        </tr>
+                                        <tr>
+                                            <th>Abreviación Tarjeta</th>
+                                            <th>2</th>
+                                            <th>Ver Tabla de Abreviación de Tarjetas
+                                            </th>
+                                        </tr>
+                                        <tr>
+                                            <th>Separador de campo</th>
+                                            <th>1</th>
+                                            <th>Valor “|” Hexa 0x7c</th>
+                                        </tr>
+                                        <tr>
+                                            <th>Fecha Transacción</th>
+                                            <th>8</th>
+                                            <th>Formato DDMMAAAA</th>
+                                        </tr>
+                                        <tr>
+                                            <th>Separador de campo</th>
+                                            <th>1 (opcional)</th>
+                                            <th>Valor “|” Hexa 0x7c</th>
+                                        </tr>
+                                        <tr>
+                                            <th>Hora Transacción</th>
+                                            <th>6</th>
+                                            <th>Formato HHMMSS</th>
+                                        </tr>
+                                        <tr>
+                                            <th>Separador de campo</th>
+                                            <th>1 (opcional)</th>
+                                            <th>Valor “|” Hexa 0x7c</th>
+                                        </tr>
+                                        <tr>
+                                            <th>Comercio Prestador</th>
+                                            <th>12</th>
+                                            <th>Valor que indica el código de comercio del
+                                                prestador.</th>
+                                        </tr>
+                                        <tr>
+                                            <th>Separador de campo</th>
+                                            <th>1 (Opcional)</th>
+                                            <th>Valor “|” Hexa 0x7c</th>
+                                        </tr>
+                                        <tr>
+                                            <th>Campo Impresión</th>
+                                            <th>Variable (Opcional)</th>
+                                            <th>Campo depende si la caja requiere voucher formateado</th>
+                                        </tr>
+                                        <tr>
+                                            <th>Separador de campo</th>
+                                            <th>1 (Opcional)</th>
+                                            <th>Valor “|” Hexa 0x7c</th>
+                                        </tr>
+                                        <tr>
+                                            <th>Tipo cuota</th>
+                                            <th>2 (Opcional)</th>
+                                            <th>Campo correspondiente al número de
+                                                cuota. Depende si comercio cuenta con el
+                                                producto Cuotas contratado.
+                                                Valores:
+                                                02 = 2 cuotas
+                                                03 = 3 cuotas
+                                                xx = xx cuotas</th>
+                                        </tr>
+                                        <tr>
+                                            <th>Separador de campo</th>
+                                            <th>1 (Opcional)</th>
+                                            <th>Valor “|” Hexa 0x7c</th>
+                                        </tr>
+                                        <tr>
+                                            <th>Número Cuota</th>
+                                            <th>2 (Opcional)</th>
+                                            <th>Campo correspondiente al número de
+                                                cuota. Depende si comercio cuenta con el
+                                                producto Cuotas contratado.
+                                                Valores:
+                                                02 = 2 cuotas
+                                                03 = 3 cuotas
+                                                xx = xx cuotas</th>
+                                        </tr>
+                                        <tr>
+                                            <th>Separador de campo</th>
+                                            <th>1 (Opcional)</th>
+                                            <th>Valor “|” Hexa 0x7c</th>
+                                        </tr>
+                                        <tr>
+                                            <th>Monto cuota</th>
+                                            <th>12 (máximo) opcional</th>
+                                            <th>Campo correspondiente al monto de
+                                                cuota. Depende si comercio cuenta con el
+                                                producto Cuotas contratado.</th>
+                                        </tr>
+                                        <tr>
+                                            <th>Separador de campo</th>
+                                            <th>1 (opcional) </th>
+                                            <th>Valor “|” Hexa 0x7c</th>
+                                        </tr>
+                                        <tr>
+                                            <th>Glosa tipo cuota</th>
+                                            <th>30 (máximo)</th>
+                                            <th>Campo correspondiente a la glosa del tipo
+                                                de cuota. Depende si comercio cuenta con
+                                                el producto Cuotas contratado.</th>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                < ETX>
+                                            </th>
+                                            <th>1</th>
+                                            <th>Indica Fin de comando Valor Hexa 0x03</th>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                < LRC>
+                                            </th>
+                                            <th>1</th>
+                                            <th>Byte resultado de la operación XOR del
+                                                mensaje</th>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                </div>
+                </section>
+            </div>
+            <section id="tarjeta-sim" class="container mt-32 mb-pb16 ">
+                <section class="background-card d-block last-child p-4">
+                    <p><span>Respuesta:</span>
+                        < STX>0271|00|597001600402|ANDRO107|123456|831679|000026001|2383|000039|CR|||AX|25112020|145
+                            014|597001600403|**************************************** AVISO DE PREMIO
+                            **************************************** PRUEBA TITULO LAGO
+                            597001600403 25/11/2020 PEL3DTHMONTO
+                            FELICITACIONES USTED SE HA GANADO XYX
+                            H2H PEL 3 - PREMIO COMIENZA Y TERMINA CON - PEL 3 H2H XYX
+                            EQUIVALENTES A : 1500 CODIGO DEL PREMIO 831679-00014340
+                            ESTE VALOR SERA ABONADO EN SU ESTADO DE CUENTA SIGUIENTE O SUBSIGUIENTE
+                            COMPROBANTE DE VENTA PAGO EN CUOTAS TARJETA DE CREDITO PRUEBA
+                            TITULO LARGO Multicomercio Paraiso Springfield 597001600402-P20.
+                            1V1 597001600403 FECHA HORA TERMINAL25/11/20 14:50:14 ANDRO107
+                            NUMERO DE TARJETA C-AX***********2383 AMEX A000000025010402TOTAL:
+                            $ 26.001NUMERO DE CUOTAS : 06TIPO DE CUOTAS : CUOTAS SIN INTERESMONTO CUOTA :
+                            $ 4.336TASA INTERES : 0,00%NUMERO DE BOLETA: 123456NUMERO DE OPERACION:
+                            000039CODIGO DE AUTORIZACION: 831679 GRACIAS POR SU COMPRA
+                            ACEPTO PAGAR SEGUN CONTRATO CON EMISOR TRANSACCION PREMIADA
+                            CODIGO DEL PREMIO :00014340 |04|06|4336|CUOTAS SIN INTERES< ETX>
+                                < L </p>
+
+                                    <div class="container mt-32 mb-pb16 ">
+                                        <div class="background-card d-block last-child p-4">
+                                            <section class="p-4">
+                                                <span>
+                                                    <h5>0900 - Solicitud Mensajes Intermedios desde el POS para una
+                                                        venta:</h5>
+                                                </span>
+                                                <div class="col-12 w-100">
+                                                    <div class=" border-table table-puertos">
+                                                        <table class="cont-table">
+                                                            <thead class="table-head">
+                                                                <tr>
+                                                                    <th>DATO</th>
+                                                                    <th>LARGO</th>
+                                                                    <th>COMENTARIO</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <th>
+                                                                        < STX>
+                                                                    </th>
+                                                                    <th>1</th>
+                                                                    <th>Indica inicio de comando Valor Hexa 0x02</th>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th>Comando</th>
+                                                                    <th>4</th>
+                                                                    <th>Valor 0900</th>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th>Separador de campo</th>
+                                                                    <th>1</th>
+                                                                    <th>Valor “|” Hexa 0x7c</th>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th>Código Respuesta</th>
+                                                                    <th>2</th>
+                                                                    <th>Valor Numérico (Ver Tabla 1)</th>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th>
+                                                                        < ETX>
+                                                                    </th>
+                                                                    <th>1</th>
+                                                                    <th>Indica Fin de comando Valor Hexa 0x03</th>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th>
+                                                                        < LRC>
+                                                                    </th>
+                                                                    <th>20</th>
+                                                                    <th>Byte resultado de la operación XOR del
+                                                                        mensaje</th>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </section>
+                                            <p><span>Nota:</span>Este comando es enviado desde el POS hacia la caja,
+                                                siempre y cuando el parámetro en comando Venta lo indique.
+                                                El POS no espera una respuesta desde la caja, por lo tanto, no tiene
+                                                reintentos de envío para este comando.</p>
+                                            <p><span>Respuesta:</span>
+                                                < STX>0900|80< ETX>
+                                                        < LRC>
+                                            </p>
+                                        </div>
+                                    </div>
+                </section>
+            </section>
+            <section id="tarjeta-sim" class="container mt-32 mb-pb16 ">
+                <section class="background-card d-block last-child p-4">
+                    <div class="container mt-32 mb-pb16 ">
+                        <div class="background-card d-block last-child p-4">
+                            <section class="p-4">
+                                <span>
+                                    <h5>0500 - Solicitud Cierre</h5>
+                                </span>
+                                <div class="col-12 w-100">
+                                    <div class=" border-table table-puertos">
+                                        <table class="cont-table">
+                                            <thead class="table-head">
+                                                <tr>
+                                                    <th>DATO</th>
+                                                    <th>LARGO</th>
+                                                    <th>COMENTARIO</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th>
+                                                        < STX>
+                                                    </th>
+                                                    <th>1</th>
+                                                    <th>Indica inicio de comando Valor Hexa 0x02</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>Comando</th>
+                                                    <th>4</th>
+                                                    <th>Valor 0500</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>Separador de campo</th>
+                                                    <th>1</th>
+                                                    <th>Valor “|” Hexa 0x7c</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>Campo Impresión</th>
+                                                    <th>1</th>
+                                                    <th>Indica si entrega voucher formateado</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>
+                                                        < ETX>
+                                                    </th>
+                                                    <th>1</th>
+                                                    <th>Indica Fin de comando Valor Hexa 0x03</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>
+                                                        < LRC>
+                                                    </th>
+                                                    <th>1</th>
+                                                    <th>Byte resultado de la operación XOR del
+                                                        mensaje</th>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="p-4">
+                                <span>
+                                    <h5>0510 - Respuesta Cierre</h5>
+                                </span>
+                                <div class="col-12 w-100">
+                                    <div class=" border-table table-puertos">
+                                        <table class="cont-table">
+                                            <thead class="table-head">
+                                                <tr>
+                                                    <th>DATO</th>
+                                                    <th>LARGO</th>
+                                                    <th>COMENTARIO</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th>
+                                                        < STX>
+                                                    </th>
+                                                    <th>1</th>
+                                                    <th>Indica inicio de comando Valor Hexa 0x02</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>Comando</th>
+                                                    <th>4</th>
+                                                    <th>Valor 0510</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>Separador de campo</th>
+                                                    <th>1</th>
+                                                    <th>Valor “|” Hexa 0x7c</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>Código Respuesta</th>
+                                                    <th>2</th>
+                                                    <th>Valor Numérico</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>Separador de campo</th>
+                                                    <th>1</th>
+                                                    <th>Valor “|” Hexa 0x7c</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>Código de comercio</th>
+                                                    <th>12</th>
+                                                    <th>Valor Numérico</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>Separador de campo</th>
+                                                    <th>1</th>
+                                                    <th>Valor “|” Hexa 0x7c</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>Terminal ID</th>
+                                                    <th>8</th>
+                                                    <th>Valor Alfanumérico</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>Separador de campo</th>
+                                                    <th>1 (opional)</th>
+                                                    <th>Valor “|” Hexa 0x7c</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>Campo Impresión</th>
+                                                    <th>Variable (opional)</th>
+                                                    <th>Campo depende si la caja requiere voucher formateado</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>
+                                                        < ETX>
+                                                    </th>
+                                                    <th>1</th>
+                                                    <th>Indica Fin de comando Valor Hexa 0x03</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>
+                                                        < LRC>
+                                                    </th>
+                                                    <th>1</th>
+                                                    <th>Byte resultado de la operación XOR del
+                                                        mensaje</th>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                            </section>
+                            <p><span>Ejemplo:</span></p>
+                            <p><span>Requerimiento:</span></p>
+                            <p>
+                                < STX>0800< ETX>
+                                        < LRC>
+                            </p>
+                            <p><span>Respuesta:</span>
+                                < STX>0810|00|597029414300|70000537< ETX>
+                                        < LRC>
+                            </p>
+                        </div>
+                    </div>
+                </section>
+            </section>
+
+            <section id="tarjeta-sim" class="container mt-32 mb-pb16 ">
+                <section class="background-card d-block last-child p-4">
+                    <div class="container mt-32 mb-pb16 ">
+                        <div class="background-card d-block last-child p-4">
+                            <section class="p-4">
+                                <span>
+                                    <h5>0800 - Solicitud Carga de Llaves</h5>
+                                </span>
+                                <div class="col-12 w-100">
+                                    <div class=" border-table table-puertos">
+                                        <table class="cont-table">
+                                            <thead class="table-head">
+                                                <tr>
+                                                    <th>DATO</th>
+                                                    <th>LARGO</th>
+                                                    <th>COMENTARIO</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th>
+                                                        < STX>
+                                                    </th>
+                                                    <th>1</th>
+                                                    <th>Indica inicio de comando Valor Hexa 0x02</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>Comando</th>
+                                                    <th>4</th>
+                                                    <th>Valor 0800</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>
+                                                        < ETX>
+                                                    </th>
+                                                    <th>1</th>
+                                                    <th>Indica Fin de comando Valor Hexa 0x03</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>
+                                                        < LRC>
+                                                    </th>
+                                                    <th>1</th>
+                                                    <th>Byte resultado de la operación XOR del
+                                                        mensaje</th>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="p-4">
+                                <span>
+                                    <h5>0810 - Respuesta Carga de Llaves</h5>
+                                </span>
+                                <div class="col-12 w-100">
+                                    <div class=" border-table table-puertos">
+                                        <table class="cont-table">
+                                            <thead class="table-head">
+                                                <tr>
+                                                    <th>DATO</th>
+                                                    <th>LARGO</th>
+                                                    <th>COMENTARIO</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th>
+                                                        < STX>
+                                                    </th>
+                                                    <th>1</th>
+                                                    <th>Indica inicio de comando Valor Hexa 0x02</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>
+                                                        Comando
+                                                    </th>
+                                                    <th>4</th>
+                                                    <th>Valor 0810</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>
+                                                        Separador de campo
+                                                    </th>
+                                                    <th>1</th>
+                                                    <th>Valor “|” Hexa 0x7c</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>
+                                                        Código Respuesta
+                                                    </th>
+                                                    <th>2</th>
+                                                    <th>Valor Numérico</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>
+                                                        Separador de campo
+                                                    </th>
+                                                    <th>1</th>
+                                                    <th>Valor “|” Hexa 0x7c</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>
+                                                        Código de comercio
+                                                    </th>
+                                                    <th>12</th>
+                                                    <th>Valor Numérico</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>
+                                                        Separador de campo
+                                                    </th>
+                                                    <th>1</th>
+                                                    <th>Valor “|” Hexa 0x7c</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>
+                                                        Terminal ID
+                                                    </th>
+                                                    <th>8</th>
+                                                    <th>Valor Alfanumérico</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>
+                                                        < ETX>
+                                                    </th>
+                                                    <th>1</th>
+                                                    <th>Indica Fin de comando Valor Hexa 0x03</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>
+                                                        < LRC>
+                                                    </th>
+                                                    <th>1</th>
+                                                    <th>Byte resultado de la operación XOR del
+                                                        mensaje</th>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                            </section>
+                            <p><span>Ejemplo:</span></p>
+                            <p><span>Requerimiento:</span></p>
+                            <p>
+                                < STX>0800< ETX>
+                                        < LRC>
+                            </p>
+                            <p><span>Respuesta:</span></p>
+                            <p>
+                                <STX>0810|00|597029414300|70000537<ETX>
+                                        <LRC>
+                            </p>
+                        </div>
+                    </div>
+                </section>
+            </section>
+
+            <section id="tarjeta-sim" class="container mt-32 mb-pb16 ">
+                <section class="background-card d-block last-child p-4">
+                    <div class="container mt-32 mb-pb16 ">
+                        <div class="background-card d-block last-child p-4">
+                            <section class="p-4">
+                                <span>
+                                    <h5>0100 - Solicitud Polling</h5>
+                                </span>
+                                <div class="col-12 w-100">
+                                    <div class=" border-table table-puertos">
+                                        <table class="cont-table">
+                                            <thead class="table-head">
+                                                <tr>
+                                                    <th>DATO</th>
+                                                    <th>LARGO</th>
+                                                    <th>COMENTARIO</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th>
+                                                        < STX>
+                                                    </th>
+                                                    <th>1</th>
+                                                    <th>Indica inicio de comando Valor Hexa 0x02</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>Comando</th>
+                                                    <th>4</th>
+                                                    <th>Valor 0100</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>Separador de campo</th>
+                                                    <th>1</th>
+                                                    <th>Valor “|” Hexa 0x7c</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>Campo Impresión</th>
+                                                    <th>1</th>
+                                                    <th>Indica si entrega voucher formateado</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>
+                                                        < ETX>
+                                                    </th>
+                                                    <th>1</th>
+                                                    <th>Indica Fin de comando Valor Hexa 0x03</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>
+                                                        < LRC>
+                                                    </th>
+                                                    <th>1</th>
+                                                    <th>Byte resultado de la operación XOR del
+                                                        mensaje</th>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="p-4">
+                                <span>
+                                    <h5>Respuesta Polling</h5>
+                                </span>
+                                <div class="col-12 w-100">
+                                    <div class=" border-table table-puertos">
+                                        <table class="cont-table">
+                                            <thead class="table-head">
+                                                <tr>
+                                                    <th>DATO</th>
+                                                    <th>LARGO</th>
+                                                    <th>COMENTARIO</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <th>
+                                                    < ACK>
+                                                </th>
+                                                <th>1</th>
+                                                <th>Comando recibido OK Valor Hexa 0x06</th>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </section>
+                            <p><span>Ejemplo:</span></p>
+                            <p><span>Requerimiento:</span></p>
+                            <p>
+                                < STX>0100< ETX>
+                                        < LRC>
+                            </p>
+                            <p><span>Respuesta:</span>
+                                < ACK>
+                            </p>
+                        </div>
+                    </div>
+                </section>
+            </section>
+            <section id="tarjeta-sim" class="container mt-32 mb-pb16 ">
+                <section class="background-card d-block last-child p-4">
+                    <div class="container mt-32 mb-pb16 ">
+                        <div class="background-card d-block last-child p-4">
+                            <section class="p-4">
+                                <span>
+                                    <h5>0070 - Solicitud Ejecutar Inicialización</h5>
+                                </span>
+                                <div class="col-12 w-100">
+                                    <div class=" border-table table-puertos">
+                                        <table class="cont-table">
+                                            <thead class="table-head">
+                                                <tr>
+                                                    <th>DATO</th>
+                                                    <th>LARGO</th>
+                                                    <th>COMENTARIO</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th>
+                                                        < STX>
+                                                    </th>
+                                                    <th>1</th>
+                                                    <th>Indica inicio de comando Valor Hexa 0x02</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>Comando</th>
+                                                    <th>4</th>
+                                                    <th>Valor 0070</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>
+                                                        < ETX>
+                                                    </th>
+                                                    <th>1</th>
+                                                    <th>Indica Fin de comando Valor Hexa 0x03</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>
+                                                        < LRC>
+                                                    </th>
+                                                    <th>1</th>
+                                                    <th>Byte resultado de la operación XOR del
+                                                        mensaje</th>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="p-4">
+                                <span>
+                                    <h5>1080 - Respuesta de Inicialización</h5>
+                                </span>
+                                <div class="col-12 w-100">
+                                    <div class=" border-table table-puertos">
+                                        <table class="cont-table">
+                                            <thead class="table-head">
+                                                <tr>
+                                                    <th>DATO</th>
+                                                    <th>LARGO</th>
+                                                    <th>COMENTARIO</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <th>
+                                                    < ACK>
+                                                </th>
+                                                <th>1</th>
+                                                <th>Comando recibido OK Valor Hexa 0x06</th>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </section>
+                            <p><span>Ejemplo:</span></p>
+                            <p><span>Requerimiento:</span></p>
+                            <p>
+                                < STX>0070< ETX>
+                                        < LRC>
+                            </p>
+                            <p><span>Respuesta:</span>
+                                < ACK>
+                            </p>
+                        </div>
+                    </div>
+                </section>
+            </section>
+            <section id="tarjeta-sim" class="container mt-32 mb-pb16 ">
+                <section class="background-card d-block last-child p-4">
+                    <div class="container mt-32 mb-pb16 ">
+                        <div class="background-card d-block last-child p-4">
+                            <section class="p-4">
+                                <span>
+                                    <h5>0080 - Solicitud de Inicialización </h5>
+                                </span>
+                                <div class="col-12 w-100">
+                                    <div class=" border-table table-puertos">
+                                        <table class="cont-table">
+                                            <thead class="table-head">
+                                                <tr>
+                                                    <th>DATO</th>
+                                                    <th>LARGO</th>
+                                                    <th>COMENTARIO</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th>
+                                                        < STX>
+                                                    </th>
+                                                    <th>1</th>
+                                                    <th>Indica inicio de comando Valor Hexa 0x02</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>Comando</th>
+                                                    <th>4</th>
+                                                    <th>Valor 0080</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>
+                                                        < ETX>
+                                                    </th>
+                                                    <th>1</th>
+                                                    <th>Indica Fin de comando Valor Hexa 0x03</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>
+                                                        < LRC>
+                                                    </th>
+                                                    <th>1</th>
+                                                    <th>Byte resultado de la operación XOR del
+                                                        mensaje</th>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="p-4">
+                                <span>
+                                    <h5>1080 - Respuesta de Inicialización</h5>
+                                </span>
+                                <div class="col-12 w-100">
+                                    <div class=" border-table table-puertos">
+                                        <table class="cont-table">
+                                            <thead class="table-head">
+                                                <tr>
+                                                    <th>DATO</th>
+                                                    <th>LARGO</th>
+                                                    <th>COMENTARIO</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th>
+                                                        < STX>
+                                                    </th>
+                                                    <th>1</th>
+                                                    <th>Indica inicio de comando Valor Hexa 0x02</th>
+                                                </tr>
+
+                                                <tr>
+                                                    <th>
+                                                        Comando
+                                                    </th>
+                                                    <th>4</th>
+                                                    <th>Valor 1080</th>
+                                                </tr>
+
+                                                <tr>
+                                                    <th>
+                                                        Separador de campo
+                                                    </th>
+                                                    <th>1</th>
+                                                    <th>Valor “|” Hexa 0x7c</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>
+                                                        Código Respuesta
+                                                    </th>
+                                                    <th>2</th>
+                                                    <th>Valor Numérico</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>
+                                                        Separador de campo
+                                                    </th>
+                                                    <th>1</th>
+                                                    <th>Valor “|” Hexa 0x7c</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>
+                                                        Fecha Transacción
+                                                    </th>
+                                                    <th>8</th>
+                                                    <th>Formato DDMMAAAA</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>
+                                                        Separador de campo
+                                                    </th>
+                                                    <th>1</th>
+                                                    <th>Valor “|” Hexa 0x7c</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>
+                                                        Hora Transacción
+                                                    </th>
+                                                    <th>6</th>
+                                                    <th>Formato HHMMSS</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>
+                                                        < ETX>
+                                                    </th>
+                                                    <th>1</th>
+                                                    <th>Indica Fin de comando Valor Hexa 0x03</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>
+                                                        < LRC>
+                                                    </th>
+                                                    <th>1</th>
+                                                    <th>Byte resultado de la operación XOR del
+                                                        mensaje</th>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </section>
+                            <p><span>Ejemplo:</span></p>
+                            <p><span>Requerimiento:</span></p>
+                            <p>
+                                < STX>0080< ETX>
+                                        < LRC>
+                            </p>
+                            <p><span>Respuesta:</span></p>
+                            <p>
+                                < STX>1080|90|27022016|120628< ETX>
+                                        < LRC>
+                            </p>
+                        </div>
+                    </div>
+                </section>
+            </section>
+            <section id="tarjeta-sim" class="container mt-32 mb-pb16 ">
+                <section class="background-card d-block last-child p-4">
+                    <div class="container mt-32 mb-pb16 ">
+                        <div class="background-card d-block last-child p-4">
+                            <section class="p-4">
+                                <span>
+                                    <h2>Vouchers</h2>
+                                </span>
+                                <div class="col-12 w-100">
+                                    <p>Los voucher serán generados por el POS para los casos en que la caja lo indique
+                                        en el comando de venta, así como también para los duplicados, anulaciones y
+                                        cierres.</p>
+                                    <p>Cada línea contendrá 40 caracteres, los que se concatenan en un solo buffer que
+                                        será enviado en campo de impresión en
+                                        la respuesta transacciones de venta y cierre. La caja al recibir este buffer
+                                        debe considerar que cada 40 caracteres conforman una línea de impresión</p>
+                                    <p>En relación con el largo del Voucher, este dependerá del tipo de transacción a
+                                        imprimir</p>
+                                    <h5><span>Ejemplos referenciales :</span></h5>
+                                </div>
+                            </section>
+                            <section class="p-4">
+                                <div class="col-12 w-100">
+                                    <div class=" border-table table-puertos">
+                                        <table class="cont-table">
+                                            <thead class="table-head">
+                                                <tr>
+                                                    <th>Transacción Venta Débito (redcompra)</th>
+                                                    <th>Transacción Venta Crédito sin cuotas</th>
+
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th>
+                                                        Falta Voucher IM30
+                                                    </th>
+                                                    <th>Falta Voucher IM30</th>
+                                                </tr>
+
+                                                <tr>
+                                                    <th colspan="2">
+                                                        Cantidad de caracteres máximos permitidos: <br>
+                                                        - Ancho: 40 <br>
+                                                        - Largo: 19
+                                                    </th>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="p-4">
+                                <div class="col-12 w-100">
+                                    <div class=" border-table table-puertos">
+                                        <table class="cont-table">
+                                            <thead class="table-head">
+                                                <tr>
+                                                    <th>Transacción Venta Crédito Cuota Normal</th>
+                                                    <th>Duplicado última Venta Crédito</th>
+
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th>
+                                                        Falta Voucher IM30
+                                                    </th>
+                                                    <th>Falta Voucher IM30</th>
+                                                </tr>
+
+                                                <tr>
+                                                    <th colspan="2">
+                                                        Cantidad de caracteres máximos permitidos: <br>
+                                                        - Ancho: 40 <br>
+                                                        - Largo: 19
+                                                    </th>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="p-4">
+                                <div class="col-12 w-100">
+                                    <div class=" border-table table-puertos">
+                                        <table class="cont-table">
+                                            <thead class="table-head">
+                                                <tr>
+                                                    <th>Transacción Venta Crédito 2CSI</th>
+                                                    <th>Transacción Venta Crédito 3CSI</th>
+
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th>
+                                                        Falta Voucher IM30
+                                                    </th>
+                                                    <th>Falta Voucher IM30</th>
+                                                </tr>
+
+                                                <tr>
+                                                    <th colspan="2">
+                                                        Cantidad de caracteres máximos permitidos: <br>
+                                                        - Ancho: 40 <br>
+                                                        - Largo: 24
+                                                    </th>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="p-4">
+                                <div class="col-12 w-100">
+                                    <div class=" border-table table-puertos">
+                                        <table class="cont-table">
+                                            <thead class="table-head">
+                                                <tr>
+                                                    <th>Transacción Venta Pago Diferido</th>
+                                                    <th>Comprobante Promoción</th>
+
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th>
+                                                        Falta Voucher IM30
+                                                    </th>
+                                                    <th>Falta Voucher IM30</th>
+                                                </tr>
+
+                                                <tr>
+                                                    <th>
+                                                        Cantidad de caracteres máximos permitidos: <br>
+                                                        - Ancho: 40 <br>
+                                                        - Largo: 24
+                                                    </th>
+                                                    <th>
+                                                        Cantidad de caracteres máximos permitidos: <br>
+                                                        - Ancho: 40 <br>
+                                                        - Largo: 36 (No considera voucher de venta)
+                                                    </th>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="p-4">
+                                <div class="col-12 w-100">
+                                    <div class=" border-table table-puertos">
+                                        <table class="cont-table">
+                                            <thead class="table-head">
+                                                <tr>
+                                                    <th>Transacción Venta en Promoción</th>
+                                                    <th>Reporte de Cierre del Terminal</th>
+
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th>
+                                                        Falta Voucher IM30
+                                                    </th>
+                                                    <th>Falta Voucher IM30</th>
+                                                </tr>
+
+                                                <tr>
+                                                    <th>
+                                                        Cantidad de caracteres máximos permitidos: <br>
+                                                        - Ancho: 40 <br>
+                                                        - Largo: 24
+                                                    </th>
+                                                    <th>
+                                                        Cantidad de caracteres máximos permitidos: <br>
+                                                        - Ancho: 40 <br>
+                                                        - Largo: 18
+                                                    </th>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </section>
+            </section>
+
+            <section id="tarjeta-sim" class="container mt-32 mb-pb16 ">
+                <section class="background-card d-block last-child p-4">
+                    <div class="container mt-32 mb-pb16 ">
+                            <section class="p-4">
+                                <div class="col-12 col-md-4 w-100">
+                                    <div class=" border-table">
+                                        <table class="cont-table table-puertos">
+                                            <tbody>
+                                                <tr>
+                                                    <th>
+                                                        Aprobado
+                                                    </th>
+                                                    <th>00</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>
+                                                        Rechazado
+                                                    </th>
+                                                    <th>01</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>
+                                                        Autorizador no Responde
+                                                    </th>
+                                                    <th>02</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>
+                                                        Conexión Fallo
+                                                    </th>
+                                                    <th>03</th>
+
+                                                </tr>
+                                                <tr>
+                                                    <th>
+                                                        Transacción ya Fue Anulada
+                                                    </th>
+                                                    <th>04</th>
+
+                                                </tr>
+                                                <tr>
+                                                    <th>
+                                                        No existe Transacción para Anular
+                                                    </th>
+                                                    <th>05</th>
+
+                                                </tr>
+                                                <tr>
+                                                    <th>
+                                                        Tarjeta no Soportada
+                                                    </th>
+                                                    <th>06</th>
+
+                                                </tr>
+                                                <tr>
+                                                    <th>
+                                                        Transacción Cancelada
+                                                    </th>
+                                                    <th>07</th>
+
+                                                </tr>
+                                                <tr>
+                                                    <th>
+                                                        No puede Anular Transacción Debito
+                                                    </th>
+                                                    <th>08</th>
+
+                                                </tr>
+                                                <tr>
+                                                    <th>
+                                                        Error Lectura Tarjeta
+                                                    </th>
+                                                    <th>09</th>
+
+                                                </tr>
+                                                <tr>
+                                                    <th>
+                                                        Monto menor al mínimo permitido
+                                                    </th>
+                                                    <th>10</th>
+
+                                                </tr>
+                                                <tr>
+                                                    <th>
+                                                        No existe venta
+                                                    </th>
+                                                    <th>11</th>
+
+                                                </tr>
+                                                <tr>
+                                                    <th>
+                                                        Transacción No Soportada
+                                                    </th>
+                                                    <th>12</th>
+
+                                                </tr>
+                                                <tr>
+                                                    <th>
+                                                        Debe ejecutar cierre
+                                                    </th>
+                                                    <th>13</th>
+
+                                                </tr>
+                                                <tr>
+                                                    <th>
+                                                        Error Encriptando PAN (BCYCLE)
+                                                    </th>
+                                                    <th>14</th>
+
+                                                </tr>
+                                                <tr>
+                                                    <th>
+                                                        Error Operando con Debito (BCYCLE)
+                                                    </th>
+                                                    <th>15</th>
+
+                                                </tr>
+                                                <tr>
+                                                    <th>
+                                                        Solicitando Conformar Monto
+                                                    </th>
+                                                    <th>80</th>
+
+                                                </tr>
+                                                <tr>
+                                                    <th>
+                                                        Solicitando Ingreso de Clave
+                                                    </th>
+                                                    <th>81</th>
+
+                                                </tr>
+                                                <tr>
+                                                    <th>
+                                                        Solicitando Ingreso de Clave
+                                                    </th>
+                                                    <th>82</th>
+
+                                                </tr>
+                                                <tr>
+                                                    <th>
+                                                        Selección menú crédito/Redcompra
+                                                    </th>
+                                                    <th>83</th>
+
+                                                </tr>
+                                                <tr>
+                                                    <th>
+                                                        Opere tarjeta
+                                                    </th>
+                                                    <th>84</th>
+
+                                                </tr>
+                                                <tr>
+                                                    <th>
+                                                        Selección de cuotas
+                                                    </th>
+                                                    <th>85</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>
+                                                        Ingreso de cuotas
+                                                    </th>
+                                                    <th>86</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>
+                                                        Confirmación de cuotas
+                                                    </th>
+                                                    <th>87</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>
+                                                        Aceptar consulta cuotas
+                                                    </th>
+                                                    <th>88</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>
+                                                        Opción mes de gracia
+                                                    </th>
+                                                    <th>89</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>
+                                                        Inicialización Exitosa
+                                                    </th>
+                                                    <th>90</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>
+                                                        Inicialización Fallida
+                                                    </th>
+                                                    <th>91</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>
+                                                        Lector no Conectado
+                                                    </th>
+                                                    <th>92</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>
+                                                        Consultando cuota al Autorizador
+                                                    </th>
+                                                    <th>93</th>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                            </section>
+                            <h5>Nota: Toda transacción cuyo código de respuesta, en el POS, sea distinto de “0” será considerada como un rechazo. Por 
+                                secreto bancario el detalle de la causa del rechazo no será entregado al comercio.</h5>
+                        </div>
+                </section>
+            </section>
+            <section id="tarjeta-sim" class="container mt-32 mb-pb16 ">
+                <section class="background-card d-block last-child p-4">
+                    <div class="container mt-32 mb-pb16 ">
+                        <div class="background-card d-block last-child p-4">
+                            <section class="p-4">
+                                <p><span>Tabla Abreviación de Tarjetas soportadas:</span></p>
+                                <div class="col-12 w-100">
+                                    <div class=" border-table table-puertos">
+                                        <table class="cont-table">
+                                            <thead class="table-head">
+                                                <tr>
+                                                    <th>TARJETA</th>
+                                                    <th>ABREVIACIÓN</th>
+
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th>
+                                                        VISA
+                                                    </th>
+                                                    <th>VI</th>
+                                                </tr>
+
+                                                <tr>
+                                                    <th>MASTERCARD</th>
+                                                    <th>MC</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>AMEX</th>
+                                                    <th>AX</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>DINERS</th>
+                                                    <th>DC</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>MAGNA</th>
+                                                    <th>MG</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>DEBITO(REDCOMPRA)</th>
+                                                    <th>DB</th>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="p-4">
+                                <p><span>Tabla Abreviación Procesamiento de Tarjetas:</span></p>
+                                <div class="col-12 w-100">
+                                    <div class=" border-table table-puertos">
+                                        <table class="cont-table">
+                                            <thead class="table-head">
+                                                <tr>
+                                                    <th>TARJETA</th>
+                                                    <th>ABREVIACIÓN</th>
+
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th>
+                                                        FALLBACK
+                                                    </th>
+                                                    <th>F</th>
+                                                </tr>
+
+                                                <tr>
+                                                    <th>BANDA</th>
+                                                    <th>B</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>CHIP</th>
+                                                    <th>E</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>CTLS(SIN CONTACTO)</th>
+                                                    <th>C</th>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+
+                                    </div>
+                                </div>
+                            </section>
+                            <p><span>Ejemplo</span></p>
+                            <p>Falta Voucher IM30</p>
+                        </div>
+                    </div>
+                </section>
+            </section>
+            <section id="tarjeta-sim" class="container mt-32 mb-pb16 ">
+                <section class="background-card d-block last-child p-4">
+                    <h2><span>Venta Multicomercio</span></h2>
+                    <p>Para la implementación de la venta del producto de Multicomercio se incorpora el comando 270. Para la utilización de 
+                        dicho producto se debe haber contactado previamente con el encargado de integración de Transbank para el soporte 
+                        transaccional del mismo.</p>
+                    <p>Si se desea realizar una venta Multicomercio se debe enviar en el comando de venta el valor del comercio prestador con 
+                        la cual se realizará la transacción.</p>
+                    <p>Es necesario realizar una “transacción de cierre” cada vez que se cambie de “Prestador”, con este cierre se actualizarán 
+                        los productos asociados al prestador</p>
+                    <p>Para cambiar de “prestador” (Multicódigo) el flujo sería el siguiente:</p>
+
+                    <div class="text-center w-100 px-40">
+                        <img src="assets/img/diagramas/Mesa de trabajo 1 copia 8.svg" alt="">
+                    </div>
+                </section>
+            </section>
+            <section id="tarjeta-sim" class="container mt-32 mb-pb16 ">
+                <section class="background-card d-block last-child p-4">
+                    <p>Datos de Comunicación:</p>
+                    <p>Para las pruebas de implementación se cuenta con las siguientes IP´s y Puertos:</p>
+                    <p>Datos Transaccionales: <br>
+                        IP: 200.10.12.16 <br>
+                        Puerto: 4200</p>
+                    <p>Datos Para Inicialización: <br>
+                        IP: 200.10.9.92 <br>
+                        Puerto:8013</p>
+                        <section class="p-4">
+                            <h1><span>Glosario</span></h1>
+                            <div class="col-12 w-100">
+                                <div class=" border-table table-puertos">
+                                    <table class="cont-table">
+                                        <thead class="table-head">
+                                            <tr>
+                                                <th>Término</th>
+                                                <th>Definición</th>
+
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th>
+                                                    UPM
+                                                </th>
+                                                <th>Módulo de pago desatendido</th>
+                                            </tr>
+
+                                            <tr>
+                                                <th>Epp</th>
+                                                <th>Cifrado de PIN Pad</th>
+                                            </tr>
+                                            <tr>
+                                                <th>Scr</th>
+                                                <th>Lector de tarjetas seguro</th>
+                                            </tr>
+                                            <tr>
+                                                <th>Esd</th>
+                                                <th> Descarga electrostática</th>
+                                            </tr>
+                                            <tr>
+                                                <th>Gnd</th>
+                                                <th>Tierra</th>
+                                            </tr>
+                                            <tr>
+                                                <th>LCD</th>
+                                                <th>Pantalla de cristal líquido</th>
+                                            </tr>
+                                            <tr>
+                                                <th>..MDB</th>
+                                                <th> Bus Multidrop</th>
+                                            </tr>
+                                            <tr>
+                                                <th>USB</th>
+                                                <th>Bus serie universal</th>
+                                            </tr>
+                                            <tr>
+                                                <th>RS232</th>
+                                                <th>Estándar recomendado 232</th>
+                                            </tr>
+                                            <tr>
+                                                <th>Carnero</th>
+                                                <th>Memoria de acceso aleatorio</th>
+                                            </tr>
+                                            <tr>
+                                                <th>Mcu</th>
+                                                <th> Unidad de microcontrolador</th>
+                                            </tr>
+                                            <tr>
+                                                <th>CPU</th>
+                                                <th>Unidad Central de Procesamiento</th>
+                                            </tr>
+                                            <tr>
+                                                <th>AM</th>
+                                                <th>Módulo de acceso seguro</th>
+                                            </tr>
+                                            <tr>
+                                                <th>Si</th>
+                                                <th>Módulo de identidad del suscriptor</th>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                </div>
+                            </div>
+                        </section>
+                        <section class="p-4">
+                            <h1><span>Contenido del producto</span></h1>
+                            <div class="col-12 w-100">
+                                <div class=" border-table table-puertos">
+                                    <table class="cont-table">
+                                        <thead class="table-head">
+                                            <tr>
+                                                <th>Articulo</th>
+                                                <th>Cantidad</th>
+
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th>
+                                                    Terminal de pago desatendida IM30
+                                                </th>
+                                                <th>1</th>
+                                            </tr>
+
+                                            <tr>
+                                                <th>Soporte de montaje IM30</th>
+                                                <th>1</th>
+                                            </tr>
+                                            <tr>
+                                                <th>Tuercas M4</th>
+                                                <th>4</th>
+                                            </tr>
+                                            <tr>
+                                                <th>Tornillos M4</th>
+                                                <th>4</th>
+                                            </tr>
+                                            <tr>
+                                                <th>Guía de configuración rápida de IM30</th>
+                                                <th>1</th>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                </div>
+                            </div>
+                        </section>
                 </section>
             </section>
         </div>
