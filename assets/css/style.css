@@ -179,7 +179,7 @@ a {
 }
 a img {
   max-width: 2.4rem;
-  margin-right: 0.8rem;
+  margin-right: 0.6rem;
 }
 
 .alert {
@@ -191,6 +191,13 @@ a img {
   position: absolute;
   top: 0;
   z-index: 9999;
+  transition: 0.8s;
+  animation: fade-in 0.6s forwards;
+}
+@media (max-width: 991px) {
+  .alert {
+    left: 0;
+  }
 }
 
 .nav-pills .nav-link:disabled {
@@ -214,7 +221,7 @@ a img {
 }
 
 .logo-tablet {
-  min-width: 16rem;
+  min-width: 8rem;
 }
 
 .version {
@@ -232,11 +239,19 @@ a img {
 }
 @media (min-width: 992px) {
   .main {
+    margin-left: 29%;
+    margin-right: 2%;
     transition: 0.4s;
   }
   .main.active {
-    margin-left: 11%;
+    margin-left: 13%;
+    margin-right: 2%;
     transition: 0.45s;
+  }
+}
+@media (min-width: 1100px) {
+  .main {
+    margin-left: 30.8rem;
   }
 }
 
@@ -252,6 +267,9 @@ a img {
 .menu-btn {
   background-color: rgba(255, 255, 255, 0);
   padding: 1.4rem;
+}
+.menu-btn img {
+  width: 3.2rem;
 }
 
 .article {
@@ -279,21 +297,41 @@ img.img-puertos {
   }
 }
 
+.black--veil.active {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99999;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.459);
+}
+
 .nav--color {
-  background-color: #202830;
+  background-color: white;
   margin-right: 1.6rem;
   color: #707382;
-  padding: 1.6rem;
+  padding: 1.4rem 0.2rem 1.4rem 1.6rem;
   left: -70%;
   height: 100%;
   width: 70%;
   position: fixed;
   width: 70%;
-  z-index: 99999;
   transition: 0.8s;
+  top: 8.8rem;
+}
+@media (max-width: 992px) {
+  .nav--color {
+    top: 0;
+  }
+}
+.nav--color.active .justify--center {
+  justify-content: center;
 }
 @media (max-width: 992px) {
   .nav--color.active {
+    top: 0;
+    z-index: 999999;
     left: 0;
   }
 }
@@ -326,7 +364,7 @@ img.img-puertos {
 }
 .nav--color h3 {
   font-size: 1.6rem;
-  color: #0098dd;
+  color: #D5006C;
   margin-bottom: 1.6rem;
 }
 .nav--color ul {
@@ -346,7 +384,7 @@ img.img-puertos {
   animation: fade-in 0.4s forwards;
 }
 .nav--color ul li a p {
-  color: #a0afca;
+  color: #707382;
   opacity: 0;
   animation: fade-in 0.6s forwards;
 }
@@ -362,7 +400,6 @@ img.img-puertos {
   top: 10;
   left: 18rem;
   border-radius: 0.8rem;
-  background-color: red;
   width: 10rem;
   z-index: 99999999;
 }
@@ -376,10 +413,9 @@ img.img-puertos {
 @media (min-width: 992px) {
   .nav--color {
     position: fixed;
-    max-width: 24%;
+    max-width: 27%;
     left: 0;
-    top: 0;
-    height: 100%;
+    height: calc(100% - 7.7rem);
     transition: 0.4s;
   }
   .nav--color .logo-nav {
@@ -399,13 +435,41 @@ img.img-puertos {
     animation: fade-in 0.4s forwards;
   }
 }
+@media (min-width: 1100px) {
+  .nav--color {
+    position: fixed;
+    max-width: 28rem;
+    left: 0;
+  }
+}
 .scroll {
   margin: 0 !important;
-  height: 90%;
+  height: calc(100% - 8rem);
   overflow: auto;
   scrollbar-width: thin;
-  scrollbar-color: #707382 #202830;
+  scrollbar-color: #e7ebf3 #f9fbfe;
   transition: 0.6s;
+  width: 100%;
+}
+.scroll::-webkit-scrollbar-thumb {
+  border-radius: 10px !important;
+  border: solid 1px #fff !important;
+  background: #e7ebf3 !important;
+}
+.scroll::-webkit-scrollbar-track {
+  border-radius: 10px !important;
+  background: #f9fbfe !important;
+}
+.scroll ul {
+  padding: 0;
+}
+.scroll ul li {
+  justify-content: start;
+}
+.scroll ul li div ul {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
 }
 .scroll h3 {
   transition: 0.6s;
@@ -432,9 +496,12 @@ img.img-puertos {
   .scroll.active .text {
     display: none;
   }
+  .scroll.active ul {
+    padding-left: 0.4rem;
+  }
 }
-.scroll.active ul li a img {
-  margin-right: 1.8rem;
+.scroll.active ul li {
+  justify-content: center;
 }
 @media (min-width: 992px) {
   .scroll.active ul li a {

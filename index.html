@@ -18,179 +18,169 @@
     <title>Manual de integracion</title>
 </head>
 
-<body class="color flex justify-center">
-    <nav class="nav--color">
-        <div class="flex flex-betwwen align-items-center justify-content-lg-center logo-nav">
-            <section class="flex">
-                <img class="logo-w" src="assets/img/tbk-w.svg" alt="tbk negativo">
-                <H2>DEVELOPERs</H2>
-
-            </section>
-            <button class="btn--close d-lg-none">
-                <svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M18.3154 16.0001L24.0394 10.2761C24.5607 9.75476 24.5607 8.91209 24.0394 8.39076C23.518 7.86942 22.6754 7.86942 22.154 8.39076L16.43 14.1148L10.706 8.39076C10.1847 7.86942 9.34202 7.86942 8.82069 8.39076C8.29935 8.91209 8.29935 9.75476 8.82069 10.2761L14.5447 16.0001L8.82069 21.7241C8.29935 22.2454 8.29935 23.0881 8.82069 23.6094C9.08069 23.8694 9.42202 24.0001 9.76335 24.0001C10.1047 24.0001 10.446 23.8694 10.706 23.6094L16.43 17.8854L22.154 23.6094C22.414 23.8694 22.7554 24.0001 23.0967 24.0001C23.438 24.0001 23.7794 23.8694 24.0394 23.6094C24.5607 23.0881 24.5607 22.2454 24.0394 21.7241L18.3154 16.0001Z" />
-                </svg>
-            </button>
-
-        </div>
-        <div class="scroll">
-            <div>
-                <h3 class="text">Introducción</h3>
-                <h3>...</h3>
-                <ul>
-                    <li>
-                        <a class="flex justify-content-start" href="#transacciones">
-                            <img src="assets/img/icons/transaccion.svg" alt="configuracion">
-                            <p>Las transacciones y operaciones</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="flex justify-content-start" href="#especificaciones">
-                            <img src="assets/img/icons/Especific.svg" alt="configuracion">
-                            <p>Especificaciones</p>
-                        </a>
-                    </li>
-                </ul>
+<body class="color">
+    <div class="black--veil"></div>
+    <header class="nav-color px-32 fixed-top nav-fixed px-md-5">
+        <div class=" flex flex-betwwen d-flex align-items-center">
+            <div class="flex">
+                <button class="menu-btn me-5">
+                    <img class="" src="assets/img/burger.svg" alt="Menu">
+                </button>
+                <img class="d-none d-sm-block logo-tablet" src="assets/img/tbk.svg"
+                    alt="Logotipo tbk developer">
             </div>
-            <div>
-                <h3 class="text">Componentes</h3>
-                <h3>...</h3>
-                <ul>
-                    <li>
-                        <a class="flex justify-content-start" href="#interfaz">
-                            <img src="assets/img/icons/interfaz.svg" alt="configuracion">
-                            <p>Interfaz</p>
-                        </a>
-                    </li>
-                    <li>
-                        <div class="accordion-header" id="flush-headingOne">
-                            <button class="accordion-button flex justify-content-start" type="button"
-                                data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="true"
-                                aria-controls="flush-collapseOne">
-                                <img src="assets/img/icons/Puertos.svg" alt="configuracion">
-                                <p>Puertos</p>
-                            </button>
-                            <div class="alert"></div>
-                        </div>
-                        <div id="flush-collapseOne" class="accordion-collapse collapse show"
-                            aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                            <ul>
-                                <li><a class="flex justify-content-start" href="#rs">RS232</a></li>
-                                <li><a class="flex justify-content-start" href="#usb">USB</a></li>
-                                <li><a class="flex justify-content-start" href="#PUERTOS-USB">Puertos USB</a></li>
-                                <li><a class="flex justify-content-start" href="#MDB">MDB</a></li>
-                                <li><a class="flex justify-content-start" href="#AUX">AUX</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <div>
-                <h3 class="text">Instalación del producto</h3>
-                <h3>...</h3>
-                <ul>
-                    <li>
-                        <div class="accordion-header" id="flush-headingtwo">
-                            <button class="accordion-button flex justify-content-start" type="button"
-                                data-bs-toggle="collapse" data-bs-target="#flush-collapsetwo" aria-expanded="true"
-                                aria-controls="flush-collapseOne">
-                                <img src="assets/img/icons/Dimensiones.svg" alt="configuracion">
-                                <p>Dimensiones</p>
-                            </button>
-                            <div class="alert"></div>
-                        </div>
-                        <div id="flush-collapsetwo" class="accordion-collapse collapse"
-                            aria-labelledby="flush-headingtwo" data-bs-parent="#accordionFlushExample">
-                            <ul>
-                                <li><a class="flex justify-content-start">RS232</a></li>
-                                <li><a class="flex justify-content-start" href="#USB">USB</a></li>
-                                <li><a class="flex justify-content-start" href="#PUERTOS-USB">Puertos USB</a></li>
-                                <li><a class="flex justify-content-start" href="#MDB">MDB</a></li>
-                                <li><a class="flex justify-content-start" href="#AUX">AUX</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <div>
-                <h3 class="text">Transacciones y Diagramas</h3>
-                <h3>....</h3>
-                <ul class="accordion accordion-flush" id="accordionFlushExample">
-
-                    <li>
-                        <a class="flex justify-content-start" href="#dimensiones">
-                            <img src="assets/img/icons/config.svg" alt="configuracion">
-                            <p>Protocolos de Comunicación</p>
-                        </a>
-                    </li>
-                </ul>
-                <ul>
-                    <!-- <li>
-                        <a class="flex justify-content-start" href="">
-                            <img src="assets/img/icons/Protocolo.svg" alt="configuracion">
-                            <p>Protocolos de Comunicación</p>
-                        </a>
-                    </li>-->
-                    <li>
-                        <a class="flex justify-content-start" href="">
-                            <img src="assets/img/icons/comandos.svg" alt="configuracion">
-                            <p>Comandos</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="flex justify-content-start" href="">
-                            <img src="assets/img/icons/voucher.svg" alt="configuracion">
-                            <p>Vouchers</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="flex justify-content-start" href="">
-                            <img src="assets/img/icons/codigo.svg" alt="configuracion">
-                            <p class="active">Códigos de Respuesta</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="flex justify-content-start" href="">
-                            <img src="assets/img/icons/glosario.svg" alt="configuracion">
-                            <p>Glosario</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="flex justify-content-start" href="">
-                            <img src="assets/img/icons/contenido.svg" alt="configuracion">
-                            <p>Contenido del Producto</p>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="version flex d-md-none flex-betwwen align-items-center">
-                <div>version</div>
+            <div class=" d-sm-none "><img src="assets/img/tbk.svg" alt="Logotipo tbk developer"></div>
+            <div class="d-none d-sm-flex flex-gap align-items-center">
+                <h2 class="version">version 0.0.1</h2>
                 <button class="btn btn-secundary">Soporte</button>
             </div>
-
         </div>
+    </header>
 
-    </nav>
 
-    <div class="p-0 container-fluid m-left main">
-        <header class="nav-color px-32 fixed-top nav-fixed px-md-5">
-            <div class="container flex flex-betwwen d-flex align-items-center">
-                <div class="flex">
-                    <button class="menu-btn">
-                        <img class="" src="assets/img/burger.svg" alt="Menu">
-                    </button>
-                    <img class="d-none d-sm-block d-lg-none logo-tablet" src="assets/img/tbk.svg"
-                        alt="Logotipo tbk developer">
+    <div class=" main">
+        <nav class="flex align-items-center nav--color">
+            <div class="scroll">
+                <div>
+                    <h3 class="text">Introducción</h3>
+                    <h3>...</h3>
+                    <ul>
+                        <li class="flex">
+                            <a class="flex " href="#transacciones">
+                                <img src="assets/img/icons/transaccion.svg" alt="configuracion">
+                                <p>Las transacciones y operaciones</p>
+                            </a>
+                        </li>
+                        <li class="flex">
+                            <a class="flex" href="#especificaciones">
+                                <img src="assets/img/icons/Especific.svg" alt="configuracion">
+                                <p>Especificaciones</p>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-                <div class=" d-sm-none "><img src="assets/img/tbk.svg" alt="Logotipo tbk developer"></div>
-                <div class="d-none d-sm-flex flex-gap align-items-center">
-                    <h2 class="version">version 0.0.1</h2>
+                <div>
+                    <h3 class="text">Componentes</h3>
+                    <h3>...</h3>
+                    <ul>
+                        <li class="flex">
+                            <a class="flex" href="#interfaz">
+                                <img src="assets/img/icons/interfaz.svg" alt="configuracion">
+                                <p>Interfaz</p>
+                            </a>
+                        </li>
+                        <li class="flex flex-column">
+                            <div class="accordion-header" id="flush-headingOne">
+                                <button class="accordion-button flex justify--center " type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="true"
+                                    aria-controls="flush-collapseOne">
+                                    <img src="assets/img/icons/Puertos.svg" alt="configuracion">
+                                    <p>Puertos</p>
+                                    <div class="alert"></div>
+                                </button>
+                                
+                            </div>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse show"
+                                aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                <ul>
+                                    <li><a class="flex" href="#rs">RS232</a></li>
+                                    <li><a class="flex" href="#usb">USB</a></li>
+                                    <li><a class="flex" href="#PUERTOS-USB">Puertos USB</a></li>
+                                    <li><a class="flex" href="#MDB">MDB</a></li>
+                                    <li><a class="flex" href="#AUX">AUX</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text">Instalación del producto</h3>
+                    <h3>...</h3>
+                    <ul>
+                        <li>
+                            <div class="accordion-header" id="flush-headingtwo">
+                                <button class="accordion-button flex justify--center" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#flush-collapsetwo" aria-expanded="true"
+                                    aria-controls="flush-collapseOne">
+                                        <img src="assets/img/icons/Dimensiones.svg" alt="configuracion">
+                                        <div class="alert"></div>
+                                    <p>Dimensiones</p>
+                                </button>
+                                
+                            </div>
+                            <div id="flush-collapsetwo" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingtwo" data-bs-parent="#accordionFlushExample">
+                                <ul>
+                                    <li><a class="flex">RS232</a></li>
+                                    <li><a class="flex" href="#USB">USB</a></li>
+                                    <li><a class="flex" href="#PUERTOS-USB">Puertos USB</a></li>
+                                    <li><a class="flex" href="#MDB">MDB</a></li>
+                                    <li><a class="flex" href="#AUX">AUX</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text">Transacciones y Diagramas</h3>
+                    <h3>....</h3>
+                    <ul class="accordion accordion-flush" id="accordionFlushExample">
+    
+                        <li>
+                            <a class="flex" href="#dimensiones">
+                                <img src="assets/img/icons/config.svg" alt="configuracion">
+                                <p>Protocolos de Comunicación</p>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <!-- <li>
+                            <a class="flex justify-content-start" href="">
+                                <img src="assets/img/icons/Protocolo.svg" alt="configuracion">
+                                <p>Protocolos de Comunicación</p>
+                            </a>
+                        </li>-->
+                        <li>
+                            <a class="flex" href="">
+                                <img src="assets/img/icons/comandos.svg" alt="configuracion">
+                                <p>Comandos</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="flex " href="">
+                                <img src="assets/img/icons/voucher.svg" alt="configuracion">
+                                <p>Vouchers</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="flex" href="">
+                                <img src="assets/img/icons/codigo.svg" alt="configuracion">
+                                <p class="active">Códigos de Respuesta</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="flex" href="">
+                                <img src="assets/img/icons/glosario.svg" alt="configuracion">
+                                <p>Glosario</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="flex" href="">
+                                <img src="assets/img/icons/contenido.svg" alt="configuracion">
+                                <p>Contenido del Producto</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="version flex d-md-none flex-betwwen align-items-center">
+                    <div>version</div>
                     <button class="btn btn-secundary">Soporte</button>
                 </div>
+    
             </div>
-        </header>
-        <div class="container px-md-5">
+    
+        </nav>
+        <div class="">
             <main class="container mt-32">
                 <div class="background-card d-block d-sm-flex last-child justify-content-around p-4">
                     <div class="flex justify-center align-items-end">
@@ -4098,7 +4088,6 @@
         </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
         <script src="assets/js/nav.js"></script>
-        <script src="assets/js/copy.js"></script>
 
 </body>
 

@@ -1,18 +1,35 @@
+.black--veil.active {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.459);
+}
 .nav--color {
-    background-color: $grey-400;
+    background-color: $light;
     margin-right: 1.6rem;
     color: $grey-200;
-    padding: 1.6rem;
+    padding: 1.4rem .2rem 1.4rem 1.6rem;
     left: -70%;
     height: 100%;
     width: 70%;
     position: fixed;
     width: 70%;
-    z-index: 99999;
     transition: .8s;
+    top: 8.8rem;
+    @media (max-width:992px) {
+        top: 0;
+    }
 
     &.active {
+        .justify--center {
+            justify-content: center;
+        }
         @media (max-width:992px) {
+            top: 0;
+            z-index: 999999;
             left: 0;
         }
     }
@@ -52,7 +69,7 @@
 
     h3 {
         font-size: 1.6rem;
-        color: $onePay-300;
+        color: $transbank-300;
         margin-bottom: 1.6rem;
     }
 
@@ -74,7 +91,7 @@
                 color:$grey-200;
 
                 p {
-                    color: $basic-500;
+                    color: $grey-200;
                     opacity: 0;
                     animation: fade-in .6s forwards;
                 }
@@ -98,7 +115,6 @@
                 top: 10;
                 left: 18rem;
                 border-radius: 0.8rem;
-                background-color: red;
                 width: 10rem;
                 z-index: 99999999;
             }
@@ -118,10 +134,10 @@
 
     .nav--color {
         position: fixed;
-        max-width: 24%;
+        max-width: 27%;
         left: 0;
-        top: 0;
-        height: 100%;
+        
+        height: calc(100% - 7.7rem);
         transition: .4s;
 
         .logo-nav {
@@ -147,14 +163,49 @@
         }
     }
 }
+@media (min-width:1100px) {
 
+    .nav--color {
+        position: fixed;
+        max-width: 28rem;
+        left: 0;
+    }
+}
 .scroll {
     margin: 0 !important;
-    height: 90%;
+    height: calc(100% - 8rem);
     overflow: auto;
     scrollbar-width: thin;
-    scrollbar-color: $grey-200 $grey-400;
+    //firefox
+    scrollbar-color: $basic-300 $basic-200;
     transition: .6s;
+    width: 100%;
+    
+    // chrome & safari
+    &::-webkit-scrollbar-thumb {
+        border-radius: 10px!important;
+        border: solid 1px #fff !important;
+        background: $basic-300!important;
+         
+    }
+    &::-webkit-scrollbar-track {
+        border-radius: 10px!important;
+        background: $basic-200!important;
+    }
+
+    ul {
+        padding: 0;
+        li {
+            justify-content: start;
+            div {
+                ul {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: start;
+                }
+            }
+        }
+    }
 
     h3 {
         transition: .6s;
@@ -162,7 +213,6 @@
         opacity: 0;
         animation: fade-in .4s forwards;
     }
-
     .text {
         display: block;
     }
@@ -189,19 +239,19 @@
                 display: none;
 
             }
+            ul {
+                padding-left: .4rem;
+
+            }
         }
-
-
 
         ul {
             li {
-                a {
-                    img {
-                        margin-right: 1.8rem;
-                    }
-                }
+                justify-content: center;
             }
         }
+
+
 
         ul {
             li {
