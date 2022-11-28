@@ -239,13 +239,13 @@ a img {
 }
 @media (min-width: 992px) {
   .main {
-    margin-left: 29%;
-    margin-right: 2%;
+    margin-left: 13rem;
+    margin-right: 2rem;
     transition: 0.4s;
   }
   .main.active {
-    margin-left: 13%;
-    margin-right: 2%;
+    margin-left: 13rem;
+    margin-right: 2rem;
     transition: 0.45s;
   }
 }
@@ -304,7 +304,7 @@ img.img-puertos {
   z-index: 99999;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.459);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .nav--color {
@@ -322,6 +322,7 @@ img.img-puertos {
 }
 @media (max-width: 992px) {
   .nav--color {
+    z-index: 999999;
     top: 0;
   }
 }
@@ -422,7 +423,7 @@ img.img-puertos {
     margin-bottom: 6rem;
   }
   .nav--color.active {
-    max-width: 11%;
+    max-width: 10.5rem;
     transition: 0.4s;
   }
   .nav--color.active section img {

@@ -24,15 +24,14 @@
 
 .main {
   @media(min-width: 992px) {
-    margin-left: 29%;
-    margin-right: 2%;
+    margin-left: 13rem;
+    margin-right: 2rem;
     transition: .4s;
     
 
     &.active {
-      margin-left: 13%;
-      margin-right: 2%;
-
+      margin-left: 13rem;
+      margin-right: 2rem;
       transition: .45s;
     }
   }
